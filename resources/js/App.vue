@@ -1,10 +1,13 @@
 <template>
-    <div id="app">
+    <div id="app" class="bg-black text-white h-screen">
       <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/inicio">Inicio</router-link>
+        <router-link to="/" class="mr-4">Home</router-link>
+        <router-link to="/about" class="mr-4">About</router-link>
+        <router-link to="/inicio" class="mr-4">Inicio</router-link>
       </nav>
+      <body>
+        
+      </body>
       <router-view></router-view>
     </div>
   </template>
@@ -15,13 +18,6 @@
   };
   </script>
   
-  <style scoped>
-    nav {
-      margin: 20px;
-    }
-  
-    nav a {
-      margin-right: 15px;
-    }
+  <style>
   </style>
   
