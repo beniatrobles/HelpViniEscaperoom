@@ -15,6 +15,10 @@ const routes = [
         path: '/about',
         component: () => import('./About.vue'),
     },
+    {
+        path: '/inicio',
+        component: () => import('./Inicio.vue'),
+    },
 ];
 
 const router = createRouter({
