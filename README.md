@@ -40,6 +40,7 @@ Opcionalmente, asegúrate de tener instalado un servidor local como Apache, Ngin
        - Claves API o configuraciones de servicios externos según sea necesario.
       
     - Configura la base de datos ejecutando las migraciones con `php artisan migrate`.
+    - Genera la clave única de la aplicación ejecutando `php artisan key:generate`. Esta clave es necesaria, y se usará para proteger los datos almacenados en la aplicación.
     - Compila los recursos del frontend. Para producción, ejecuta `npm run build`. Si estás desarrollando, usa `npm run dev`.
 
 ---
