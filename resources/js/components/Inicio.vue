@@ -6,9 +6,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Help Vini - Inicio</title>
-</head><body class="bg-gradient-to-br from-blue-800 to-green-500 flex items-center justify-center min-h-screen">
+</head>
+<div class="flex items-center justify-center">
 
-    <div class="bg-black rounded-[20px] shadow-2xl w-[1200px] h-[800px] relative flex">
+<body class="bg-gradient-to-br from-blue-800 to-green-500 min-h-screen flex items-center">
+
+    <div class="bg-white rounded-[20px] shadow-2xl w-[1000px] h-[600px] relative flex">
     
         <div class="bg-white rounded-[15px] w-full h-full relative overflow-hidden border border-gray-400 flex flex-col">
         
@@ -70,6 +73,7 @@
         </div>
     </div>
 </body>
+</div>
 </template>
 
 <style scoped>
