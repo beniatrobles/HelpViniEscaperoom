@@ -1,19 +1,23 @@
 
 import "./bootstrap";
 import { createApp } from "vue";
+import "../css/app.css";
 
-import App from "./App.vue";
+
+import App from "./components/App.vue";
+import Home from "./components/Home.vue"
+import Inicio from "./components/Inicio.vue"
 import { createRouter, createWebHistory } from 'vue-router';
 
 
 const routes = [
     {
         path: '/',
-        component: () => import('./Home.vue'),
+        component:Home,
     },
     {
-        path: '/about',
-        component: () => import('./About.vue'),
+        path: '/inicio',
+        component:Inicio,
     },
 ];
 

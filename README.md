@@ -1,66 +1,74 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Proyecto Laravel + Vue.js
 
-## About Laravel
+Este proyecto utiliza **Laravel** como framework para el backend y **Vue.js** para el frontend. Laravel proporciona una base robusta y escalable para manejar la lógica del servidor, mientras que Vue.js permite una experiencia de usuario interactiva y dinámica en el navegador.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requisitos Previos
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Antes de empezar, asegúrate de que tu sistema cumpla con los siguientes requisitos:
 
-## Learning Laravel
+- **PHP**: Versión 8.0 o superior.
+- **Composer**: Herramienta para manejar las dependencias de PHP.
+- **Node.js**: Incluyendo npm o Yarn, para manejar las dependencias de frontend.
+- **Git**: Para clonar el repositorio y manejar el control de versiones.
+- **Base de datos**: MySQL o cualquier otra compatible con Laravel.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Opcionalmente, asegúrate de tener instalado un servidor local como Apache, Nginx o herramientas como Laravel Sail o Valet, si no usas el servidor embebido de Laravel.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## Instalación del proyecto
+1. Primero clonamos el repositorio:
+    - Clona el repositorio en tu máquina local con el comando `git clone https://github.com/2425-EscapeRoom-2DW3/G1_2DW3A_EscapeRoom`.
+    - Cambia al directorio del proyecto con `cd G1_2DW3A_EscapeRoom`.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+> [!WARNING]
+>Algunos archivos y carpetas no están incluidos en el repositorio, pero son esenciales para el correcto funcionamiento del proyecto, por lo que deberemos de crearlos nosotros.
+2. A continuación configuraremos el proyecto para poder comenzar a trabajar en el
+    
+    - Instala las dependencias de PHP ejecutando `composer install`. Este comando creará la carpeta `/vendor` donde se guardarán todas esas dependencias
+    
+    - Instala las dependencias de Node.js usando `npm install` o, si prefieres, `yarn install`. Esto creará la carpeta `node_modules`, también necesaria para el correcto funcionamiento.
+    
+    - crea el archivo llamado `.env`. En este archivo se almacenan variables de entorno, como las credenciales y configuraciones necesarias para la conexión a la base de datos.
+        > [!NOTE]
+        > Para ello puede utilizar el archivo `.env.example` que se encuentra entre los archivos del proyecto. Este proporciona una plantilla del archivo `.env` con las variables a modificar.
+    
+        - accede a este archivo y configura las variables necesarias, como: `DB_HOST`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` para la base de datos.
+       - Claves API o configuraciones de servicios externos según sea necesario.
+      
+    - Configura la base de datos ejecutando las migraciones con `php artisan migrate`.
+    - Genera la clave única de la aplicación ejecutando `php artisan key:generate`. Esta clave es necesaria, y se usará para proteger los datos almacenados en la aplicación.
+    - Compila los recursos del frontend. Para producción, ejecuta `npm run build`. Si estás desarrollando, usa `npm run dev`.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Archivos Adicionales Necesarios
 
-## Contributing
+Como ya mencionamos anteriormente, algunos archivos y carpetas no están incluidos en el repositorio, pero pueden llegar a ser esenciales para el correcto funcionamiento del proyecto. Aquí se explican cuáles son y cómo generarlos:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **`/public/storage`**: Enlace simbólico que conecta los archivos públicos con el directorio `/storage/app/public`. Se genera ejecutando `php artisan storage:link`. Será necesario cuando queramos que los archivos del directorio `/storage/app/public` sean accesibles desde el navegador, como por ejemplo, archivos subidos por el usuario
+  
+- **Archivos de frontend compilados**: Archivos CSS, JS y otros recursos necesarios para el navegador. Se generan automáticamente ejecutando `npm run build` o `npm run dev`.
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Comandos Útiles
 
-## Security Vulnerabilities
+Durante el desarrollo y la administración del proyecto, estos son algunos comandos útiles:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Para iniciar el servidor de desarrollo de Laravel, usa `php artisan serve`.
+- Para iniciar el servidor de desarrollo del frontend con Vue.js, usa `npm run dev`.
+- Para compilar los recursos del frontend para producción, usa `npm run build`.
+- Para ejecutar las pruebas definidas en el proyecto, utiliza `php artisan test`.
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Notas Importantes
+
+1. **Archivos sensibles**: El archivo `.env` contiene información confidencial y nunca debe ser incluido en el repositorio. Usa `.env.example` como referencia para configurarlo.
+
+3. **Frontend compilado**: No edites directamente los archivos en `/public/build`. Estos se generan automáticamente a partir del código fuente ubicado en `resources/`.
+

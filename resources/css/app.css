@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+h1, .btn__inicio{
+    font-family: "Press Start 2P", system-ui ;
+}
+.titulo__inicio{
+    border-right: 4px solid white ;
+    animation: parpadeo 1s infinite step-end, type 10s infinite;
+}
+.btn__inicio{
+    box-shadow: 0 15px 0 green;
+}
+.img__inicio{
+    filter: drop-shadow(0 0 10px #0ED800);
+    animation: flotar 2s alternate infinite linear;
+}
+@keyframes parpadeo{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes type{
+    0%{
+        width: 0;
+    }
+    25%,100%{
+        width: 100%;
+    }
+}
+@keyframes flotar{
+    from{
+        transform: translateY(25px);
+    }to{
+        transform: translateY(-25px);
+    }
+}
