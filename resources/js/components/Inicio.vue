@@ -8,7 +8,7 @@
   <title>Help Vini - Inicio</title>
 </head>
 
-<div class="mesa">
+<div class="mesa h-screen">
 <body>
     
 </body>

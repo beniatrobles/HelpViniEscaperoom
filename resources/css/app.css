@@ -3,11 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.mesa {
-
-    background: url(img/mesa.jpg);
-}
-
 h1, .btn__inicio{
     font-family: "Press Start 2P", system-ui ;
 }
@@ -22,6 +17,14 @@ h1, .btn__inicio{
     filter: drop-shadow(0 0 10px #0ED800);
     animation: flotar 2s alternate infinite linear;
 }
+
+.mesa {
+    background: url(img/mesa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 @keyframes parpadeo{
     50%{
         border-color: transparent;
