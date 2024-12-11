@@ -14,12 +14,12 @@
  <img :src="'/img/clips.png'" class="absolute w-[100px] rotate-[-20deg] top-[200px] left-[5%] z-10">
  <img :src="'/img/platano.png'" class="absolute w-[250px] bottom-[6%] left-[-7%] z-10 brightness-75">
  
- <div class=" absolute top-[20%] right-[7%] flex rotate-[-10deg] cursor-pointer transition duration-200 hover:scale-[1.05] hover:rotate-[-5deg]">
-  <img :src="'/img/airpods.png'" class=" w-[80px] ">
-  <img :src="'/img/airpods.png'" class=" w-[80px] rotate-[-20deg] scale-x-[-1]">
-</div>
-<router-link to="/inicio/cuaderno" class="absolute right-[25%] bottom-[0] w-[200px] rotate-[82deg] hover:scale-[1.05] hover:z-20 duration-200 hover:rotate-[80deg]"> <img :src="'/img/cuaderno.png'" > </router-link>
-<router-view class="absolute inset-0 z-[100]"></router-view>
+  <router-link to="/inicio/airpods" class=" absolute top-[20%] right-[7%] flex rotate-[-10deg] cursor-pointer transition duration-200 hover:scale-[1.05] hover:rotate-[-5deg]">
+    <img :src="'/img/airpods.png'" class=" w-[80px] ">
+    <img :src="'/img/airpods.png'" class=" w-[80px] rotate-[-20deg] scale-x-[-1]">
+  </router-link>
+  <router-link to="/inicio/cuaderno" class="absolute right-[25%] bottom-[0] w-[200px] rotate-[82deg] hover:scale-[1.05] hover:z-20 duration-200 hover:rotate-[80deg]"> <img :src="'/img/cuaderno.png'" > </router-link>
+  <router-view class="absolute inset-0 z-[100]"></router-view>
 
   
 </div>
