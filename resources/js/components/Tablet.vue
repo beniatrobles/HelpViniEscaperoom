@@ -2,8 +2,8 @@
 </script>
 
 <template>
-    <div class="flex items-center justify-center">
-
+    <div class="flex items-center justify-center caca">
+        <router-link to="/inicio"><h1 class="absolute top-1 right-1">X</h1></router-link>
         <body class="bg-gradient-to-br from-blue-800 to-green-500 min-h-screen flex items-center">
     
             <div class="bg-white rounded-[20px] shadow-2xl w-[1000px] h-[600px] relative flex">

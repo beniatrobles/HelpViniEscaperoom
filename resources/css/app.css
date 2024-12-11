@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, .btn__inicio{
+h1, .btn__inicio, .parrafo__inicio{
     font-family: "Press Start 2P", system-ui ;
 }
 .titulo__inicio{
@@ -18,12 +18,12 @@ h1, .btn__inicio{
     animation: flotar 2s alternate infinite linear;
 }
 
-.mesa {
-    background: url(img/mesa.jpg);
+/* .mesa {
+    background-image: url(img/mesa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 @keyframes parpadeo{
     50%{
