@@ -6,6 +6,13 @@
 h1, .btn__inicio, .parrafo__inicio{
     font-family: "Press Start 2P", system-ui ;
 }
+
+p {
+    
+    -webkit-text-stroke-color: black;
+
+}
+
 .titulo__inicio{
     border-right: 4px solid white ;
     animation: parpadeo 1s infinite step-end, type 10s infinite;
