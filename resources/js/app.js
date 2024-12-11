@@ -11,6 +11,7 @@ import Cuaderno from "./components/Cuaderno.vue";
 import Revista from "./components/Revista.vue";
 // import PostIt from "./components/PostIt.vue";
 import { createRouter, createWebHistory } from "vue-router";
+import Airpods from "./components/Airpods.vue";
 
 const routes = [
     {
@@ -36,6 +37,10 @@ const routes = [
             {
                 path: 'cuaderno',
                 component: Cuaderno,
+            },
+            {
+                path: 'airpods',
+                component: Airpods,
             },
         ],
     },
