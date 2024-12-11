@@ -9,7 +9,7 @@ import Tablet from "./components/Tablet.vue"; // Importa el componente Tablet
 import Polaroid from "./components/Polaroid.vue";
 import Cuaderno from "./components/Cuaderno.vue";
 import Revista from "./components/Revista.vue";
-// import PostIt from "./components/PostIt.vue";
+import PostIt from "./components/PostIt.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import Airpods from "./components/Airpods.vue";
 
@@ -41,6 +41,10 @@ const routes = [
             {
                 path: 'airpods',
                 component: Airpods,
+            },
+            {
+                path: 'postit',
+                component: PostIt,
             },
         ],
     },
