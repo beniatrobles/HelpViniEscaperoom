@@ -9,55 +9,55 @@
             <img class="absolute z-[-50] inset-0 w-[100%]" :src="'/img/fondoTablet.jpg'" alt="">
             <div class="grid grid-cols-4 gap-8 p-8">
                 <div class="flex flex-col items-center">
-                    <img :src="'/img/gmail.png'" alt="Gmail" class="w-16 h-16">
+                    <img :src="'/img/gmail.png'" alt="Gmail" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Gmail</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img :src="'/img/twitter.png'" alt="Twitter" class="w-16 h-16">
+                    <img :src="'/img/twitter.png'" alt="Twitter" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Twitter</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img :src="'/img/instagram.png'" alt="Instagram" class="w-16 h-16">
+                    <img :src="'/img/instagram.png'" alt="Instagram" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Instagram</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img :src="'/img/notas.png'" alt="Notas" class="w-16 h-16">
+                    <img :src="'/img/notas.png'" alt="Notas" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Notas</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img :src="'/img/pinterest.png'" alt="Pinterest" class="w-16 h-16">
+                    <img :src="'/img/pinterest.png'" alt="Pinterest" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Pinterest</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 1" alt="App 1" class="w-16 h-16">
-                    <p class="text-sm font-semibold">App 1</p>
+                    <img :src="'/img/spotify.png'" alt="Spotify" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">Spotify</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 2" alt="App 2" class="w-16 h-16">
-                    <p class="text-sm font-semibold">App 2</p>
+                    <img :src="'/img/tiktok.png'" alt="Tiktok" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">Tiktok</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 3" alt="App 3" class="w-16 h-16">
+                    <img src="https://via.placeholder.com/60x60?text=App 3" alt="App 3" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">App 3</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 4" alt="App 4" class="w-16 h-16">
+                    <img src="https://via.placeholder.com/60x60?text=App 4" alt="App 4" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">App 4</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 5" alt="App 5" class="w-16 h-16">
+                    <img src="https://via.placeholder.com/60x60?text=App 5" alt="App 5" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">App 5</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 6" alt="App 6" class="w-16 h-16">
+                    <img src="https://via.placeholder.com/60x60?text=App 6" alt="App 6" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">App 6</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 7" alt="App 7" class="w-16 h-16">
+                    <img src="https://via.placeholder.com/60x60?text=App 7" alt="App 7" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">App 7</p>
                 </div>
             </div>
-        <div class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black"></div>
+        <div class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer"></div>
         </div>
     </div>
 </template>
