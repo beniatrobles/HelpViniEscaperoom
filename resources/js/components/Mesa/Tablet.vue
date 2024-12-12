@@ -8,38 +8,38 @@
         <div class="w-[1000px] h-[600px] rounded-3xl border-r-[40px] border-l-[30px] border-t-[15px] border-b-[15px] border-black shadow-md relative">
             <img class="absolute z-[-50] inset-0 w-[100%]" :src="'/img/fondoTablet.jpg'" alt="">
             <div class="grid grid-cols-4 gap-8 p-8">
-                <div class="flex flex-col items-center">
-                    <img :src="'/img/gmail.png'" alt="Gmail" class="w-16 h-16 cursor-pointer">
+                <router-link to="/inicio/tablet/gmail" class="flex flex-col items-center">
+                    <img :src="'/img/apps/gmail.png'" alt="Gmail" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Gmail</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img :src="'/img/twitter.png'" alt="Twitter" class="w-16 h-16 cursor-pointer">
-                    <p class="text-sm font-semibold">Twitter</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img :src="'/img/instagram.png'" alt="Instagram" class="w-16 h-16 cursor-pointer">
+                </router-link>
+                <router-link to="/inicio/tablet/instagram" class="flex flex-col items-center">
+                    <img :src="'/img/apps/instagram.png'" alt="Instagram" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Instagram</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img :src="'/img/notas.png'" alt="Notas" class="w-16 h-16 cursor-pointer">
+                </router-link>
+                <router-link to="/inicio/tablet/notas" class="flex flex-col items-center">
+                    <img :src="'/img/apps/notas.png'" alt="Notas" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Notas</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img :src="'/img/pinterest.png'" alt="Pinterest" class="w-16 h-16 cursor-pointer">
+                </router-link>
+                <router-link to="/inicio/tablet/pinterest" class="flex flex-col items-center">
+                    <img :src="'/img/apps/pinterest.png'" alt="Pinterest" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Pinterest</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img :src="'/img/spotify.png'" alt="Spotify" class="w-16 h-16 cursor-pointer">
+                </router-link>
+                <router-link to="/inicio/tablet/spotify" class="flex flex-col items-center">
+                    <img :src="'/img/apps/spotify.png'" alt="Spotify" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Spotify</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img :src="'/img/tiktok.png'" alt="Tiktok" class="w-16 h-16 cursor-pointer">
+                </router-link>
+                <router-link to="/inicio/tablet/tiktok" class="flex flex-col items-center">
+                    <img :src="'/img/apps/tiktok.png'" alt="Tiktok" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Tiktok</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 3" alt="App 3" class="w-16 h-16 cursor-pointer">
-                    <p class="text-sm font-semibold">App 3</p>
-                </div>
+                </router-link>
+                <router-link to="/inicio/tablet/twitter" class="flex flex-col items-center">
+                    <img :src="'/img/apps/twitter.png'" alt="Twitter" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">Twitter</p>
+                </router-link>
+                <router-link to="/inicio/tablet/whatsapp" class="flex flex-col items-center">
+                    <img :src="'/img/apps/whatsapp.png'" alt="Whatsapp" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">Whatsapp</p>
+                </router-link>
                 <div class="flex flex-col items-center">
                     <img src="https://via.placeholder.com/60x60?text=App 4" alt="App 4" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">App 4</p>
@@ -59,6 +59,7 @@
             </div>
         <div class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer"></div>
         </div>
+    <router-view class="absolute inset-0 z-[100]"></router-view>
     </div>
 </template>
 
