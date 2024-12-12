@@ -19,6 +19,8 @@ import Spotify from "./components/Mesa/Aplicaciones/Spotify.vue";
 import Tiktok from "./components/Mesa/Aplicaciones/Tiktok.vue";
 import Twitter from "./components/Mesa/Aplicaciones/Twitter.vue";
 import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
+import Registro from "./components/Registro.vue";
+
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -90,6 +92,10 @@ const routes = [
                 component: PostIt,
             },
         ],
+    },
+    {
+        path: '/registro',
+        component: Registro,
     },
 ];
 
