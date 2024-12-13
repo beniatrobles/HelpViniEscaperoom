@@ -43,6 +43,7 @@ const enviarFormulario = () => {
         .then((res) => {
             // Redirect to login upon success
             router.get("/");
+            alert("Usuario registrado correctamente")
         })
         .catch((err) => {
             // Show an alert on error
