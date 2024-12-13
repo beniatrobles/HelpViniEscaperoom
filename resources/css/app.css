@@ -21,7 +21,7 @@ p {
     box-shadow: 0 15px 0 green;
 }
 .img__inicio{
-    filter: drop-shadow(0 0 10px #0ED800);
+    filter: drop-shadow(0 0 20px #0ED800);
     animation: flotar 2s alternate infinite linear;
 }
 
