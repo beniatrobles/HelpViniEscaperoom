@@ -9,6 +9,7 @@ import Revista from "./components/Mesa/Revista.vue";
 import PostIt from "./components/Mesa/PostIt.vue";
 import Airpods from "./components/Mesa/Airpods.vue";
 import Glovo from "./components/Mesa/Aplicaciones/Glovo.vue";
+import GmailLogin from "./components/Mesa/Aplicaciones/GmailL.vue"
 import Gmail from "./components/Mesa/Aplicaciones/Gmail.vue";
 import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
@@ -37,6 +38,11 @@ const routes = [
                     {
                         path: 'glovo',
                         component: Glovo,
+
+                    },
+                    {
+                        path: 'gmailL',
+                        component: GmailLogin,
 
                     },
                     {
