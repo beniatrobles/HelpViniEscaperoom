@@ -7,7 +7,14 @@
         <router-link to="/inicio"><h1 class="absolute top-5 right-5 text-[30px]">X</h1></router-link>
         <div class="w-[1000px] h-[600px] rounded-3xl border-r-[40px] border-l-[30px] border-t-[15px] border-b-[15px] border-black shadow-md relative">
             <img class="absolute z-[-50] inset-0 w-[100%]" :src="'/img/fondoTablet.jpg'" alt="">
+            <div class="bg-black bg-opacity-25 h-5">
+                <p class="ml-2 text-[10px] text-white"> 9:47 PM </p>
+            </div>
             <div class="grid grid-cols-4 gap-8 p-8">
+                <router-link to="/inicio/tablet/glovo" class="flex flex-col items-center">
+                    <img :src="'/img/apps/glovo.png'" alt="Glovo" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">Glovo</p>
+                </router-link>
                 <router-link to="/inicio/tablet/gmail" class="flex flex-col items-center">
                     <img :src="'/img/apps/gmail.png'" alt="Gmail" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Gmail</p>
@@ -40,10 +47,6 @@
                     <img :src="'/img/apps/whatsapp.png'" alt="Whatsapp" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Whatsapp</p>
                 </router-link>
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 4" alt="App 4" class="w-16 h-16 cursor-pointer">
-                    <p class="text-sm font-semibold">App 4</p>
-                </div>
                 <div class="flex flex-col items-center">
                     <img src="https://via.placeholder.com/60x60?text=App 5" alt="App 5" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">App 5</p>
