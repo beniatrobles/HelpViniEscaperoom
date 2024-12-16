@@ -8,6 +8,7 @@ import Cuaderno from "./components/Mesa/Cuaderno.vue";
 import Revista from "./components/Mesa/Revista.vue";
 import PostIt from "./components/Mesa/PostIt.vue";
 import Airpods from "./components/Mesa/Airpods.vue";
+import Glovo from "./components/Mesa/Aplicaciones/Glovo.vue";
 import Gmail from "./components/Mesa/Aplicaciones/Gmail.vue";
 import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
@@ -33,6 +34,11 @@ const routes = [
                 path: 'tablet', // Subruta: /inicio/tablet
                 component: Tablet,
                     children: [
+                    {
+                        path: 'glovo',
+                        component: Glovo,
+
+                    },
                     {
                         path: 'gmail',
                         component: Gmail,
