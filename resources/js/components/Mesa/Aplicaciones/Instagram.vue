@@ -9,12 +9,12 @@
                     <h1 class="text-center">INSTAGRAM</h1>
                     <br>
                     <nav class="flex flex-col gap-3">
-                        <router-link to="/inicio/tablet/instagram/inicio" class="px-3 py-[10px] hover:bg-zinc-800 rounded flex items-center gap-1"><img :src="'/img/icon-casa.png'" class="w-[20px]"> Inicio</router-link>
+                        <router-link to="/inicio/tablet/instagram" class="px-3 py-[10px] hover:bg-zinc-800 rounded flex items-center gap-1"><img :src="'/img/icon-casa.png'" class="w-[20px]"> Inicio</router-link>
                         <router-link to="/inicio/tablet/instagram/mensajes" class="px-3 py-[10px] hover:bg-zinc-800 rounded flex items-center gap-1"><img :src="'/img/icon-direct.png'" class="w-[20px]"> Mensajes</router-link>
                         <router-link to="/inicio/tablet/instagram/perfil" class="px-3 py-[10px] hover:bg-zinc-800 rounded flex items-center gap-1"><img :src="'/img/vini.jpeg'" class="w-[20px] rounded-full"> Perfil</router-link>
                     </nav>
                 </section>
-                <section class="w-[75%] p-10">
+                <section class="w-[75%] py-10 px-24 overflow-auto">
                     <router-view></router-view>
                 </section>
             </div>
