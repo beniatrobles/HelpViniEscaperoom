@@ -31,6 +31,7 @@ import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
 import InstagramInicio from "./components/Mesa/Aplicaciones/Instagram/InstagramInicio.vue";
 import InstagramMensajes from "./components/Mesa/Aplicaciones/Instagram/InsragramMensajes.vue";
 import InstagramPerfil from "./components/Mesa/Aplicaciones/Instagram/InstagramPerfil.vue";
+import MensajePrueba from "./components/Mesa/Aplicaciones/Instagram/MensajePrueba.vue";
 
 // NOTAS 
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
@@ -105,6 +106,12 @@ const routes = [
                             {
                                 path: 'mensajes',
                                 component: InstagramMensajes,
+                                children: [
+                                    {
+                                        path: 'uno',
+                                        component: MensajePrueba
+                                    }
+                                ]
                             },
                             {
                                 path: 'perfil',

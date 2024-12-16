@@ -6,7 +6,7 @@
 
             <div class=" flex w-[100%] h-[100%] bg-zinc-900">
                 <section class="w-[25%] border-r p-8">
-                    <h1 class="text-center">INSTAGRAM</h1>
+                    <router-link to="/inicio/tablet/instagram"><img :src="'/img/logo-instagram.png'" ></router-link>
                     <br>
                     <nav class="flex flex-col gap-3">
                         <router-link to="/inicio/tablet/instagram" class="px-3 py-[10px] hover:bg-zinc-800 rounded flex items-center gap-1"><img :src="'/img/icon-casa.png'" class="w-[20px]"> Inicio</router-link>
@@ -14,7 +14,7 @@
                         <router-link to="/inicio/tablet/instagram/perfil" class="px-3 py-[10px] hover:bg-zinc-800 rounded flex items-center gap-1"><img :src="'/img/vini.jpeg'" class="w-[20px] rounded-full"> Perfil</router-link>
                     </nav>
                 </section>
-                <section class="w-[75%] py-10 px-24 overflow-auto">
+                <section class="w-[75%] py-10 px-20 overflow-auto">
                     <router-view></router-view>
                 </section>
             </div>
