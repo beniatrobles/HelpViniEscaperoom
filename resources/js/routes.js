@@ -10,8 +10,11 @@ import PostIt from "./components/Mesa/PostIt.vue";
 import Airpods from "./components/Mesa/Airpods.vue";
 import Glovo from "./components/Mesa/Aplicaciones/Glovo.vue";
 import GmailLogin from "./components/Mesa/Aplicaciones/GmailL.vue"
-import Gmail from "./components/Mesa/Aplicaciones/Gmail.vue";
+import Gmail from "./components/Mesa/Aplicaciones/Gmail/Gmail.vue";
 import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
+import InstagramInicio from "./components/Mesa/Aplicaciones/Instagram/InstagramInicio.vue";
+import InstagramMensajes from "./components/Mesa/Aplicaciones/Instagram/InsragramMensajes.vue";
+import InstagramPerfil from "./components/Mesa/Aplicaciones/Instagram/InstagramPerfil.vue";
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
 import Pinterest from "./components/Mesa/Aplicaciones/Pinterest.vue";
 import Spotify from "./components/Mesa/Aplicaciones/Spotify.vue";
@@ -52,6 +55,20 @@ const routes = [
                     {
                         path: 'instagram',
                         component: Instagram,
+                        children: [
+                            {
+                                path: 'inicio',
+                                component: InstagramInicio
+                            },
+                            {
+                                path: 'mensajes',
+                                component: InstagramMensajes
+                            },
+                            {
+                                path: 'perfil',
+                                component: InstagramPerfil
+                            }
+                        ]
                     },
                     {
                         path: 'notas',
