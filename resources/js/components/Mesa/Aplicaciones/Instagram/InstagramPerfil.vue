@@ -6,6 +6,9 @@
                 <div class="flex items-center gap-2">
                     <p class="font-bold text-xl flex items-center gap-1">vinijr<img :src="'/img/verificado.png'" class="w-[15px] h-[15px]"></p>
                 </div>
+                <div>
+                    
+                </div>
             </div>
         </header>
     </div>
