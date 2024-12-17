@@ -42,7 +42,7 @@
                             </td>
                             <td class="px-6 py-4">
                                 <a href="{{ route('admin.show', $usuario->id_usuario) }}" class="bg-blue-500 text-white px-4 py-2 rounded-lg text-xs shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200">Ver</a>
-                                <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg text-xs shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition duration-200">Editar</button>
+                               <a href="{{ route('admin.usuarios.edit', $usuario->id_usuario) }}" class="bg-green-500 text-white px-4 py-2 rounded-md">Editar</a>
                                 <a href="{{ route('admin.confirmarEliminacion', $usuario->id_usuario) }}" class="bg-red-500 text-white px-4 py-2 rounded-lg text-xs shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 transition duration-200">Eliminar</a>
                             </td>
                         </tr>

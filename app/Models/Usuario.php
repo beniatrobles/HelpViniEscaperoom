@@ -18,7 +18,7 @@ class Usuario extends Model
     // Definir la relación con el modelo Rol
     public function rol()
     {
-        return $this->belongsTo(Rol::class, 'id_rol');  // Relación inversa: un usuario pertenece a un rol
+        return $this->belongsTo(Rol::class, 'id_rol',);  // Relación inversa: un usuario pertenece a un rol
     }
 
     public function partidas()

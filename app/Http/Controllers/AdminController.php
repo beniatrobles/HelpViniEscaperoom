@@ -7,6 +7,8 @@ use App\Models\Rol;
 use App\Models\Partida;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Log;
+
 class AdminController extends Controller
 {
     public function index()
@@ -66,6 +68,43 @@ class AdminController extends Controller
 
         
     }
+
+    public function edit($id)
+{
+    
+    $usuario = Usuario::findOrFail($id);
+    
+    $roles = Rol::all();
+    
+    
+    return view('admin.edit', compact('usuario', 'roles'));
+}
+
+public function update(Request $request, $id)
+{
+    Log::debug('Datos recibidos para actualización:', $request->all());
+    Log::debug('ID del usuario:', [$id]);
+
+
+    $request->validate([
+        'nombre_usuario' => 'required|string|max:255',
+        'correo' => 'required|email|unique:usuarios,correo,' . $id,
+        'contraseña' => 'nullable|string|min:3', 
+        'id_rol' => 'required|exists:rols,id_rol',
+    ]);
+
+    
+    $usuario = Usuario::findOrFail($id);
+    $usuario->nombre_usuario = $request->nombre_usuario;
+    $usuario->correo = $request->correo;
+    if ($request->filled('contraseña')) {
+        $usuario->contraseña = bcrypt($request->contraseña);
+    }
+    $usuario->id_rol = $request->id_rol;
+    $usuario->save();
+   
+    return redirect()->route('admin.usuarios')->with('success', 'Usuario actualizado correctamente');
+}
 
     
 }
