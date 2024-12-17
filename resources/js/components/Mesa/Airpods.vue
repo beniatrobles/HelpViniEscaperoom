@@ -14,7 +14,7 @@
         </div>
         <div>
                 <audio controls>
-                    <source :src="'/audio/funk.mp3'" type="audio/mp3">
+                    <source :src="'/audio/cancion.mp3'" type="audio/mp3">
                 </audio>
         </div>
 
