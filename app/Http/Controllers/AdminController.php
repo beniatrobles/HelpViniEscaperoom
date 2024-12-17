@@ -38,41 +38,32 @@ class AdminController extends Controller
         return redirect()->route('admin.usuarios')->with('success', 'Usuario eliminado correctamente.');
     }
 
+    
     public function create()
     {
-        // Obtener todos los roles disponibles para asociarlos con el usuario
-        $roles = Rol::all();
-        
-        // Pasar los roles a la vista 'admin.create'
-        return view('admin.create', compact('roles'));
+        return view('admin.create');  
     }
     
     public function store(Request $request)
     {
-        // Validar los datos del formulario
+        
         $request->validate([
-            'nombre_usuario' => 'required|max:255',
+            'nombre_usuario' => 'required|string|max:255',
             'correo' => 'required|email|unique:usuarios,correo',
-            'contraseña' => 'required|min:8',
-            'rol' => 'required|exists:roles,rol', // El rol debe existir en la tabla roles
+            'contraseña' => 'required|string|min:6|confirmed',
+            'id_rol' => 'required|exists:rols,id_rol', 
         ]);
-    
-        // Crear un nuevo usuario
-        $usuario = new Usuario();
-        $usuario->nombre_usuario = $request->input('nombre_usuario');
-        $usuario->correo = $request->input('correo');
-        $usuario->contraseña = bcrypt($request->input('contraseña')); // Encriptar la contraseña
-        $usuario->save(); // Guardar el usuario en la tabla usuarios
-    
-        // Asociar el rol al usuario
-        $rol = new Rol();
-        $rol->id_usuario = $usuario->id_usuario; // Relacionar con el ID del nuevo usuario
-        $rol->rol = $request->input('rol');
-        $rol->save(); // Guardar el rol en la tabla roles
-    
-        return redirect()->route('admin.usuarios')->with('success', 'Usuario creado con éxito.');
+
+        // Crear el usuario
+        $usuario = Usuario::create([
+            'nombre_usuario' => $request->nombre_usuario,
+            'correo' => $request->correo,
+            'contraseña' => bcrypt($request->contraseña), 
+            'id_rol' => $request->id_rol,  // 
+        ]);
+
+        return redirect()->route('admin.usuarios')->with('success', 'Usuario creado exitosamente');
     }
-    
 
     
 }

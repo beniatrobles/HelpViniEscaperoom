@@ -11,6 +11,10 @@
     <div class="container mx-auto p-6">
         <h1 class="text-4xl font-bold text-gray-800 mb-6">Listado de Usuarios</h1>
 
+        <div class="mb-6">
+            <a href="{{ route('admin.create') }}" class="bg-green-500 text-white px-6 py-3 rounded-lg text-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-200">Agregar Usuario</a>
+        </div>
+
         <!-- Tabla de usuarios con roles y partidas -->
         <div class="overflow-x-auto bg-white shadow-md rounded-lg">
             <table class="min-w-full table-auto text-sm">
@@ -46,17 +50,14 @@
                 </tbody>
             </table>
         </div>
-        <div class="mt-6">
-            <a href="{{ route('admin.create') }}" class="inline-block bg-blue-500 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-200 ml-11">
-                Agregar Usuario
-            </a>
-        </div>
-    </div>
-
-    <!-- Paginación -->
+          <!-- Paginación -->
     <div class="mt-6 text-center">
         {{ $usuarios->links() }}
     </div>
+        
+    </div>
+
+  
     
 </body>
 </html>

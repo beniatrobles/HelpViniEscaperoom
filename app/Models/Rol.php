@@ -9,19 +9,10 @@ class Rol extends Model
 {
     use HasFactory;
 
-    // Especificamos el nombre de la tabla si no es plural
-    protected $table = 'rols';
+    protected $table = 'rols';  // Especifica el nombre de la tabla en la base de datos
+    protected $primaryKey = 'id_rol';  // Establece la clave primaria
 
-    // La clave primaria de la tabla 'rols' es id_usuario
-    protected $primaryKey = 'id_usuario';
-
-    // Campos que pueden ser asignados masivamente
-    protected $fillable = ['id_usuario', 'rol'];
-
-    // Relación inversa con el modelo Usuario
-    public function usuario()
-    {
-        return $this->belongsTo(Usuario::class, 'id_usuario');
-    }
+    // Definir los campos que se pueden asignar de forma masiva
+    protected $fillable = ['rol'];
 }
 

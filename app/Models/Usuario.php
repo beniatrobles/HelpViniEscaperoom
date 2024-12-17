@@ -2,40 +2,28 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class Usuario extends Model
 {
     use HasFactory;
 
-    // Si la clave primaria es 'id_usuario' en vez de 'id' (lo que hemos hecho en la migración)
-    
-    protected $table = "usuarios";
-    protected $primaryKey = 'id_usuario';
+    protected $table = 'usuarios';  // Especifica el nombre de la tabla en la base de datos
+    protected $primaryKey = 'id_usuario';  // Establece la clave primaria
 
-    protected $fillable = ['nombre_usuario','correo','contraseña'];
+    // Definir los campos que se pueden asignar de forma masiva
+    protected $fillable = ['nombre_usuario', 'correo', 'contraseña', 'id_rol'];
 
-    protected $hidden = ['id_usuario'];
-
-    // Definir la relación 1:1 con el modelo Rol (un usuario tiene un solo rol)
+    // Definir la relación con el modelo Rol
     public function rol()
     {
-        return $this->hasOne(Rol::class, 'id_usuario', 'id_usuario');
+        return $this->belongsTo(Rol::class, 'id_rol');  // Relación inversa: un usuario pertenece a un rol
     }
 
-    // Definir la relación con el modelo Partida
     public function partidas()
     {
-        return $this->hasMany(Partida::class, 'id_usuario', 'id_usuario');
-    }
-
-
-    public function obtenerUsuarios(){
-        return Usuario::all();
-    }
-
-    public function obtenerUsuarioPorId($id_usuario){
-        return Usuario::find($id_usuario);
+        return $this->hasMany(Partida::class, 'id_usuario');
     }
 }
+
