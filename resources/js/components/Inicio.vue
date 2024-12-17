@@ -20,9 +20,22 @@
       <img :src="'/img/postit.png'" alt="" class="brightness-75"></router-link>
 
     <img :src="'/img/boli.png'" class="absolute w-[25px] rotate-[25deg] top-[80px] left-[12%] z-10 boli">
-    <img :src="'/img/clips.png'" class="absolute w-[100px] rotate-[-20deg] top-[200px] left-[5%] z-10">
+
+
+    <router-link to="/inicio/clips" class="absolute w-[100px] rotate-[-20deg] top-[200px] left-[5%] z-10 hover:scale-[1.1] hover:rotate-[-40deg] transition duration-200">
+      <img :src="'/img/clips.png'">
+    </router-link>
+    
     <router-link to="/inicio/platano" class="absolute w-[250px] bottom-[6%] left-[-7%] z-10 brightness-75 hover:scale-[1.05] hover:rotate-[5deg] transition duration-200">
       <img :src="'/img/platano.png'">
+    </router-link>
+
+    <router-link>
+      <img class="absolute w-[300px] bottom-[20%] left-[15%] hover:scale-[1.1] hover:rotate-[20deg] transition duration-200" :src="'/img/panuelo.png'" alt="">
+    </router-link>
+
+    <router-link to="/inicio/mechero" class="absolute w-[75px] top-[300px] right-[10%] z-[100] rotate-[20deg] hover:scale-[1.1] hover:rotate-[5deg] transition duration-200">
+      <img :src="'/img/mechero.png'">
     </router-link>
 
     <router-link to="/inicio/airpods"

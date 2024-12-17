@@ -27,10 +27,10 @@
 
             <div class="mb-4">
                 <label for="rol" class="block text-gray-700">Rol</label>
-                <select name="rol" id="rol" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                    <option value="administrador">Administrador</option>
-                    <option value="usuario">Usuario</option>
-                    <!-- Puedes agregar más roles si es necesario -->
+                <select name="id_rol" id="rol" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    <option value="3">administrador</option>
+                    <option value="2">usuario</option>
+                    <option value="1">invitado</option>
                 </select>
             </div>
 
@@ -41,8 +41,8 @@
 
             <div class="mb-6 text-right">
                 <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200">Crear Usuario</button>
+                <a href="{{ route('admin.usuarios') }}" class="ml-4 bg-gray-500 text-white px-4 py-2 rounded-md">Cancelar</a>
             </div>
-            <a href="{{ route('admin.usuarios') }}" class="ml-4 bg-gray-500 text-white px-4 py-2 rounded-md">Cancelar</a>
         </form>
     </div>
 </body>

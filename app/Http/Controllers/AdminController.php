@@ -50,7 +50,7 @@ class AdminController extends Controller
         $request->validate([
             'nombre_usuario' => 'required|string|max:255',
             'correo' => 'required|email|unique:usuarios,correo',
-            'contraseña' => 'required|string|min:6|confirmed',
+            'contraseña' => 'required|string|min:3',
             'id_rol' => 'required|exists:rols,id_rol', 
         ]);
 
@@ -63,6 +63,8 @@ class AdminController extends Controller
         ]);
 
         return redirect()->route('admin.usuarios')->with('success', 'Usuario creado exitosamente');
+
+        
     }
 
     

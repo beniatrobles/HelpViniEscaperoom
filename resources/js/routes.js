@@ -13,6 +13,8 @@ import Revista from "./components/Mesa/Revista.vue";
 import PostIt from "./components/Mesa/PostIt.vue";
 import Airpods from "./components/Mesa/Airpods.vue";
 import Platano from "./components/mesa/Platano.vue";
+import Mechero from "./components/Mesa/Mechero.vue";
+import Clips from "./components/Mesa/Clips.vue";
 
 /* ----------------------------------------APLICACIONES DE LA TABLET----------------------------------------------*/
 
@@ -173,6 +175,14 @@ const routes = [
             {
                 path: 'platano',
                 component: Platano,
+            },
+            {
+                path: 'mechero',
+                component: Mechero,
+            },
+            {
+                path: 'clips',
+                component: Clips,
             },
         ],
     },
