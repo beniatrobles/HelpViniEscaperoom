@@ -19,7 +19,7 @@
       <!-- <div class="h-[100px] w-[100px] bg-yellow-600 text-center text-black "><p>_________</p>_______<p>___________</p></div>-->
       <img :src="'/img/postit.png'" alt="" class="brightness-75"></router-link>
 
-    <img :src="'/img/boli.jpg'" class="absolute w-[100px] rotate-[-20deg] top-[100px] left-[10%] z-10 boli">
+    <img :src="'/img/boli.png'" class="absolute w-[28px] rotate-[25deg] top-[80px] left-[12%] z-10 boli">
     <img :src="'/img/clips.png'" class="absolute w-[100px] rotate-[-20deg] top-[200px] left-[5%] z-10">
     <router-link to="/inicio/platano" class="absolute w-[250px] bottom-[6%] left-[-7%] z-10 brightness-75 hover:scale-[1.05] hover:rotate-[5deg] transition duration-200">
       <img :src="'/img/platano.png'">
