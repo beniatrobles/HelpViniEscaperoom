@@ -1,6 +1,8 @@
 <template>
     <div class="w-[100%] h-[100%]">
-        Inicio
+        <p class="font-bold">Inicio</p>
+        <hr>
+        <header></header>
     </div>
 </template>
 
