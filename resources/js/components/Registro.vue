@@ -37,9 +37,9 @@ const password = ref("");
 const enviarFormulario = () => {
     axios
         .post("/register", {
-            nombre: nombre.value,
-            email: email.value,
-            pass: password.value,
+            nombre_usuario: nombre.value,
+            correo: email.value,
+            contraseña: password.value,
             id_rol: 2
         })
         .then((res) => {

@@ -12,17 +12,17 @@ class AuthController extends Controller
     {
 
         $requestt = $request->validate([
-            'nombre' => 'required|string',
-            'email' => 'required|string|email|unique:usuarios,correo',
-            'pass' => 'required|string',
+            'nombre_usuario' => 'required|string',
+            'correo' => 'required|string|email|unique:usuarios,correo',
+            'contraseña' => 'required|string',
             'id_rol' => 'required|integer'
         ]);
 
 
         $user = Usuario::create([
-            'nombre_usuario' => $requestt['nombre'],
-            'correo' => $requestt['email'],
-            'contraseña' => Hash::make($requestt['pass']),
+            'nombre_usuario' => $requestt['nombre_usuario'],
+            'correo' => $requestt['correo'],
+            'contraseña' => Hash::make($requestt['contraseña']),
             'id_rol' => $requestt['id_rol']
         ]);
         
