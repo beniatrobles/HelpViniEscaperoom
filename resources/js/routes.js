@@ -15,6 +15,7 @@ import Airpods from "./components/Mesa/Airpods.vue";
 import Platano from "./components/mesa/Platano.vue";
 import Mechero from "./components/Mesa/Mechero.vue";
 import Clips from "./components/Mesa/Clips.vue";
+import Boli from "./components/Mesa/Boli.vue";
 
 /* ----------------------------------------APLICACIONES DE LA TABLET----------------------------------------------*/
 
@@ -49,6 +50,10 @@ import Tiktok from "./components/Mesa/Aplicaciones/Tiktok.vue";
 
 // TWITTER
 import Twitter from "./components/Mesa/Aplicaciones/Twitter.vue";
+import TwitterInicio from "./components/Mesa/Aplicaciones/Twitter/TwitterInicio.vue";
+import TwitterNotificaciones from "./components/Mesa/Aplicaciones/Twitter/TwitterNotificaciones.vue";
+import TwitterMensajes from "./components/Mesa/Aplicaciones/Twitter/TwitterMensajes.vue";
+import TwitterPerfil from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil.vue";
 
 // WHATSAPP 
 import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
@@ -140,6 +145,25 @@ const routes = [
                     {
                         path: 'twitter',
                         component: Twitter,
+                        children: [
+                            {
+                                path: '',
+                                component: TwitterInicio,
+                            },
+                            {
+                                path: 'notificaciones',
+                                component: TwitterNotificaciones,
+                            },
+                            {
+                                path: 'mensajes',
+                                component: TwitterMensajes,
+                            },
+                            {
+                                path: 'perfil',
+                                component: TwitterPerfil,
+
+                            },
+                        ]
                     },
                     {
                         path: 'whatsapp',
@@ -183,6 +207,10 @@ const routes = [
             {
                 path: 'clips',
                 component: Clips,
+            },
+            {
+                path: 'boli',
+                component: Boli,
             },
         ],
     },
