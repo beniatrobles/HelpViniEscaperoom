@@ -15,6 +15,7 @@ class AuthController extends Controller
             'nombre' => 'required|string',
             'email' => 'required|string|email|unique:usuarios,correo',
             'pass' => 'required|string',
+            'id_rol' => 'required|integer'
         ]);
 
 
@@ -22,6 +23,7 @@ class AuthController extends Controller
             'nombre_usuario' => $requestt['nombre'],
             'correo' => $requestt['email'],
             'contraseña' => Hash::make($requestt['pass']),
+            'id_rol' => $requestt['id_rol']
         ]);
         
 

@@ -7,9 +7,7 @@
         </div>
         <form @submit.prevent="enviarFormulario"
             class="bg-zinc-1000 flex flex-col justify-center items-center border-[1px]  max-w-[300px] w-[100%] h-[350px] rounded">
-            <h1 class=" mb-6 text-xl">Registrate</h1>
-            <input type="text" v-model="nombre" name="nombre" placeholder="Nombre de Usuario" />
-            <br />
+            <h1 class=" mb-6 text-xl">Login</h1>
             <input type="email" v-model="email" name="email" placeholder="Email" />
             <br />
             <input type="password" v-model="password" name="password" placeholder="Contraseña" />
@@ -29,29 +27,12 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 // Reactive variables
-const nombre = ref("");
 const email = ref("");
 const password = ref("");
 
-// Method to handle form submission
-const enviarFormulario = () => {
-    axios
-        .post("/register", {
-            nombre: nombre.value,
-            email: email.value,
-            pass: password.value,
-            id_rol: 2
-        })
-        .then((res) => {
-            // Redirect to login upon success
-            router.push("/");
-            alert("Usuario registrado correctamente")
-        })
-        .catch((err) => {
-            // Show an alert on error
-            alert("Error al registrar al usuario "+err );
-        });
-};
+const post = {
+    
+}
 </script>
 <style scoped>
 input {
