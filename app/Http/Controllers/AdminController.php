@@ -7,6 +7,8 @@ use App\Models\Rol;
 use App\Models\Partida;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Log;
+
 class AdminController extends Controller
 {
     public function index()
@@ -50,7 +52,7 @@ class AdminController extends Controller
         $request->validate([
             'nombre_usuario' => 'required|string|max:255',
             'correo' => 'required|email|unique:usuarios,correo',
-            'contraseña' => 'required|string|min:3',
+            'contrasena' => 'required|string|min:3',
             'id_rol' => 'required|exists:rols,id_rol', 
         ]);
 
@@ -58,7 +60,7 @@ class AdminController extends Controller
         $usuario = Usuario::create([
             'nombre_usuario' => $request->nombre_usuario,
             'correo' => $request->correo,
-            'contraseña' => bcrypt($request->contraseña), 
+            'contrasena' => bcrypt($request->contraseña), 
             'id_rol' => $request->id_rol,  // 
         ]);
 
@@ -66,6 +68,37 @@ class AdminController extends Controller
 
         
     }
+
+    public function edit($id_usuario)
+{
+    $usuario = Usuario::findOrFail($id_usuario);
+    $roles = Rol::all();
+    return view('admin.edit', compact('usuario', 'roles'));
+}
+
+public function update(Request $request, $id_usuario)
+{
+    
+
+    $request->validate([
+        'nombre_usuario' => 'required|string|max:255',
+        'correo' => 'required|email|unique:usuarios,correo,' . $id_usuario . ',id_usuario',
+        'contraseña' => 'nullable|string|min:3', 
+        'id_rol' => 'required|exists:rols,id_rol',
+    ]);
+
+    
+    $usuario = Usuario::findOrFail($id_usuario);
+    $usuario->nombre_usuario = $request->nombre_usuario;
+    $usuario->correo = $request->correo;
+    if ($request->filled('contraseña')) {
+        $usuario->contraseña = bcrypt($request->contraseña);
+    }
+    $usuario->id_rol = $request->id_rol;
+    $usuario->save();
+   
+    return redirect()->route('admin.usuarios')->with('success', 'Usuario actualizado correctamente');
+}
 
     
 }
