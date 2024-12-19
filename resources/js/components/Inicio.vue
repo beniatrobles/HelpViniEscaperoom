@@ -17,10 +17,9 @@
       <img :src="'/img/polaroid.jpg'"> </router-link>
     <router-link to="/inicio/postit"
       class="absolute w-[120px] rotate-[-10deg] top-[100px] left-[5%] hover:scale-[1.05] hover:z-10 duration-200 hover:rotate-0">
-      <!-- <div class="h-[100px] w-[100px] bg-yellow-600 text-center text-black "><p>_________</p>_______<p>___________</p></div>-->
       <img :src="'/img/postit.png'" alt="" class="brightness-75"></router-link>
 
-    <router-link to="/inicio/boli" class="absolute w-[25px] rotate-[25deg] top-[80px] left-[12%] z-10">
+    <router-link to="/inicio/boli" class="absolute w-[25px] rotate-[25deg] top-[80px] left-[12%] z-10 hover:rotate-[5deg] hover:scale-[1.1] transition duration-200">
       <img :src="'/img/boli.png'">
     </router-link>
 

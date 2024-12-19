@@ -19,6 +19,12 @@ import Boli from "./components/Mesa/Boli.vue";
 
 /* ----------------------------------------APLICACIONES DE LA TABLET----------------------------------------------*/
 
+// CALCULADORA
+import Calculadora from "./components/Mesa/Aplicaciones/Calculadora.vue";
+
+// DRIVE
+import Drive from "./components/Mesa/Aplicaciones/Drive.vue";
+
 // GLOVO 
 import Glovo from "./components/Mesa/Aplicaciones/Glovo.vue";
 
@@ -74,7 +80,17 @@ const routes = [
             {
                 path: 'tablet', // Subruta: /inicio/tablet
                 component: Tablet,
-                    children: [
+                    children: [            
+                    {
+                        path: 'calculadora',
+                        component: Calculadora,
+    
+                    },
+                    {
+                        path: 'drive',
+                        component: Drive,
+
+                    },
                     {
                         path: 'glovo',
                         component: Glovo,
