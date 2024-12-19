@@ -11,6 +11,14 @@
                 <p class="ml-2 text-[10px] text-white"> 9:47 PM </p>
             </div>
             <div class="grid grid-cols-4 gap-8 p-8">
+                <router-link to="/inicio/tablet/calculadora" class="flex flex-col items-center">
+                    <img :src="'/img/apps/calculadora.png'" alt="Calculadora" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">Calculadora</p>
+                </router-link>
+                <router-link to="/inicio/tablet/drive" class="flex flex-col items-center">
+                    <img :src="'/img/apps/drive.png'" alt="Drive" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">Drive</p>
+                </router-link>
                 <router-link to="/inicio/tablet/glovo" class="flex flex-col items-center">
                     <img :src="'/img/apps/glovo.png'" alt="Glovo" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Glovo</p>
@@ -50,14 +58,6 @@
                 <div class="flex flex-col items-center">
                     <img src="https://via.placeholder.com/60x60?text=App 5" alt="App 5" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">App 5</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 6" alt="App 6" class="w-16 h-16 cursor-pointer">
-                    <p class="text-sm font-semibold">App 6</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/60x60?text=App 7" alt="App 7" class="w-16 h-16 cursor-pointer">
-                    <p class="text-sm font-semibold">App 7</p>
                 </div>
             </div>
         <div class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer"></div>

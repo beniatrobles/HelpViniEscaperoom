@@ -13,8 +13,8 @@
             <img :src="'/img/airpods.png'" class="w-[250px] rotate-[-20deg] scale-x-[-1]">
         </div>
         <div>
-                <audio controls>
-                    <source :src="'/audio/cancion.mp3'" type="audio/mp3">
+                <audio controls autoplay loop>
+                    <source :src="'/audio/cancion.mp3'" type="audio/mp3 ">
                 </audio>
         </div>
 
