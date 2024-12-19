@@ -9,10 +9,10 @@ class Rol extends Model
 {
     use HasFactory;
 
-    protected $table = 'rols';  // Especifica el nombre de la tabla en la base de datos
-    protected $primaryKey = 'id_rol';  // Establece la clave primaria
+    protected $table = 'rols';  
+    protected $primaryKey = 'id_rol';  
 
-    // Definir los campos que se pueden asignar de forma masiva
+    
     protected $fillable = ['rol'];
 }
 

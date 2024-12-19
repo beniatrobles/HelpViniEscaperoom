@@ -52,7 +52,7 @@ class AdminController extends Controller
         $request->validate([
             'nombre_usuario' => 'required|string|max:255',
             'correo' => 'required|email|unique:usuarios,correo',
-            'contraseña' => 'required|string|min:3',
+            'contrasena' => 'required|string|min:3',
             'id_rol' => 'required|exists:rols,id_rol', 
         ]);
 
@@ -60,7 +60,7 @@ class AdminController extends Controller
         $usuario = Usuario::create([
             'nombre_usuario' => $request->nombre_usuario,
             'correo' => $request->correo,
-            'contraseña' => bcrypt($request->contraseña), 
+            'contrasena' => bcrypt($request->contraseña), 
             'id_rol' => $request->id_rol,  // 
         ]);
 
@@ -69,32 +69,26 @@ class AdminController extends Controller
         
     }
 
-    public function edit($id)
+    public function edit($id_usuario)
 {
-    
-    $usuario = Usuario::findOrFail($id);
-    
+    $usuario = Usuario::findOrFail($id_usuario);
     $roles = Rol::all();
-    
-    
     return view('admin.edit', compact('usuario', 'roles'));
 }
 
-public function update(Request $request, $id)
+public function update(Request $request, $id_usuario)
 {
-    Log::debug('Datos recibidos para actualización:', $request->all());
-    Log::debug('ID del usuario:', [$id]);
-
+    
 
     $request->validate([
         'nombre_usuario' => 'required|string|max:255',
-        'correo' => 'required|email|unique:usuarios,correo,' . $id,
+        'correo' => 'required|email|unique:usuarios,correo,' . $id_usuario . ',id_usuario',
         'contraseña' => 'nullable|string|min:3', 
         'id_rol' => 'required|exists:rols,id_rol',
     ]);
 
     
-    $usuario = Usuario::findOrFail($id);
+    $usuario = Usuario::findOrFail($id_usuario);
     $usuario->nombre_usuario = $request->nombre_usuario;
     $usuario->correo = $request->correo;
     if ($request->filled('contraseña')) {

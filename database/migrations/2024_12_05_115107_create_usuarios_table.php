@@ -17,8 +17,8 @@ return new class extends Migration
             $table->bigIncrements('id_usuario');
             $table->string('nombre_usuario');
             $table->string('correo')->unique();
-            $table->string('contraseña');
-            $table->unsignedBigInteger('id_rol'); // Clave foránea
+            $table->string('contrasena');
+            $table->unsignedBigInteger('id_rol'); 
             $table->timestamps();
 
             // Definir la relación con la tabla 'rols'
