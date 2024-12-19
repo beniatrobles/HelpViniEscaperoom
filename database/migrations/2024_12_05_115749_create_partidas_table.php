@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('partidas', function (Blueprint $table) {
             $table->id('id_partida'); 
+            $table->boolean('tablet');
+            $table->boolean('gmail');
+            $table->boolean('instagram');
+            $table->boolean('twitter');
+            $table->boolean('whatsapp');     
             $table->boolean('completado'); 
             $table->integer('tiempo'); 
             $table->unsignedBigInteger('id_usuario'); 

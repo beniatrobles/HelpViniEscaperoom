@@ -12,7 +12,7 @@ class Partida extends Model
     protected $table = "partidas";
 
     protected $primaryKey = 'id_partida';
-    protected $fillable = ['completado','tiempo'];
+    protected $fillable = ['completado','tiempo','gmail','instagram','twitter','whatsapp'];
 
     
 
