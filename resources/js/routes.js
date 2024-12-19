@@ -60,6 +60,7 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 
 // LOGIN 
 import Registro from "./components/Registro.vue";
+import Login from "./components/Login.vue";
 
 const routes = [
     {
@@ -217,6 +218,10 @@ const routes = [
     {
         path: '/registro',
         component: Registro,
+    },
+    {
+        path: '/login',
+        component: Login,
     },
 ];
 

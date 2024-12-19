@@ -25,7 +25,8 @@
 <script setup>
 import { ref } from "vue";
 import axios from "axios";
-import { router } from "@inertiajs/vue3";
+import { useRouter } from 'vue-router';
+const router = useRouter();
 
 // Reactive variables
 const nombre = ref("");
@@ -36,18 +37,19 @@ const password = ref("");
 const enviarFormulario = () => {
     axios
         .post("/register", {
-            nombre: nombre.value,
-            email: email.value,
-            pass: password.value,
+            nombre_usuario: nombre.value,
+            correo: email.value,
+            contraseña: password.value,
+            id_rol: 2
         })
         .then((res) => {
             // Redirect to login upon success
-            router.get("/");
+            router.push("/");
             alert("Usuario registrado correctamente")
         })
         .catch((err) => {
             // Show an alert on error
-            alert("Error al registrar al usuario");
+            alert("Error al registrar al usuario "+err );
         });
 };
 </script>

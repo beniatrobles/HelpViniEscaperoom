@@ -1,9 +1,10 @@
 <script setup>
+import UserCard from './UserCard.vue';
 </script>
 
 <template>
-
   <div class="h-screen relative overflow-hidden">
+    <UserCard/>
     <img :src="'/img/mesa.jpg'" class="w-[100%] h-[100%] z-[-10]">
     <router-link to="/inicio/tablet"
       class="absolute w-[350px] rotate-[-80deg] top-0 right-[25%]  z-10 hover:scale-[1.05] hover:z-20 duration-200 hover:rotate-[-83deg]">
@@ -31,7 +32,7 @@
       <img :src="'/img/platano.png'">
     </router-link>
 
-    <router-link>
+    <router-link to="">
       <img class="absolute w-[250px] bottom-[20%] left-[15%] rotate-[15deg] brightness-90 hover:scale-[1.1] hover:rotate-[25deg] transition duration-200" :src="'/img/trapo.png'" alt="">
     </router-link>
 
@@ -53,4 +54,6 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

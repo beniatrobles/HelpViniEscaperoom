@@ -19,6 +19,7 @@ Route::delete('/admin/{id}', [AdminController::class, 'destroy'])->name('admin.d
 
 // Otras rutas relacionadas con autenticación
 Route::post('/register', [AuthController::class, 'registro']);
+
 Route::get('/{any}', function () {
     return view('welcome'); // Vue se monta aquí
 })->where('any', '.*');
