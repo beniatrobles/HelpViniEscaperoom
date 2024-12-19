@@ -1,10 +1,10 @@
 <script setup>
-import UserCard from './UserCard.vue';
+
 </script>
 
 <template>
   <div class="h-screen relative overflow-hidden">
-    <UserCard/>
+    
     <img :src="'/img/mesa.jpg'" class="w-[100%] h-[100%] z-[-10]">
     <router-link to="/inicio/tablet"
       class="absolute w-[350px] rotate-[-80deg] top-0 right-[25%]  z-10 hover:scale-[1.05] hover:z-20 duration-200 hover:rotate-[-83deg]">

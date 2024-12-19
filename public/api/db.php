@@ -13,7 +13,6 @@ try {
     // Establecer el modo de error de PDO a excepciones
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-
 } catch (PDOException $e) {
     // Si ocurre un error, se muestra el mensaje del error
     echo "Error de conexión: " . $e->getMessage();

@@ -55,6 +55,7 @@ const enviarFormulario = async () => {
     } else {
       mensajeExito.value = data.success;
       user.value = data.user;
+      console.log(data)
       localStorage.setItem('token', data.token);
       checkToken();
       // window.location.href = '/registro';
@@ -75,12 +76,12 @@ const checkToken = () => {
     if (payload) {
       user.value = payload.user;
       mensajeExito.value = 'Usuario autenticado';
-      // alert(mensajeExito.value)
+      alert(mensajeExito.value)
     } else {
       mensajeError.value = 'El token ha expirado o es inválido';
       localStorage.removeItem('token');
       user.value = null;
-      // alert(mensajeError.value)
+      alert(mensajeError)
     }
   }
 };
@@ -113,7 +114,6 @@ const logout = () => {
 
 onMounted(() => {
   checkToken()
-
 })
 </script>
 

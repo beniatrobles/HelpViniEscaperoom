@@ -1,4 +1,5 @@
 <template>
+  <UserCard/>
     <div class="flex flex-col justify-center items-center h-screen">
       <h1 class="text-[40px] max-w-max overflow-hidden whitespace-nowrap titulo__inicio">Help <span class="text-[#0ED800]">Vini</span> Escape Room</h1>
       <img :src="'/img/Logo.png'" class="img__inicio" width="450px">
@@ -8,5 +9,6 @@
   </template>
   
   <script setup>
-  
+  import UserCard from './UserCard.vue';
+
   </script>
