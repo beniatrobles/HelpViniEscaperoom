@@ -60,7 +60,7 @@ class AdminController extends Controller
         $usuario = Usuario::create([
             'nombre_usuario' => $request->nombre_usuario,
             'correo' => $request->correo,
-            'contrasena' => bcrypt($request->contraseña), 
+            'contrasena' => bcrypt($request->contrasena), 
             'id_rol' => $request->id_rol,  // 
         ]);
 
@@ -83,7 +83,7 @@ public function update(Request $request, $id_usuario)
     $request->validate([
         'nombre_usuario' => 'required|string|max:255',
         'correo' => 'required|email|unique:usuarios,correo,' . $id_usuario . ',id_usuario',
-        'contraseña' => 'nullable|string|min:3', 
+        'contrasena' => 'nullable|string|min:3', 
         'id_rol' => 'required|exists:rols,id_rol',
     ]);
 
@@ -92,7 +92,7 @@ public function update(Request $request, $id_usuario)
     $usuario->nombre_usuario = $request->nombre_usuario;
     $usuario->correo = $request->correo;
     if ($request->filled('contraseña')) {
-        $usuario->contraseña = bcrypt($request->contraseña);
+        $usuario->contrasena = bcrypt($request->contrasena);
     }
     $usuario->id_rol = $request->id_rol;
     $usuario->save();

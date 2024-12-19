@@ -35,8 +35,8 @@
             </div>
 
             <div class="mb-4">
-                <label for="contraseña" class="block text-gray-700">Contraseña</label>
-                <input type="password" name="contraseña" id="contraseña" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                <label for="contrasena" class="block text-gray-700">Contraseña</label>
+                <input type="password" name="contrasena" id="contrasena" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
             </div>
 
             <div class="mb-6 text-right">
