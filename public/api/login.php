@@ -25,7 +25,7 @@ $stmt->bindParam(':email', $email);
 $stmt->execute();
 
 $user = $stmt->fetch();
-
+ 
 // Si el usuario no existe
 if (!$user) {
     echo json_encode(['error' => 'Usuario no encontrado']);
@@ -33,7 +33,7 @@ if (!$user) {
 }
 
 // Verificar si la contraseña coincide con el hash almacenado en la base de datos
-if (!password_verify($password, $user['contraseña'])) {
+if (!password_verify($password, $user['contrasena'])) {
     echo json_encode(['error' => 'Contraseña incorrecta']);
     exit;
 }

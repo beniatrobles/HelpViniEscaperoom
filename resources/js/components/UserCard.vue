@@ -26,7 +26,7 @@
                     <a href="/login" class="mt-2 text-white border-b border-white">Iniciar Sesion</a>
                 </div>
                 <div class="p-4 flex justify-center">
-                    <a href="/register" class="mt-2 text-white border-b border-white">Registrarse</a>
+                    <a href="/registro" class="mt-2 text-white border-b border-white">Registrarse</a>
                 </div>
             </div>
         </div>
