@@ -6,7 +6,7 @@
   <div class="h-screen relative overflow-hidden">
     
     <img :src="'/img/mesa.jpg'" class="w-[100%] h-[100%] z-[-10]">
-    <router-link to="/inicio/tablet"
+    <router-link to="/inicio/tabletBloq"
       class="absolute w-[350px] rotate-[-80deg] top-0 right-[25%]  z-10 hover:scale-[1.05] hover:z-20 duration-200 hover:rotate-[-83deg]">
       <img :src="'/img/ipad.png'"> </router-link>
     <router-link to="/inicio/revista"

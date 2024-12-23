@@ -6,6 +6,7 @@ import Inicio from "./components/Inicio.vue";
 
 // COMPONENTES DE LA MESA
 import Tablet from "./components/Mesa/Tablet.vue";
+import TabletBloq from "./components/Mesa/TabletBloq.vue";
 import Polaroid from "./components/Mesa/Polaroid.vue";
 import Cuaderno from "./components/Mesa/Cuaderno.vue";
 import CuadernoAbierto from "./components/mesa/CuadernoAbierto.vue";
@@ -68,6 +69,7 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
 
+
 const routes = [
     {
         path: '/',
@@ -77,6 +79,10 @@ const routes = [
         path: '/inicio',
         component: Inicio,
         children: [
+            {
+                path: 'tabletBloq',
+                component: TabletBloq
+            },
             {
                 path: 'tablet', // Subruta: /inicio/tablet
                 component: Tablet,
