@@ -40,17 +40,33 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router';
+import axios from 'axios';
+import { useAuthStore } from '@/stores/authStore'
 const router = useRouter();
+const authStore = useAuthStore();
 
 const alerta = ref('Introduce el PIN')
 const pin = ref('')
 
-const probarContra = () => {
+const probarContra = async () => {
     pin.value === "1234" ? router.push('/inicio/tablet') : alerta.value = 'Pin Incorrecto'
 
     if (pin.value === "1234") {
+        try {
+            //sacamos el numero de la partida actual
+            const partidaActual = await comprobarPartida()
+            const idPartida = partidaActual.data.id_partida
+            //modificamos esa partida
+            await axios.put(`/actualizar-partida/${idPartida}`, {
+                tablet: true
+            })
+        } catch (e) {
+            console.log("ERROR", e)
+        }
+
+
         router.push('/inicio/tablet');
-    }else {
+    } else {
         alerta.value = 'Pin Incorrecto';
         pin.value = '';
     }
@@ -69,10 +85,26 @@ const introducirNumeroTecado = (e) => {
         introducirNumero(e.key); // Si es un número, lo agrega al PIN
     } else if (e.key === 'Backspace') {
         borrarNumero();
-    }else if(e.key === 'Enter') probarContra()
+    } else if (e.key === 'Enter') probarContra()
 };
 
-onMounted(() => {
+const comprobarPartida = async () => {
+    // Obtener el id del usuario actual
+    const idUsuario = authStore.user.id;
+    // Consultar la partida activa
+    const partidaActual = await axios.get(`/partida-activa/${idUsuario}`);
+    return partidaActual
+}
+
+onMounted(async () => {
+    const partida = await comprobarPartida()
+    const tablet = partida.data.tablet; 
+    console.log(tablet)
+   
+    if (tablet) {
+        router.push('/inicio/tablet');
+    }
+
     window.addEventListener('keydown', introducirNumeroTecado);
 });
 //para que al cerrar el componente no exista el evento

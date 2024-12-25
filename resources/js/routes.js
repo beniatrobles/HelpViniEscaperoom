@@ -68,6 +68,7 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
+import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/PublicacionPista.vue";
 
 
 const routes = [
@@ -146,6 +147,12 @@ const routes = [
                             {
                                 path: 'perfil',
                                 component: InstagramPerfil,
+                                children: [
+                                    {
+                                        path: 'publicacion1',
+                                        component: PublicacionPista
+                                    },
+                                ] 
                             },
                         ]
                     },
