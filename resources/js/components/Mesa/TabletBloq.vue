@@ -42,8 +42,10 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router';
 import axios from 'axios';
 import { useAuthStore } from '@/stores/authStore'
+import { usePartidaStore } from '@/stores/partidaStore';
 const router = useRouter();
 const authStore = useAuthStore();
+const partidaStore = usePartidaStore();
 
 const alerta = ref('Introduce el PIN')
 const pin = ref('')
@@ -54,12 +56,10 @@ const probarContra = async () => {
     if (pin.value === "1234") {
         try {
             //sacamos el numero de la partida actual
-            const partidaActual = await comprobarPartida()
+            const partidaActual = await partidaStore.comprobarPartida()
             const idPartida = partidaActual.data.id_partida
             //modificamos esa partida
-            await axios.put(`/actualizar-partida/${idPartida}`, {
-                tablet: true
-            })
+            await partidaStore.cambiarEstado('tablet', idPartida)
         } catch (e) {
             console.log("ERROR", e)
         }
@@ -88,16 +88,10 @@ const introducirNumeroTecado = (e) => {
     } else if (e.key === 'Enter') probarContra()
 };
 
-const comprobarPartida = async () => {
-    // Obtener el id del usuario actual
-    const idUsuario = authStore.user.id;
-    // Consultar la partida activa
-    const partidaActual = await axios.get(`/partida-activa/${idUsuario}`);
-    return partidaActual
-}
+
 
 onMounted(async () => {
-    const partida = await comprobarPartida()
+    const partida = await partidaStore.comprobarPartida()
     const tablet = partida.data.tablet; 
     console.log(tablet)
    

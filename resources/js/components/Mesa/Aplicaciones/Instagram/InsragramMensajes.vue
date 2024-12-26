@@ -7,105 +7,44 @@
         <hr>
         <div class="flex gap-2 h-[100%] mt-3">
             <div class="w-[35%] border-r border-zinc-800 overflow-auto">
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
+                <router-link to="/inicio/tablet/instagram/mensajes/mensaje1"
+                    class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
+                    <img :src="'/img/elbicho.jpg'" class="w-[50px] h-[50px] rounded-full">
+                    <div>
+                        <div class="flex items-center gap-2">
+                    <p class="font-bold flex items-center gap-1">cristiano<img :src="'/img/verificado.png'" class="w-[10px] h-[10px]"></p>
+                </div>
+                        <p class="whitespace-nowrap">mensaje</p>
+                    </div>
+                    
+                </router-link>
+                <router-link to="/inicio/tablet/instagram/mensajes/mensaje2"
+                    class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
                     <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
                     <div>
                         <p class="font-bold">Usuario</p>
                         <p class="whitespace-nowrap">mensaje</p>
                     </div>
                 </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
+                <router-link to="/inicio/tablet/instagram/mensajes/uno"
+                    class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
                     <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
                     <div>
                         <p class="font-bold">Usuario</p>
                         <p class="whitespace-nowrap">mensaje</p>
                     </div>
                 </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
+
+                <router-link to="/inicio/tablet/instagram/mensajes/uno"
+                    class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
                     <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
                     <div>
                         <p class="font-bold">Usuario</p>
                         <p class="whitespace-nowrap">mensaje</p>
                     </div>
                 </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
-                    <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
-                    </div>
-                </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
+                <router-link to="/inicio/tablet/instagram/mensajes/uno"
+                    class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800">
                     <img :src="'/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
                     <div>
                         <p class="font-bold">Usuario</p>
@@ -114,7 +53,8 @@
                 </router-link>
             </div>
             <div class="w-[65%] relative">
-                <div class="flex flex-col justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div
+                    class="flex flex-col justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <img :src="'/img/icon-direct.png'">
                     <p>Tus mensajes</p>
                 </div>

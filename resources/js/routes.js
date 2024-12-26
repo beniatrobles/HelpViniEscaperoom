@@ -41,7 +41,11 @@ import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
 import InstagramInicio from "./components/Mesa/Aplicaciones/Instagram/InstagramInicio.vue";
 import InstagramMensajes from "./components/Mesa/Aplicaciones/Instagram/InsragramMensajes.vue";
 import InstagramPerfil from "./components/Mesa/Aplicaciones/Instagram/InstagramPerfil.vue";
-import MensajePrueba from "./components/Mesa/Aplicaciones/Instagram/MensajePrueba.vue";
+import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+import MensajePista from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajePista.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 
 // NOTAS 
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
@@ -69,7 +73,6 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
 import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/PublicacionPista.vue";
-
 
 const routes = [
     {
@@ -139,9 +142,13 @@ const routes = [
                                 component: InstagramMensajes,
                                 children: [
                                     {
-                                        path: 'uno',
-                                        component: MensajePrueba
-                                    }
+                                        path: 'mensaje1',
+                                        component: MensajeRonaldo
+                                    },
+                                    {
+                                        path: 'mensaje2',
+                                        component: MensajePista
+                                    },
                                 ]
                             },
                             {
