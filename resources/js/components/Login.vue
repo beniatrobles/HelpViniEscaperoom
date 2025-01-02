@@ -22,99 +22,26 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
-import axios from "axios";
-import { useRouter } from 'vue-router';
+import { ref } from "vue";
+import { useAuthStore } from "@/stores/authStore";
+import { useRouter } from "vue-router";
 
+const authStore = useAuthStore();
 const router = useRouter();
 
-// campos del formulario
 const email = ref("");
 const password = ref("");
-//mensajes de error y succes
-const mensajeError = ref("")
-const mensajeExito = ref("")
-//usuario
-const user = ref(null);
-
-
 
 const enviarFormulario = async () => {
-  const post = {
-    correo: email.value,
-    contraseña: password.value
-  }
-  try {
-    const respuesta = await axios.post('/api/login.php', post);
-    const data = respuesta.data;
-    console.log(respuesta)
-    if (data.error) {
-      mensajeError.value = data.error;
-      mensajeExito.value = '';
-      user.value = null;
-    } else {
-      mensajeExito.value = data.success;
-      user.value = data.user;
-      console.log(data)
-      localStorage.setItem('token', data.token);
-      checkToken();
-      // window.location.href = '/registro';
-    }
-  } catch (error) {
-    mensajeError.value = error;
-    mensajeExito.value = '';
+  await authStore.login(email.value, password.value);
 
-  }
-
-}
-
-const checkToken = () => {
-  const token = localStorage.getItem('token');
-  if (token) {
-    console.log(token)
-    const payload = decodeToken(token);
-    if (payload) {
-      user.value = payload.user;
-      mensajeExito.value = 'Usuario autenticado';
-      alert(mensajeExito.value)
-    } else {
-      mensajeError.value = 'El token ha expirado o es inválido';
-      localStorage.removeItem('token');
-      user.value = null;
-      alert(mensajeError)
-    }
+  if (authStore.mensajeExito) {
+    alert(authStore.mensajeExito);
+    router.push("/"); // Redirige al inicio
+  } else if (authStore.mensajeError) {
+    alert(authStore.mensajeError);
   }
 };
-
-// Function to decode the token
-const decodeToken = (token) => {
-  try {
-    const base64Url = token.split('.')[1];
-    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-    const jsonPayload = decodeURIComponent(
-      atob(base64)
-        .split('')
-        .map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
-        .join('')
-    );
-    return JSON.parse(jsonPayload);
-  } catch (e) {
-    console.error('Error al decodificar el token', e);
-    return null;
-  }
-};
-
-// Logout function
-const logout = () => {
-  localStorage.removeItem('token');
-  user.value = null;
-  successMessage.value = '';
-  errorMessage.value = '';
-};
-
-onMounted(() => {
-  checkToken()
-})
 </script>
 
 

@@ -6,6 +6,7 @@ import Inicio from "./components/Inicio.vue";
 
 // COMPONENTES DE LA MESA
 import Tablet from "./components/Mesa/Tablet.vue";
+import TabletBloq from "./components/Mesa/TabletBloq.vue";
 import Polaroid from "./components/Mesa/Polaroid.vue";
 import Cuaderno from "./components/Mesa/Cuaderno.vue";
 import CuadernoAbierto from "./components/mesa/CuadernoAbierto.vue";
@@ -40,7 +41,11 @@ import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
 import InstagramInicio from "./components/Mesa/Aplicaciones/Instagram/InstagramInicio.vue";
 import InstagramMensajes from "./components/Mesa/Aplicaciones/Instagram/InsragramMensajes.vue";
 import InstagramPerfil from "./components/Mesa/Aplicaciones/Instagram/InstagramPerfil.vue";
-import MensajePrueba from "./components/Mesa/Aplicaciones/Instagram/MensajePrueba.vue";
+import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+import MensajePista from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajePista.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 
 // NOTAS 
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
@@ -67,6 +72,8 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
+import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/PublicacionPista.vue";
+import Traductor from "./components/Mesa/Aplicaciones/Traductor.vue";
 
 const routes = [
     {
@@ -77,6 +84,10 @@ const routes = [
         path: '/inicio',
         component: Inicio,
         children: [
+            {
+                path: 'tabletBloq',
+                component: TabletBloq
+            },
             {
                 path: 'tablet', // Subruta: /inicio/tablet
                 component: Tablet,
@@ -132,14 +143,24 @@ const routes = [
                                 component: InstagramMensajes,
                                 children: [
                                     {
-                                        path: 'uno',
-                                        component: MensajePrueba
-                                    }
+                                        path: 'mensaje1',
+                                        component: MensajeRonaldo
+                                    },
+                                    {
+                                        path: 'mensaje2',
+                                        component: MensajePista
+                                    },
                                 ]
                             },
                             {
                                 path: 'perfil',
                                 component: InstagramPerfil,
+                                children: [
+                                    {
+                                        path: 'publicacion1',
+                                        component: PublicacionPista
+                                    },
+                                ] 
                             },
                         ]
                     },
@@ -186,6 +207,10 @@ const routes = [
                         path: 'whatsapp',
                         component: Whatsapp,
                     },
+                    {
+                        path: 'traductor',
+                        component: Traductor
+                    }
                 ],
             },
         

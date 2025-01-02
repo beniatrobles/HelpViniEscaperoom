@@ -35,15 +35,16 @@
         </section>
         <hr class="mt-[50px]">
         <section class="grid grid-cols-3 gap-1 mt-2">
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
+            <router-link to="/inicio/tablet/instagram/perfil/publicacion1" class="bg-black aspect-square cursor-pointer publicacion"><img :src="'/img/vini.jpeg'"></router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
         </section>
         <div class="mt-6 opacity-0">.</div>
     </div>
+    <router-view class="absolute inset-0"></router-view>
 </template>
 
 <style scoped>
