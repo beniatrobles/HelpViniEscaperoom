@@ -55,10 +55,10 @@
                     <img :src="'/img/apps/whatsapp.png'" alt="Whatsapp" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Whatsapp</p>
                 </router-link>
-                <div class="flex flex-col items-center">
+                <router-link to="/inicio/tablet/traductor" class="flex flex-col items-center">
                     <img src="https://via.placeholder.com/60x60?text=App 5" alt="App 5" class="w-16 h-16 cursor-pointer">
-                    <p class="text-sm font-semibold">App 5</p>
-                </div>
+                    <p class="text-sm font-semibold">Traductor</p>
+                </router-link>
             </div>
         <div class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer"></div>
         </div>

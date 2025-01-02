@@ -73,6 +73,7 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
 import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/PublicacionPista.vue";
+import Traductor from "./components/Mesa/Aplicaciones/Traductor.vue";
 
 const routes = [
     {
@@ -206,6 +207,10 @@ const routes = [
                         path: 'whatsapp',
                         component: Whatsapp,
                     },
+                    {
+                        path: 'traductor',
+                        component: Traductor
+                    }
                 ],
             },
         

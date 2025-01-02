@@ -93,7 +93,6 @@ const introducirNumeroTecado = (e) => {
 onMounted(async () => {
     const partida = await partidaStore.comprobarPartida()
     const tablet = partida.data.tablet; 
-    console.log(tablet)
    
     if (tablet) {
         router.push('/inicio/tablet');
