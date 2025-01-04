@@ -9,7 +9,7 @@
             <div
                 class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer">
             </div>
-            <img class="absolute z-[-50] inset-0 w-[100%] blur" :src="'/img/fondoTablet.jpg'" alt="">
+            <img class="absolute z-[-50] inset-0 w-[100%] blur" :src="'/storage/img/fondoTablet.jpg'" alt="">
             <div class="absolute w-full h-full flex justify-center items-center flex-col bg-black bg-opacity-50">
                 <p>{{ alerta }}</p>
                 <input type="password" placeholder="PIN" readonly

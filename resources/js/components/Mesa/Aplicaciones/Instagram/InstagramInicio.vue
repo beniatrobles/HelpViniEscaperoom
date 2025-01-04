@@ -17,8 +17,8 @@
                         <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="w-[100%]">
                     </div>
                     <div class="flex gap-2 p-2">
-                        <img :src="'/img/icon-corazon.png'">
-                        <router-link to="" class="hover:opacity-50"><img :src="'/img/icon-coment.png'"></router-link>
+                        <img :src="'/storage/img/icon-corazon.png'">
+                        <router-link to="" class="hover:opacity-50"><img :src="'/storage/img/icon-coment.png'"></router-link>
                     </div>
                 </div>
         </section>
