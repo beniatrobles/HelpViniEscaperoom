@@ -3,7 +3,7 @@
       <router-link to="/inicio">
         <h1 class="absolute top-5 right-5 text-[30px]">X</h1>
       </router-link>
-      <img :src="'/img/boli.png'" class="w-[100px] mb-10">
+      <img :src="'/storage/img/boli.png'" class="w-[100px] mb-10">
       <h1>Un boli muy interesante el cual nos es completamente inútil.</h1>
     </div>
   </template>

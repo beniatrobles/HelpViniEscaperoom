@@ -9,8 +9,8 @@
         </router-link>
 
         <div class="h-[250px] flex ">
-            <img :src="'/img/airpods.png'" class="w-[250px]">
-            <img :src="'/img/airpods.png'" class="w-[250px] rotate-[-20deg] scale-x-[-1]">
+            <img :src="'/storage/img/airpods.png'" class="w-[250px]">
+            <img :src="'/storage/img/airpods.png'" class="w-[250px] rotate-[-20deg] scale-x-[-1]">
         </div>
         <div>
                 <audio controls autoplay loop>

@@ -6,7 +6,7 @@
                 <div class="h-[100%] w-[25%]">
                     <div class="flex items-center justify-start my-3">
                         <router-link to="/inicio/tablet/twitter">
-                            <img src="/public/img/apps/twitterF.png" alt="" class="w-[40px] h-[40px]">
+                            <img :src="'/storage/img/apps/twitterF.png'" alt="" class="w-[40px] h-[40px]">
                         </router-link>
                     </div>
 
@@ -14,7 +14,7 @@
 
                         <router-link to="/inicio/tablet/twitter" class="my-1 flex flex-row items-center">
                             
-                            <img :src="'/img/apps/iconos/icon-inicio-tw.svg'" alt="" class="w-[30px] mr-3">
+                            <img :src="'/storage/img/apps/iconos/icon-inicio-tw.svg'" alt="" class="w-[30px] mr-3">
                             
                             <p> Inicio </p>
                         
@@ -23,7 +23,7 @@
                         
                         <router-link to="/inicio/tablet/twitter/notificaciones" class="my-1 flex flex-row items-center">
                             
-                            <img :src="'/img/apps/iconos/icon-notificaciones.svg'" alt="" class="w-[30px] mr-3">
+                            <img :src="'/storage/img/apps/iconos/icon-notificaciones.svg'" alt="" class="w-[30px] mr-3">
                             <p> Notificaciones </p>
                             
                         </router-link>
@@ -31,7 +31,7 @@
                         
                         <router-link to="/inicio/tablet/twitter/mensajes" class="my-1 flex flex-row items-center">
                             
-                            <img :src="'/img/apps/iconos/icon-msj-tw.png'" alt="" class="w-[30px] mr-3">
+                            <img :src="'/storage/img/apps/iconos/icon-msj-tw.png'" alt="" class="w-[30px] mr-3">
                             <p> Mensajes </p>
                         
                         </router-link>
@@ -39,7 +39,7 @@
                         
                         <router-link to="/inicio/tablet/twitter/perfil" class="my-1 flex flex-row items-center">
                             
-                            <img :src="'/img/apps/iconos/icon-perfil-tw.png'" alt="" class="w-[30px] mr-3">
+                            <img :src="'/storage/img/apps/iconos/icon-perfil-tw.png'" alt="" class="w-[30px] mr-3">
                             <p> Perfil </p>
                             
                         </router-link>

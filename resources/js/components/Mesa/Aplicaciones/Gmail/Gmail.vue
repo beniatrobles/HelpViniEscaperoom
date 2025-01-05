@@ -5,15 +5,15 @@
             <div class="flex bg-zinc-900 h-[100%]">
                 <div class="h-[100%] border-r w-[25%]">
                     <div class="flex py-8 px-[44px]">
-                        <img src="/public/img/apps/gmailF.png" alt="" class="w-[40px] h-[40px]">
+                        <img :src="'/storage/img/apps/gmailF.png'" alt="" class="w-[40px] h-[40px]">
                         <h2 class="ml-3 text-2xl">Gmail</h2>
                     </div>
                     <nav class="flex flex-col gap-3 px-8">
-                        <router-link to="/inicio/tablet/gmail" class="my-1 flex gap-1 hover:bg-zinc-800 px-3 py-[10px] rounded-full"><img :src="'/img/icon-recibidos.png'" class="w-[20px]">Recibidos</router-link>
+                        <router-link to="/inicio/tablet/gmail" class="my-1 flex gap-1 hover:bg-zinc-800 px-3 py-[10px] rounded-full"><img :src="'/storage/img/icon-recibidos.png'" class="w-[20px]">Recibidos</router-link>
 
-                        <router-link to="/inicio/tablet/gmail/enviados" class="my-1 flex gap-1 hover:bg-zinc-800 px-3 py-[10px] rounded-full"><img :src="'/img/icon-enviados.png'" class="w-[20px]">Enviados</router-link>
+                        <router-link to="/inicio/tablet/gmail/enviados" class="my-1 flex gap-1 hover:bg-zinc-800 px-3 py-[10px] rounded-full"><img :src="'/storage/img/icon-enviados.png'" class="w-[20px]">Enviados</router-link>
 
-                        <router-link to="/inicio/tablet/gmail/borradores" class="my-1 flex gap-1 hover:bg-zinc-800 px-3 py-[10px] rounded-full"><img :src="'/img/icon-borradores.png'" class="w-[20px]">Borradores</router-link>
+                        <router-link to="/inicio/tablet/gmail/borradores" class="my-1 flex gap-1 hover:bg-zinc-800 px-3 py-[10px] rounded-full"><img :src="'/storage/img/icon-borradores.png'" class="w-[20px]">Borradores</router-link>
                         
                     </nav>
 

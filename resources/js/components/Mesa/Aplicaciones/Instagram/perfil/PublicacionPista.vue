@@ -5,13 +5,13 @@
         </router-link>
         <div class="flex justify-center items-center w-[80%]">
             <div class="">
-                <img :src="'/img/vini.jpeg'" class>
+                <img :src="'/storage/img/vini.jpeg'" class>
             </div>
             <div class="bg-zinc-900 w-[60%] h-full py-3 px-3 flex flex-col">
                 <div class="flex items-center gap-1 pb-3 border-b border-zinc-800">
-                    <img :src="'/img/vini.jpeg'" class="w-[30px] rounded-full">
+                    <img :src="'/storage/img/vini.jpeg'" class="w-[30px] rounded-full">
                     <div class="flex items-center gap-2">
-                        <p class="font-bold flex items-center gap-1">vinijr<img :src="'/img/verificado.png'"
+                        <p class="font-bold flex items-center gap-1">vinijr<img :src="'/storage/img/verificado.png'"
                                 class="w-[15px] h-[15px]"></p>
                     </div>
                     <p>Al César lo que es del César</p>
@@ -21,7 +21,7 @@
                     <img :src="'https://img.uefa.com/imgml/TP/teams/logos/240x240/50051.png'"
                         class="w-[30px] rounded-full bg-white p-1">
                     <div class="flex items-center gap-2">
-                        <p class="font-bold flex items-center gap-1">realmadrid<img :src="'/img/verificado.png'"
+                        <p class="font-bold flex items-center gap-1">realmadrid<img :src="'/storage/img/verificado.png'"
                                 class="w-[15px] h-[15px]"></p>
                     </div>
                     <p>👏👏👏</p>

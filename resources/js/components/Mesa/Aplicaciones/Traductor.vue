@@ -44,12 +44,19 @@ const texto = ref('')
 const idiomaTexto = ref('en')
 const traduccion = ref('')
 const idiomaTraduccion = ref('es')
-
-const idiomasDisponibles = ref('')
+//por defecto tiene césar y binario
+const idiomasDisponibles = ref([{
+    languaje: 'cesar',
+    name: 'César'
+},
+{
+    languaje: 'binario',
+    name: 'Binario'
+}])
 
 
 const traducirTexto = async () => {
-
+    traduccion.value = '...'
     const options = {
         headers: {
             'x-rapidapi-key': 'd2260ef91dmshbde673dd9b9bf3ep115196jsn0d3c3fca0430',
@@ -82,7 +89,7 @@ onMounted(async () => {
                 'x-rapidapi-host': 'deep-translate1.p.rapidapi.com'
             }
         });
-        idiomasDisponibles.value = get.data.languages
+        idiomasDisponibles.value.unshift(...get.data.languages) 
 
     } catch (error) {
         console.error(error);
