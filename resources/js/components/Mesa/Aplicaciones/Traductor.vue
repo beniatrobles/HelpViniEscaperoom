@@ -8,7 +8,8 @@
             <router-link to="/inicio/tablet"
                 class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer"></router-link>
             <div class="w-full h-full bg-white flex flex-col justify-center">
-                <h2 class="text-3xl text-black text-center mb-8 font-extrabold absolute left-0 right-0 top-10">Traductor</h2>
+                <h2 class="text-3xl text-black text-center mb-8 font-extrabold absolute left-0 right-0 top-10">Traductor
+                </h2>
                 <div class="flex justify-center items-center gap-4">
                     <div class="text-black flex flex-col w-[40%] gap-2">
                         <select v-model="idiomaTexto" class="border border-black rounded">
@@ -18,7 +19,7 @@
                         <textarea class="border-black border resize-none h-[200px] outline-none p-2 text-sm rounded"
                             v-model="texto"></textarea>
                     </div>
-                    <button class="text-black text-3xl" @click="traducirTexto">➡️</button> 
+                    <button class="text-black text-3xl" @click="traducirTexto">➡️</button>
                     <div class="text-black flex flex-col w-[40%] gap-2">
                         <select v-model="idiomaTraduccion" class="border border-black rounded">
                             <option :value="idioma.language" v-for="idioma in idiomasDisponibles">{{ idioma.name }}
@@ -29,7 +30,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </div>
@@ -89,10 +90,21 @@ onMounted(async () => {
                 'x-rapidapi-host': 'deep-translate1.p.rapidapi.com'
             }
         });
-        idiomasDisponibles.value.unshift(...get.data.languages) 
+        idiomasDisponibles.value.unshift(...get.data.languages)
 
     } catch (error) {
         console.error(error);
+    }
+
+    try {
+        const culo = await axios.post('/cesar',{
+            mensaje: 'xax: ZmqmSpiolsv123',
+            rotacion: 4,
+            modo: 'decrypt'
+        })
+        console.log(culo.data.translated)
+    } catch (error) {
+        console.error(error)
     }
 })
 </script>

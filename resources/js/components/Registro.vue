@@ -15,10 +15,12 @@
             <input type="password" v-model="password" name="password" placeholder="Contraseña" />
             <br />
 
-            <button type="submit" class=" relative p-[5px] bg-white text-black w-[50%] rounded flex hover:text-white font-bold">
+            <button type="submit"
+                class=" relative p-[5px] bg-white text-black w-[50%] rounded flex hover:text-white font-bold">
                 <p class="z-[10] text-center w-[100%]">Registrarme</p>
             </button>
         </form>
+        <router-link to="/login" class="mt-3 hover:text-[#0ED800]">No tienes una cuenta?</router-link>
     </div>
 </template>
 
@@ -49,7 +51,7 @@ const enviarFormulario = () => {
         })
         .catch((err) => {
             // Show an alert on error
-            alert("Error al registrar al usuario "+err );
+            alert("Error al registrar al usuario " + err);
         });
 };
 </script>
@@ -85,7 +87,8 @@ button::after {
     border-radius: 5px;
     transition: .3s;
 }
-button:hover::after{
+
+button:hover::after {
     width: 100%;
 }
 </style>

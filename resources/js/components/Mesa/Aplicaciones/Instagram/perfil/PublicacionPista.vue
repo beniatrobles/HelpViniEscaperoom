@@ -32,7 +32,7 @@
                         class="w-[30px] rounded-full bg-white p-1">
                     <p class="font-bold flex items-center gap-1">Hacker</p>
 
-                    <p>Mensaje cifrado cesar</p>
+                    <p>xax: ZmqmSpiolsv123</p>
                 </div>
 
                 <div class="mt-auto text-center border-t border-zinc-800 pt-3">Los comentarios están deshabilitados

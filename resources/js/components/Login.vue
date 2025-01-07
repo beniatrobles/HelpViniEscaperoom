@@ -15,9 +15,10 @@
 
       <button type="submit"
         class=" relative p-[5px] bg-white text-black w-[50%] rounded flex hover:text-white font-bold">
-        <p class="z-[10] text-center w-[100%]">Registrarme</p>
+        <p class="z-[10] text-center w-[100%]">Login</p>
       </button>
     </form>
+    <router-link to="/registro" class="mt-3 hover:text-[#0ED800]">No tienes una cuenta?</router-link>
   </div>
 </template>
 
