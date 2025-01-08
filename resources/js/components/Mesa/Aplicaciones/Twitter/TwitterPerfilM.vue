@@ -29,165 +29,128 @@
 
             <div class="ml-5 mt-5 mb-2 grid grid-cols-2 items-center justify-center">
 
-                <router-link to="/inicio/tablet/twitter/perfil" class="font-bold cursor-pointer">Publicaciones</router-link>
-                <router-link to="/inicio/tablet/twitter/perfilM" class="cursor-pointer">Me gusta</router-link>
+                <router-link to="/inicio/tablet/twitter/perfil" class="cursor-pointer">Publicaciones</router-link>
+                <router-link to="/inicio/tablet/twitter/perfilM" class="font-bold cursor-pointer">Me gusta</router-link>
             </div>
             <hr class="border-gray-700 border-[0.5px]">
 
-            <!-- Tweets -->
+            <!-- TWEETS -->
             <div>
                 <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
                     <div class="flex items-center mb-4">
-                        <img :src="'/storage/img/apps/iconos/twpfp.jpg'" class="w-10 h-10 rounded-full" />
+                        <div class="">
+
+                            <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
+
+                        </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <span class="font-bold">Vini Jr.</span>
-                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
-                                <span class="text-gray-400 text-sm">@vinijr · 3 ene.</span>
+                                <span class="font-bold">Ajdfuefd</span>
+                                <span class="text-gray-400 text-sm">@jajatonto · 7 ene.</span>
                             </div>
                         </div>
                     </div>
                     <div class="mb-4 text-s">
-                        <p>Perdon y gracias equipo!!!!!! ✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾</p>
+                        <p>Conozco un mono MUY tonto 🐵🤣🫵</p>
                     </div>
                     <div class="flex space-x-20 text-gray-400 text-sm items-center">
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
-                            <span>24K</span>
+                            <span>0</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
-                            <span>36K</span>
+                            <span>0</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/icon-corazon.png'" alt="">
-                            <span>263K</span>
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <span>2</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
                             <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
-                            <span>26M</span>
+                            <span>113</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div>
                 <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
                     <div class="flex items-center mb-4">
-                        <img :src="'/storage/img/apps/iconos/twpfp.jpg'" class="w-10 h-10 rounded-full" />
+                        <div class="">
+
+                            <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
+
+                        </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <span class="font-bold">Vini Jr.</span>
-                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
-                                <span class="text-gray-400 text-sm">@vinijr · 2 ene.</span>
+                                <span class="font-bold">Ajdfuefd</span>
+                                <span class="text-gray-400 text-sm">@jajatonto · 7 ene.</span>
                             </div>
                         </div>
                     </div>
                     <div class="mb-4 text-s">
-                        <p>7️⃣</p>
-                        <br>
-                        <img class="rounded-lg" :src="'/storage/img/twFT.jpg'" alt="">
+                        <p>Rodri es el mejor jugador del mundo.</p>
                     </div>
                     <div class="flex space-x-20 text-gray-400 text-sm items-center">
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
-                            <span>826</span>
+                            <span>0</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
-                            <span>4K</span>
+                            <span>0</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/icon-corazon.png'" alt="">
-                            <span>87K</span>
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <span>3</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
                             <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
-                            <span>1M</span>
+                            <span>395</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div>
                 <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
                     <div class="flex items-center mb-4">
-                        <img :src="'/storage/img/apps/iconos/twpfp.jpg'" class="w-10 h-10 rounded-full" />
+                        <div class="">
+
+                            <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
+
+                        </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <span class="font-bold">Vini Jr.</span>
-                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
-                                <span class="text-gray-400 text-sm">@vinijr · 27 dic. 2024</span>
+                                <span class="font-bold">Ajdfuefd</span>
+                                <span class="text-gray-400 text-sm">@jajatonto · 6 ene.</span>
                             </div>
                         </div>
                     </div>
                     <div class="mb-4 text-s">
-                        <img class="rounded-lg" :src="'/storage/img/twFT1.jpg'" alt="">
+                        <p>0100100101101</p>
                     </div>
                     <div class="flex space-x-20 text-gray-400 text-sm items-center">
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
-                            <span>3K</span>
+                            <span>0</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
-                            <span>19K</span>
+                            <span>0</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/icon-corazon.png'" alt="">
-                            <span>223K</span>
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <span>5</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
                             <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
-                            <span>2M</span>
+                            <span>402</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <div>
-                <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
-                    <div class="flex items-center mb-4">
-                        <img :src="'/storage/img/apps/iconos/twpfp.jpg'" class="w-10 h-10 rounded-full" />
-                        <div class="ml-3">
-                            <div class="flex items-center space-x-1">
-                                <span class="font-bold">Vini Jr.</span>
-                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
-                                <span class="text-gray-400 text-sm">@vinijr · 22 dic. 2024</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-4 text-s">
-                        <p>MADRID 🤍</p>
-                    </div>
-                    <div class="flex space-x-20 text-gray-400 text-sm items-center">
-                        <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
-                            <span>1K</span>
-                        </div>
-                        <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
-                            <span>14K</span>
-                        </div>
-                        <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/icon-corazon.png'" alt="">
-                            <span>164K</span>
-                        </div>
-                        <div class="flex items-center space-x-1 w-[15px]">
-                            <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
-                            <span>2M</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
         <div class="h-[100%] w-[30%] pl-3">
