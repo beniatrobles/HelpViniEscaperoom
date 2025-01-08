@@ -47,6 +47,10 @@
                     <img :src="'/storage/img/apps/tiktok.png'" alt="Tiktok" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Tiktok</p>
                 </router-link>
+                <router-link to="/inicio/tablet/traductor" class="flex flex-col items-center">
+                    <img :src="'/storage/img/apps/traductor.png'" alt="Traductor" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">Traductor</p>
+                </router-link>
                 <router-link to="/inicio/tablet/twitter" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/twitter.png'" alt="Twitter" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Twitter</p>
@@ -54,10 +58,6 @@
                 <router-link to="/inicio/tablet/whatsapp" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/whatsapp.png'" alt="Whatsapp" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Whatsapp</p>
-                </router-link>
-                <router-link to="/inicio/tablet/traductor" class="flex flex-col items-center">
-                    <img :src="'/storage/img/apps/traductor.png'" alt="Traductor" class="w-16 h-16 cursor-pointer">
-                    <p class="text-sm font-semibold">Traductor</p>
                 </router-link>
             </div>
         <div class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer"></div>
