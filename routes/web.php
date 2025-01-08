@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BinaryController;
+use App\Http\Controllers\CesarController;
 use App\Http\Controllers\PartidasController;
 
 Route::get('/', function () {
@@ -29,6 +31,11 @@ Route::post('/register', [AuthController::class, 'registro']);
 Route::post('/crear-partida', [PartidasController::class, 'crearPartida']);
 Route::put('/actualizar-partida/{id}', [PartidasController::class, 'actualizarPartida']);
 Route::get('/partida-activa/{idUsuario}', [PartidasController::class, 'obtenerPartidaActiva']);
+//CIFRADO CESAR
+Route::post('/cesar', [CesarController::class, 'translate']);
+//cifrado binario
+Route::post('/binary', [BinaryController::class, 'translate']);
+
 
 Route::get('/{any}', function () {
     return view('welcome'); // Vue se monta aquí
