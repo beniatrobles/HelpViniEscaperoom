@@ -65,6 +65,7 @@ import TwitterInicio from "./components/Mesa/Aplicaciones/Twitter/TwitterInicio.
 import TwitterNotificaciones from "./components/Mesa/Aplicaciones/Twitter/TwitterNotificaciones.vue";
 import TwitterMensajes from "./components/Mesa/Aplicaciones/Twitter/TwitterMensajes.vue";
 import TwitterPerfil from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil.vue";
+import TwitterPerfil2 from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil2.vue";
 import TwitterPerfilM from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfilM.vue";
 
 // WHATSAPP 
@@ -200,6 +201,11 @@ const routes = [
                             {
                                 path: 'perfil',
                                 component: TwitterPerfil,
+
+                            },
+                            {
+                                path: 'perfil2',
+                                component: TwitterPerfil2,
 
                             },
                             {
