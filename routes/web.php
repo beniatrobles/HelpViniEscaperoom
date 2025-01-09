@@ -13,9 +13,9 @@ Route::get('/', function () {
 });
 
 //Rutas para el Login
-Route::get('/login', [AutentificacionController::class, 'showLoginForm'])->name('login.form');
-Route::post('/login', [AutentificacionController::class, 'login'])->name('login');
-Route::post('/logout', [AutentificacionController::class, 'logout'])->name('logout');
+Route::get('/admin/login', [AutentificacionController::class, 'showLoginForm'])->name('login.form');
+Route::post('/admin/login', [AutentificacionController::class, 'login'])->name('login');
+Route::post('/admin/logout', [AutentificacionController::class, 'logout'])->name('logout');
 
 //Rutas CRUD
 //Crear Usuarios
