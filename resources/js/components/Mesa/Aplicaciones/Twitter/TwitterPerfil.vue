@@ -29,8 +29,8 @@
 
             <div class="ml-5 mt-5 mb-2 grid grid-cols-2 items-center justify-center">
 
-                <router-link to="/inicio/tablet/twitter/perfil" class="font-bold cursor-pointer">Publicaciones</router-link>
-                <router-link to="/inicio/tablet/twitter/perfilM" class="cursor-pointer">Me gusta</router-link>
+                <router-link to="/inicio/tablet/twitter/perfil" class="font-bold underline">Publicaciones</router-link>
+                <router-link to="/inicio/tablet/twitter/perfilM">Me gusta</router-link>
             </div>
             <hr class="border-gray-700 border-[0.5px]">
 
@@ -61,7 +61,7 @@
                             <span>36K</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/icon-corazon.png'" alt="">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
                             <span>263K</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
@@ -101,7 +101,7 @@
                             <span>4K</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/icon-corazon.png'" alt="">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
                             <span>87K</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
@@ -139,7 +139,7 @@
                             <span>19K</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/icon-corazon.png'" alt="">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
                             <span>223K</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
@@ -177,7 +177,7 @@
                             <span>14K</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/icon-corazon.png'" alt="">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
                             <span>164K</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">

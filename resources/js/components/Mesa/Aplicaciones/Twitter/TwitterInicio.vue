@@ -7,6 +7,7 @@
         </div>
 
     
+        <!-- TENDENCIAS -->
         <div class="h-[100%] w-[35%] flex flex-col p-1 border-[2px] rounded-lg mt-16">
 
             <p class="text-l font-bold">Tendencias para ti</p>
