@@ -29,8 +29,8 @@
 
             <div class="ml-5 mt-5 mb-2 grid grid-cols-2 items-center justify-center">
 
-                <router-link to="/inicio/tablet/twitter/perfil" class="cursor-pointer">Publicaciones</router-link>
-                <router-link to="/inicio/tablet/twitter/perfilM" class="font-bold cursor-pointer">Me gusta</router-link>
+                <router-link to="/inicio/tablet/twitter/perfil">Publicaciones</router-link>
+                <router-link to="/inicio/tablet/twitter/perfilM" class="font-bold underline">Me gusta</router-link>
             </div>
             <hr class="border-gray-700 border-[0.5px]">
 
@@ -39,14 +39,14 @@
                 <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
                     <div class="flex items-center mb-4">
                         <div class="">
-
-                            <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
-
+                            <router-link to="/inicio/tablet/twitter/perfil2">
+                                <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
+                            </router-link>
                         </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <span class="font-bold">Ajdfuefd</span>
-                                <span class="text-gray-400 text-sm">@jajatonto · 7 ene.</span>
+                                <router-link to="/inicio/tablet/twitter/perfil2" class="font-bold">Ajdfuefd</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2" class="text-gray-400 text-sm">@jajatonto · 7 ene.</router-link>
                             </div>
                         </div>
                     </div>
@@ -64,11 +64,11 @@
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
-                            <span>2</span>
+                            <span>4</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
                             <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
-                            <span>113</span>
+                            <span>567</span>
                         </div>
                     </div>
                 </div>
@@ -78,14 +78,14 @@
                 <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
                     <div class="flex items-center mb-4">
                         <div class="">
-
+                            <router-link to="/inicio/tablet/twitter/perfil2">
                             <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
-
+                            </router-link>
                         </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <span class="font-bold">Ajdfuefd</span>
-                                <span class="text-gray-400 text-sm">@jajatonto · 7 ene.</span>
+                                <router-link to="/inicio/tablet/twitter/perfil2" class="font-bold">Ajdfuefd</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2" class="text-gray-400 text-sm">@jajatonto · 7 ene.</router-link>
                             </div>
                         </div>
                     </div>
@@ -99,15 +99,15 @@
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
-                            <span>0</span>
+                            <span>1</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
-                            <span>3</span>
+                            <span>8</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
                             <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
-                            <span>395</span>
+                            <span>954</span>
                         </div>
                     </div>
                 </div>
@@ -117,19 +117,19 @@
                 <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
                     <div class="flex items-center mb-4">
                         <div class="">
-
+                            <router-link to="/inicio/tablet/twitter/perfil2">
                             <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
-
+                            </router-link>
                         </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <span class="font-bold">Ajdfuefd</span>
-                                <span class="text-gray-400 text-sm">@jajatonto · 6 ene.</span>
+                                <router-link to="/inicio/tablet/twitter/perfil2" class="font-bold">Ajdfuefd</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2" class="text-gray-400 text-sm">@jajatonto · 6 ene.</router-link>
                             </div>
                         </div>
                     </div>
                     <div class="mb-4 text-s">
-                        <p>0100100101101</p>
+                        <p>01100101 01001110 01100101 01111001 00110111</p>
                     </div>
                     <div class="flex space-x-20 text-gray-400 text-sm items-center">
                         <div class="flex items-center space-x-1 w-[20px]">
