@@ -40,13 +40,15 @@
                     <div class="flex items-center mb-4">
                         <div class="">
                             <router-link to="/inicio/tablet/twitter/perfil2">
-                                <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
+                                <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600"> A</p>
                             </router-link>
                         </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <router-link to="/inicio/tablet/twitter/perfil2" class="font-bold">Ajdfuefd</router-link>
-                                <router-link to="/inicio/tablet/twitter/perfil2" class="text-gray-400 text-sm">@jajatonto · 7 ene.</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2"
+                                    class="font-bold">Ajdfuefd</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2"
+                                    class="text-gray-400 text-sm">@jajatonto · 7 ene.</router-link>
                             </div>
                         </div>
                     </div>
@@ -79,13 +81,17 @@
                     <div class="flex items-center mb-4">
                         <div class="">
                             <router-link to="/inicio/tablet/twitter/perfil2">
-                            <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
+                                <p
+                                    class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">
+                                    A</p>
                             </router-link>
                         </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <router-link to="/inicio/tablet/twitter/perfil2" class="font-bold">Ajdfuefd</router-link>
-                                <router-link to="/inicio/tablet/twitter/perfil2" class="text-gray-400 text-sm">@jajatonto · 7 ene.</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2"
+                                    class="font-bold">Ajdfuefd</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2"
+                                    class="text-gray-400 text-sm">@jajatonto · 7 ene.</router-link>
                             </div>
                         </div>
                     </div>
@@ -118,13 +124,17 @@
                     <div class="flex items-center mb-4">
                         <div class="">
                             <router-link to="/inicio/tablet/twitter/perfil2">
-                            <p class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">A</p>
+                                <p
+                                    class="flex items-center justify-center w-10 h-10 rounded-full text-xl bg-purple-600">
+                                    A</p>
                             </router-link>
                         </div>
                         <div class="ml-3">
                             <div class="flex items-center space-x-1">
-                                <router-link to="/inicio/tablet/twitter/perfil2" class="font-bold">Ajdfuefd</router-link>
-                                <router-link to="/inicio/tablet/twitter/perfil2" class="text-gray-400 text-sm">@jajatonto · 6 ene.</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2"
+                                    class="font-bold">Ajdfuefd</router-link>
+                                <router-link to="/inicio/tablet/twitter/perfil2"
+                                    class="text-gray-400 text-sm">@jajatonto · 6 ene.</router-link>
                             </div>
                         </div>
                     </div>
@@ -147,6 +157,206 @@
                         <div class="flex items-center space-x-1 w-[15px]">
                             <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
                             <span>402</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
+                    <div class="flex items-center mb-4">
+                        <img :src="'/storage/img/apps/iconos/realmadrid.jpg'" class="w-10 h-10 rounded-full" />
+                        <div class="ml-3">
+                            <div class="flex items-center space-x-1">
+                                <span class="font-bold">Real Madrid C.F.</span>
+                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
+                                <span class="text-gray-400 text-sm">@realmadrid · 8 ene.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-s">
+                        <p>Convocatoria de elecciones a Presidente y Junta Directiva. <span
+                                class="text-blue-600">#RealMadrid</span></p>
+                        <br>
+                        <img class="rounded-lg" :src="'/storage/img/twFT2.jpg'" alt="">
+                    </div>
+                    <div class="flex space-x-20 text-gray-400 text-sm items-center">
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
+                            <span>82</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
+                            <span>182</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <span>2K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[15px]">
+                            <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
+                            <span>172K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
+                    <div class="flex items-center mb-4">
+                        <router-link to="/inicio/tablet/twitter/perfil">
+                            <img :src="'/storage/img/apps/iconos/twpfp.jpg'" class="w-10 h-10 rounded-full" />
+                        </router-link>
+                        <div class="ml-3">
+                            <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
+                                <span class="font-bold">Vini Jr.</span>
+                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <span class="text-gray-400 text-sm">@vinijr · 3 ene.</span>
+                            </router-link>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-s">
+                        <p>Perdon y gracias equipo!!!!!! ✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾✌🏾</p>
+                    </div>
+                    <div class="flex space-x-20 text-gray-400 text-sm items-center">
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
+                            <span>24K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
+                            <span>36K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <span>263K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[15px]">
+                            <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
+                            <span>26M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
+                    <div class="flex items-center mb-4">
+                        <router-link to="/inicio/tablet/twitter/perfil">
+                            <img :src="'/storage/img/apps/iconos/twpfp.jpg'" class="w-10 h-10 rounded-full" />
+                        </router-link>
+                        <div class="ml-3">
+                            <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
+                                <span class="font-bold">Vini Jr.</span>
+                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <span class="text-gray-400 text-sm">@vinijr · 2 ene.</span>
+                            </router-link>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-s">
+                        <p>7️⃣</p>
+                        <br>
+                        <img class="rounded-lg" :src="'/storage/img/twFT.jpg'" alt="">
+                    </div>
+                    <div class="flex space-x-20 text-gray-400 text-sm items-center">
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
+                            <span>826</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
+                            <span>4K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <span>87K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[15px]">
+                            <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
+                            <span>1M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
+                    <div class="flex items-center mb-4">
+                        <router-link to="/inicio/tablet/twitter/perfil">
+                            <img :src="'/storage/img/apps/iconos/twpfp.jpg'" class="w-10 h-10 rounded-full" />
+                        </router-link>
+                        <div class="ml-3">
+                            <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
+                                <span class="font-bold">Vini Jr.</span>
+                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <span class="text-gray-400 text-sm">@vinijr · 27 dic. 2024</span>
+                            </router-link>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-s">
+                        <img class="rounded-lg" :src="'/storage/img/twFT1.jpg'" alt="">
+                    </div>
+                    <div class="flex space-x-20 text-gray-400 text-sm items-center">
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
+                            <span>3K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
+                            <span>19K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <span>223K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[15px]">
+                            <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
+                            <span>2M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="border-gray-500 border-b-[0.5px] p-4 bg-gray-900 text-white">
+                    <div class="flex items-center mb-4">
+                        <router-link to="/inicio/tablet/twitter/perfil">
+                            <img :src="'/storage/img/apps/iconos/twpfp.jpg'" class="w-10 h-10 rounded-full" />
+                        </router-link>
+                        <div class="ml-3">
+                            <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
+                                <span class="font-bold">Vini Jr.</span>
+                                <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <span class="text-gray-400 text-sm">@vinijr · 22 dic. 2024</span>
+                            </router-link>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-s">
+                        <p>MADRID 🤍</p>
+                    </div>
+                    <div class="flex space-x-20 text-gray-400 text-sm items-center">
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-comment.png'" alt="">
+                            <span>1K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-rt.png'" alt="">
+                            <span>14K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[20px]">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <span>164K</span>
+                        </div>
+                        <div class="flex items-center space-x-1 w-[15px]">
+                            <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
+                            <span>2M</span>
                         </div>
                     </div>
                 </div>
