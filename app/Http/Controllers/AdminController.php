@@ -6,6 +6,7 @@ use App\Models\Usuario;
 use App\Models\Rol;
 use App\Models\Partida;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 use Illuminate\Support\Facades\Log;
 
@@ -48,25 +49,43 @@ class AdminController extends Controller
     
     public function store(Request $request)
     {
-        
-        $request->validate([
-            'nombre_usuario' => 'required|string|max:255',
+        // Definir las reglas de validación
+        $rules = [
             'correo' => 'required|email|unique:usuarios,correo',
-            'contrasena' => 'required|string|min:3',
-            'id_rol' => 'required|exists:rols,id_rol', 
-        ]);
+            'nombre_usuario' => 'required|string|max:255',
+            'contrasena' => 'required|min:3',
+            'id_rol' => 'required|integer',
+        ];
 
-        // Crear el usuario
-        $usuario = Usuario::create([
+        // Definir los mensajes personalizados para las validaciones
+        $messages = [
+            'correo.unique' => 'Este correo electrónico ya está registrado.',
+            'correo.required' => 'El correo electrónico es obligatorio.',
+            'correo.email' => 'Por favor, ingresa un correo electrónico válido.',
+            'nombre_usuario.required' => 'El nombre de usuario es obligatorio.',
+            'contrasena.required' => 'La contraseña es obligatoria.',
+            'contrasena.min' => 'La contraseña debe tener al menos 3 caracteres.',
+            'id_rol.required' => 'El rol es obligatorio.',
+        ];
+
+        // Validar la solicitud con las reglas y mensajes
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        // Si la validación falla, redirigir con los errores
+        if ($validator->fails()) {
+            return back()->withErrors($validator)->withInput();
+        }
+
+        // Crear el nuevo usuario si la validación pasa
+        Usuario::create([
             'nombre_usuario' => $request->nombre_usuario,
             'correo' => $request->correo,
-            'contrasena' => bcrypt($request->contrasena), 
-            'id_rol' => $request->id_rol,  // 
+            'contrasena' => bcrypt($request->contrasena),
+            'id_rol' => $request->id_rol,
         ]);
 
-        return redirect()->route('admin.usuarios')->with('success', 'Usuario creado exitosamente');
-
-        
+        // Redirigir con un mensaje de éxito
+        return redirect()->route('admin.usuarios')->with('success', 'Usuario creado con éxito.');
     }
 
     public function edit($id_usuario)
