@@ -20,18 +20,11 @@
             </div>
         </header>
         <section class="flex gap-[35px] mt-8">
-            <div class="flex flex-col items-center"     >
-                <div class="w-[65px] h-[65px] bg-black rounded-full"></div>
-                <p>Destacada</p>
-            </div>
-            <div class="flex flex-col items-center"     >
-                <div class="w-[65px] h-[65px] bg-black rounded-full"></div>
-                <p>Destacada</p>
-            </div>
-            <div class="flex flex-col items-center"     >
-                <div class="w-[65px] h-[65px] bg-black rounded-full"></div>
-                <p>Destacada</p>
-            </div>
+            <router-link to="" class="flex flex-col items-center">
+                <div class="w-[65px] h-[65px] bg-black rounded-full overflow-hidden"><img src="https://img.freepik.com/vector-gratis/nuevo-diseno-icono-x-logotipo-twitter-2023_1017-45418.jpg" alt=""></div>
+                <p class="text-center">twt</p>
+            </router-link>
+            
         </section>
         <hr class="mt-[50px]">
         <section class="grid grid-cols-3 gap-1 mt-2">
