@@ -1,10 +1,10 @@
 <template>
     <div class="w-[100%] h-[100%]">
         <header class="flex gap-10">
-            <img :src="'/img/vini.jpeg'" class="w-[100px] h-[100px] rounded-full border-red-500 border-[3px]">
+            <img :src="'/storage/img/vini.jpeg'" class="w-[100px] h-[100px] rounded-full border-red-500 border-[3px]">
             <div>
                 <div class="flex items-center gap-2">
-                    <p class="font-bold text-xl flex items-center gap-1">vinijr<img :src="'/img/verificado.png'" class="w-[15px] h-[15px]"></p>
+                    <p class="font-bold text-xl flex items-center gap-1">vinijr<img :src="'/storage/img/verificado.png'" class="w-[15px] h-[15px]"></p>
                 </div>
                 <div class="flex gap-3">
                     <p><span class="font-bold">X</span> publicaciones</p>
@@ -35,15 +35,16 @@
         </section>
         <hr class="mt-[50px]">
         <section class="grid grid-cols-3 gap-1 mt-2">
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
-            <div class="bg-black aspect-square cursor-pointer publicacion">publicacion</div>
+            <router-link to="/inicio/tablet/instagram/perfil/publicacion1" class="bg-black aspect-square cursor-pointer publicacion"><img :src="'/storage/img/vini.jpeg'"></router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
         </section>
         <div class="mt-6 opacity-0">.</div>
     </div>
+    <router-view class="absolute inset-0"></router-view>
 </template>
 
 <style scoped>

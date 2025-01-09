@@ -6,6 +6,7 @@ import Inicio from "./components/Inicio.vue";
 
 // COMPONENTES DE LA MESA
 import Tablet from "./components/Mesa/Tablet.vue";
+import TabletBloq from "./components/Mesa/TabletBloq.vue";
 import Polaroid from "./components/Mesa/Polaroid.vue";
 import Cuaderno from "./components/Mesa/Cuaderno.vue";
 import CuadernoAbierto from "./components/mesa/CuadernoAbierto.vue";
@@ -13,8 +14,17 @@ import Revista from "./components/Mesa/Revista.vue";
 import PostIt from "./components/Mesa/PostIt.vue";
 import Airpods from "./components/Mesa/Airpods.vue";
 import Platano from "./components/mesa/Platano.vue";
+import Mechero from "./components/Mesa/Mechero.vue";
+import Clips from "./components/Mesa/Clips.vue";
+import Boli from "./components/Mesa/Boli.vue";
 
 /* ----------------------------------------APLICACIONES DE LA TABLET----------------------------------------------*/
+
+// CALCULADORA
+import Calculadora from "./components/Mesa/Aplicaciones/Calculadora.vue";
+
+// DRIVE
+import Drive from "./components/Mesa/Aplicaciones/Drive.vue";
 
 // GLOVO 
 import Glovo from "./components/Mesa/Aplicaciones/Glovo.vue";
@@ -31,7 +41,11 @@ import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
 import InstagramInicio from "./components/Mesa/Aplicaciones/Instagram/InstagramInicio.vue";
 import InstagramMensajes from "./components/Mesa/Aplicaciones/Instagram/InsragramMensajes.vue";
 import InstagramPerfil from "./components/Mesa/Aplicaciones/Instagram/InstagramPerfil.vue";
-import MensajePrueba from "./components/Mesa/Aplicaciones/Instagram/MensajePrueba.vue";
+import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+import MensajePista from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajePista.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+// import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 
 // NOTAS 
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
@@ -47,12 +61,21 @@ import Tiktok from "./components/Mesa/Aplicaciones/Tiktok.vue";
 
 // TWITTER
 import Twitter from "./components/Mesa/Aplicaciones/Twitter.vue";
+import TwitterInicio from "./components/Mesa/Aplicaciones/Twitter/TwitterInicio.vue";
+import TwitterNotificaciones from "./components/Mesa/Aplicaciones/Twitter/TwitterNotificaciones.vue";
+import TwitterMensajes from "./components/Mesa/Aplicaciones/Twitter/TwitterMensajes.vue";
+import TwitterPerfil from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil.vue";
+import TwitterPerfil2 from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil2.vue";
+import TwitterPerfilM from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfilM.vue";
 
 // WHATSAPP 
 import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 
 // LOGIN 
 import Registro from "./components/Registro.vue";
+import Login from "./components/Login.vue";
+import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/PublicacionPista.vue";
+import Traductor from "./components/Mesa/Aplicaciones/Traductor.vue";
 
 const routes = [
     {
@@ -64,9 +87,23 @@ const routes = [
         component: Inicio,
         children: [
             {
+                path: 'tabletBloq',
+                component: TabletBloq
+            },
+            {
                 path: 'tablet', // Subruta: /inicio/tablet
                 component: Tablet,
-                    children: [
+                    children: [            
+                    {
+                        path: 'calculadora',
+                        component: Calculadora,
+    
+                    },
+                    {
+                        path: 'drive',
+                        component: Drive,
+
+                    },
                     {
                         path: 'glovo',
                         component: Glovo,
@@ -108,14 +145,24 @@ const routes = [
                                 component: InstagramMensajes,
                                 children: [
                                     {
-                                        path: 'uno',
-                                        component: MensajePrueba
-                                    }
+                                        path: 'mensaje1',
+                                        component: MensajeRonaldo
+                                    },
+                                    {
+                                        path: 'mensaje2',
+                                        component: MensajePista
+                                    },
                                 ]
                             },
                             {
                                 path: 'perfil',
                                 component: InstagramPerfil,
+                                children: [
+                                    {
+                                        path: 'publicacion1',
+                                        component: PublicacionPista
+                                    },
+                                ] 
                             },
                         ]
                     },
@@ -138,11 +185,45 @@ const routes = [
                     {
                         path: 'twitter',
                         component: Twitter,
+                        children: [
+                            {
+                                path: '',
+                                component: TwitterInicio,
+                            },
+                            {
+                                path: 'notificaciones',
+                                component: TwitterNotificaciones,
+                            },
+                            {
+                                path: 'mensajes',
+                                component: TwitterMensajes,
+                            },
+                            {
+                                path: 'perfil',
+                                component: TwitterPerfil,
+
+                            },
+                            {
+                                path: 'perfil2',
+                                component: TwitterPerfil2,
+
+                            },
+                            {
+
+                                path: 'perfilM',
+                                component: TwitterPerfilM,
+
+                            },
+                        ]
                     },
                     {
                         path: 'whatsapp',
                         component: Whatsapp,
                     },
+                    {
+                        path: 'traductor',
+                        component: Traductor
+                    }
                 ],
             },
         
@@ -174,11 +255,27 @@ const routes = [
                 path: 'platano',
                 component: Platano,
             },
+            {
+                path: 'mechero',
+                component: Mechero,
+            },
+            {
+                path: 'clips',
+                component: Clips,
+            },
+            {
+                path: 'boli',
+                component: Boli,
+            },
         ],
     },
     {
         path: '/registro',
         component: Registro,
+    },
+    {
+        path: '/login',
+        component: Login,
     },
 ];
 

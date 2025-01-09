@@ -15,17 +15,20 @@
             <input type="password" v-model="password" name="password" placeholder="Contraseña" />
             <br />
 
-            <button type="submit" class=" relative p-[5px] bg-white text-black w-[50%] rounded flex hover:text-white font-bold">
+            <button type="submit"
+                class=" relative p-[5px] bg-white text-black w-[50%] rounded flex hover:text-white font-bold">
                 <p class="z-[10] text-center w-[100%]">Registrarme</p>
             </button>
         </form>
+        <router-link to="/login" class="mt-3 hover:text-[#0ED800]">No tienes una cuenta?</router-link>
     </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import axios from "axios";
-import { router } from "@inertiajs/vue3";
+import { useRouter } from 'vue-router';
+const router = useRouter();
 
 // Reactive variables
 const nombre = ref("");
@@ -36,18 +39,19 @@ const password = ref("");
 const enviarFormulario = () => {
     axios
         .post("/register", {
-            nombre: nombre.value,
-            email: email.value,
-            pass: password.value,
+            nombre_usuario: nombre.value,
+            correo: email.value,
+            contraseña: password.value,
+            id_rol: 2
         })
         .then((res) => {
             // Redirect to login upon success
-            router.get("/");
+            router.push("/");
             alert("Usuario registrado correctamente")
         })
         .catch((err) => {
             // Show an alert on error
-            alert("Error al registrar al usuario");
+            alert("Error al registrar al usuario " + err);
         });
 };
 </script>
@@ -83,7 +87,8 @@ button::after {
     border-radius: 5px;
     transition: .3s;
 }
-button:hover::after{
+
+button:hover::after {
     width: 100%;
 }
 </style>
