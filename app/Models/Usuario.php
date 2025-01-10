@@ -9,12 +9,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Usuario extends Model implements Authenticatable
 {
-    use HasFactory, Notifiable;  // Usar Notifiable para las notificaciones
+    use HasFactory, Notifiable; 
 
-    protected $table = 'usuarios';  // Nombre de la tabla
-    protected $primaryKey = 'id_usuario';  // Clave primaria personalizada
+    protected $table = 'usuarios';  
+    protected $primaryKey = 'id_usuario';  
 
-    protected $fillable = ['nombre_usuario', 'correo', 'contrasena', 'id_rol'];  // Campos asignables
+    protected $fillable = ['nombre_usuario', 'correo', 'contrasena', 'id_rol'];
 
     // Relación con el modelo Rol
     public function rol()

@@ -12,35 +12,12 @@ class UsuarioSeeder extends Seeder
     public function run()
     {
         DB::table('usuarios')->insert([
-            'nombre_usuario' => 'Aitor Lopez',
-            'correo' => 'aitor@escaperoom.com',
-            'contraseña' => bcrypt('1234'),  // Contraseña encriptada
+            'nombre_usuario' => 'admin',
+            'correo' => 'admin@admin.com',
+            'contrasena' => bcrypt('1234'),  
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-        ]);
-
-        DB::table('usuarios')->insert([
-            'nombre_usuario' => 'Imanol Gullon',
-            'correo' => 'imanol@escaperoom.com',
-            'contraseña' => bcrypt('1234'),  // Contraseña encriptada
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-
-        DB::table('usuarios')->insert([
-            'nombre_usuario' => 'Beñat Robles',
-            'correo' => 'benat@escaperoom.com',
-            'contraseña' => bcrypt('1234'),  // Contraseña encriptada
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-
-        DB::table('usuarios')->insert([
-            'nombre_usuario' => 'Anurag Yadav',
-            'correo' => 'anurag@escaperoom.com',
-            'contraseña' => bcrypt('1234'),  // Contraseña encriptada
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'id_rol' => 3,  // Asignar rol de administrador
         ]);
     }
 }

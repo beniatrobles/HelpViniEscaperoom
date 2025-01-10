@@ -20,10 +20,10 @@ class RolFactory extends Factory
             // Asignar un rol aleatorio a cada usuario
             foreach ($usuarios as $usuario) {
                 Rol::create([
-                    'id_usuario' => $usuario->id_usuario,  // Asociamos el rol con el usuario
-                    'rol' => $this->faker->randomElement(['usuario', 'administrador']),  // Rol aleatorio
-                    'created_at' => now(),  // Fecha actual de creación
-                    'updated_at' => now(),  // Fecha actual de actualización
+                    'id_usuario' => $usuario->id_usuario,  
+                    'rol' => $this->faker->randomElement(['usuario', 'administrador']),  
+                    'created_at' => now(),  
+                    'updated_at' => now(),  
                 ]);
             }
         }
