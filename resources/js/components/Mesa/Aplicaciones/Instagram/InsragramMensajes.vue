@@ -2,7 +2,7 @@
     <div class="w-[100%] h-[100%]">
         <div class="flex justify-between">
             <p class="font-bold">Mensajes</p>
-            <router-link to="/">Solicitides</router-link>
+            <router-link to="/">Solicitudes</router-link>
         </div>
         <hr>
         <div class="flex gap-2 h-[100%] mt-3">
