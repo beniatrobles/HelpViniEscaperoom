@@ -23,7 +23,7 @@
                         
                         <router-link to="/inicio/tablet/twitter/notificaciones" class="my-1 flex flex-row items-center">
                             
-                            <img :src="'/storage/img/apps/iconos/icon-notificaciones.svg'" alt="" class="w-[30px] mr-3">
+                            <img :src="'/storage/img/apps/iconos/icon-notificaciones.svg'" alt="" class="w-[30px] mr-3 text-red-900">
                             <p> Notificaciones </p>
                             
                         </router-link>
