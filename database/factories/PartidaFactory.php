@@ -20,16 +20,16 @@ class PartidaFactory extends Factory
             // Asignar una partida para cada usuario existente
             foreach ($usuarios as $usuario) {
                 Partida::create([
-                    'id_usuario' => $usuario->id_usuario, // Asociar la partida al usuario
-                    'completado' => $this->faker->boolean, // Valor aleatorio de completado (true o false)
-                    'tiempo' => $this->faker->numberBetween(30, 120), // Tiempo aleatorio entre 30 y 120 minutos
-                    'created_at' => now(),  // Fecha actual de creación
-                    'updated_at' => now(),  // Fecha actual de actualización
+                    'id_usuario' => $usuario->id_usuario, 
+                    'completado' => $this->faker->boolean, 
+                    'tiempo' => $this->faker->numberBetween(30, 120), 
+                    'created_at' => now(),  
+                    'updated_at' => now(),  
                 ]);
             }
         }
 
-        return [];  // Si no hay usuarios, no se crea nada
+        return [];  
     }
 }
 
