@@ -72,3 +72,10 @@ Durante el desarrollo y la administración del proyecto, estos son algunos coman
 
 3. **Frontend compilado**: No edites directamente los archivos en `/public/build`. Estos se generan automáticamente a partir del código fuente ubicado en `resources/`.
 
+
+---
+
+## Migracion BBDD 
+1. **Despues de realizar los pasos para la instalacion del proyecto deberemos realizar la migracion de las tablas de la bbdd. Para ello usaremos el comando `php artisan migrate`.
+2. **Luego tendremos que añadir un usuario administrador a la bbdd con el comando `php artisan db:seed --class=UsuarioSeeder`. 
+
