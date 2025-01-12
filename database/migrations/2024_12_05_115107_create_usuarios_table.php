@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nombre_usuario');
             $table->string('correo')->unique();
             $table->string('contrasena');
+            $table->string('avatar_ruta')->nullable();
             $table->unsignedBigInteger('id_rol'); 
             $table->timestamps();
 

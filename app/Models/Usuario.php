@@ -14,7 +14,7 @@ class Usuario extends Model implements Authenticatable
     protected $table = 'usuarios';  
     protected $primaryKey = 'id_usuario';  
 
-    protected $fillable = ['nombre_usuario', 'correo', 'contrasena', 'id_rol'];
+    protected $fillable = ['nombre_usuario', 'correo', 'contrasena', 'avatar_ruta' , 'id_rol'];
 
     // Relación con el modelo Rol
     public function rol()
