@@ -35,6 +35,7 @@ import Gmail from "./components/Mesa/Aplicaciones/Gmail/Gmail.vue";
 import GmailRecibidos from "./components/Mesa/Aplicaciones/Gmail/GmailRecibidos.vue";
 import GmailEnviados from "./components/Mesa/Aplicaciones/Gmail/GmailEnviados.vue";
 import GmailBorradores from "./components/Mesa/Aplicaciones/Gmail/GmailBorradores.vue";
+import mensajeSpoty from "./components/Mesa/Aplicaciones/Gmail/recibidos/spoty.vue";
 
 // INSTAGRAM 
 import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
@@ -95,11 +96,11 @@ const routes = [
             {
                 path: 'tablet', // Subruta: /inicio/tablet
                 component: Tablet,
-                    children: [            
+                children: [
                     {
                         path: 'calculadora',
                         component: Calculadora,
-    
+
                     },
                     {
                         path: 'drive',
@@ -123,10 +124,17 @@ const routes = [
                             {
                                 path: '',
                                 component: GmailRecibidos,
+                                children: [
+                                    {
+                                        path: 'spoty',
+                                        component: mensajeSpoty
+                                    },
+                                ]
                             },
                             {
                                 path: 'enviados',
                                 component: GmailEnviados,
+
                             },
                             {
                                 path: 'borradores',
@@ -164,7 +172,7 @@ const routes = [
                                         path: 'publicacion1',
                                         component: PublicacionPista
                                     },
-                                ] 
+                                ]
                             },
                         ]
                     },
@@ -238,7 +246,7 @@ const routes = [
                     }
                 ],
             },
-        
+
             {
                 path: 'polaroid',
                 component: Polaroid,
