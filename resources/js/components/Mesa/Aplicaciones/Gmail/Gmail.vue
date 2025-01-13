@@ -27,7 +27,7 @@
                     </nav>
 
                 </div>
-                <div class="w-[75%] py-10 px-20 overflow-auto">
+                <div class="w-[75%] py-10 px-20 overflow-auto relative">
                     <router-view></router-view>
                 </div>
                 <router-link to="/inicio/tablet"
