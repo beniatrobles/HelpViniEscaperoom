@@ -26,6 +26,9 @@ import Calculadora from "./components/Mesa/Aplicaciones/Calculadora.vue";
 // DRIVE
 import Drive from "./components/Mesa/Aplicaciones/Drive.vue";
 
+// EL TIEMPO
+import ElTiempo from "./components/Mesa/Aplicaciones/ElTiempo.vue";
+
 // GLOVO 
 import Glovo from "./components/Mesa/Aplicaciones/Glovo.vue";
 
@@ -44,6 +47,7 @@ import InstagramMensajes from "./components/Mesa/Aplicaciones/Instagram/Insragra
 import InstagramPerfil from "./components/Mesa/Aplicaciones/Instagram/InstagramPerfil.vue";
 import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 import MensajePista from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajePista.vue";
+import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/PublicacionPista.vue";
 // import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 // import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 // import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
@@ -57,8 +61,8 @@ import Pinterest from "./components/Mesa/Aplicaciones/Pinterest.vue";
 // SPOTIFY 
 import Spotify from "./components/Mesa/Aplicaciones/Spotify.vue";
 
-// TIKTOK
-import Tiktok from "./components/Mesa/Aplicaciones/Tiktok.vue";
+// TRADUCTOR
+import Traductor from "./components/Mesa/Aplicaciones/Traductor.vue";
 
 // TWITTER
 import Twitter from "./components/Mesa/Aplicaciones/Twitter.vue";
@@ -77,8 +81,6 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
-import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/PublicacionPista.vue";
-import Traductor from "./components/Mesa/Aplicaciones/Traductor.vue";
 
 const routes = [
     {
@@ -106,6 +108,10 @@ const routes = [
                         path: 'drive',
                         component: Drive,
 
+                    },
+                    {
+                        path: 'eltiempo',
+                        component: ElTiempo,
                     },
                     {
                         path: 'glovo',
@@ -189,8 +195,8 @@ const routes = [
                         component: Spotify,
                     },
                     {
-                        path: 'tiktok',
-                        component: Tiktok,
+                        path: 'traductor',
+                        component: Traductor
                     },
                     {
                         path: 'twitter',
@@ -240,10 +246,6 @@ const routes = [
                         path: 'whatsapp',
                         component: Whatsapp,
                     },
-                    {
-                        path: 'traductor',
-                        component: Traductor
-                    }
                 ],
             },
 

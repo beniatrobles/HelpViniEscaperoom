@@ -19,6 +19,10 @@
                     <img :src="'/storage/img/apps/drive.png'" alt="Drive" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Drive</p>
                 </router-link>
+                <router-link to="/inicio/tablet/eltiempo" class="flex flex-col items-center">
+                    <img :src="'/storage/img/apps/eltiempo.png'" alt="El tiempo" class="w-16 h-16 cursor-pointer">
+                    <p class="text-sm font-semibold">El Tiempo</p>
+                </router-link>
                 <router-link to="/inicio/tablet/glovo" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/glovo.png'" alt="Glovo" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Glovo</p>
@@ -42,10 +46,6 @@
                 <router-link to="/inicio/tablet/spotify" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/spotify.png'" alt="Spotify" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Spotify</p>
-                </router-link>
-                <router-link to="/inicio/tablet/tiktok" class="flex flex-col items-center">
-                    <img :src="'/storage/img/apps/tiktok.png'" alt="Tiktok" class="w-16 h-16 cursor-pointer">
-                    <p class="text-sm font-semibold">Tiktok</p>
                 </router-link>
                 <router-link to="/inicio/tablet/traductor" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/traductor.png'" alt="Traductor" class="w-16 h-16 cursor-pointer">
