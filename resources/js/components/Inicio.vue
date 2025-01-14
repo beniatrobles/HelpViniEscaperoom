@@ -1,6 +1,8 @@
 <template>
   <div class="h-screen relative overflow-hidden">
-
+    <div class="absolute">
+      Tiempo restante: {{ tiempoFormateado }}
+    </div>
     <img :src="'/storage/img/mesa.jpg'" class="w-[100%] h-[100%] z-[-10]">
     <router-link to="/inicio/tabletBloq"
       class="absolute w-[350px] rotate-[-80deg] top-0 right-[25%]  z-10 hover:scale-[1.05] hover:z-20 duration-200 hover:rotate-[-83deg]">
@@ -56,16 +58,68 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/stores/authStore'
+import axios from 'axios';
 
 const router = useRouter();
 const authStore = useAuthStore();
 
+const tiempoRestante = ref(0); // Tiempo en segundos
+const userId = ref(0); // Cambia este valor al ID del usuario autenticado
+let intervalo; // Controla el temporizador
+
+// Formatea el tiempo en formato MM:SS
+const tiempoFormateado = computed(() => {
+  const minutos = Math.floor(tiempoRestante.value / 60);
+  const segundos = tiempoRestante.value % 60;
+  return `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+});
+
+// Cargar tiempo restante desde la base de datos para la partida activa
+const cargarTiempo = async () => {
+  try {
+    const response = await axios.get(`/partida/${userId.value}/tiempo`);
+    tiempoRestante.value = response.data.tiempo; // Actualiza el tiempo desde la base de datos
+  } catch (error) {
+    console.error('Error al cargar el tiempo:', error);
+  }
+};
+
+// Sincronizar tiempo restante con el servidor
+const sincronizarTiempo = async () => {
+  try {
+    await axios.post(`/partida/${userId.value}/actualizarTiempo`, {
+      tiempo: tiempoRestante.value,
+    });
+  } catch (error) {
+    console.error('Error al sincronizar el tiempo:', error);
+  }
+};
+
+// Iniciar temporizador
+const iniciarTemporizador = () => {
+  intervalo = setInterval(() => {
+    if (tiempoRestante.value > 0) {
+      tiempoRestante.value--;
+      // Sincronizar con el servidor cada 5 segundos
+      if (tiempoRestante.value % 5 === 0) {
+        sincronizarTiempo();
+      }
+    } else {
+      clearInterval(intervalo);
+      alert('¡La partida ha terminado!');
+    }
+  }, 1000); // Cada segundo
+};
+
 onMounted(async () => {
   // Llamamos a la función checkToken para verificar el estado de la sesión
   authStore.checkToken();
+  userId.value = (authStore.user.id)  
+  await cargarTiempo(); // Carga la partida activa y su tiempo
+  iniciarTemporizador(); // Inicia el temporizador
 
   // Si no hay token o el usuario no está autenticado, redirigir a la página de login
   if (!authStore.token || !authStore.user) {
@@ -79,13 +133,19 @@ onMounted(async () => {
         twitter: false,
         whatsapp: false,
         completado: false,
-        tiempo: 30,
+        tiempo: 1800,
         id_usuario: authStore.user.id,
       })
     } catch (e) {
       console.error(e.request.responseText)
     }
   }
+});
+
+// Detener temporizador al salir del componente
+onUnmounted(() => {
+  clearInterval(intervalo);
+  sincronizarTiempo(); // Sincroniza antes de salir
 });
 </script>
 
