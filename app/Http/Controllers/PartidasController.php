@@ -87,4 +87,40 @@ class PartidasController extends Controller
 
         return response()->json($partida, 200);
     }
+
+    public function getTiempoRestante($id)
+    {
+        $partida = Partida::where('id_usuario', $id)
+            ->where('completado', false) // Solo partidas activas
+            ->first();
+    
+        if (!$partida) {
+            return response()->json(['error' => 'No hay partida activa para este usuario.'], 404);
+        }
+    
+        return response()->json(['tiempo' => $partida->tiempo]);
+    }
+    
+    // Actualizar tiempo restante
+    public function actualizarTiempo(Request $request, $id)
+    {
+        // Validar que el campo 'tiempo' esté presente y sea un entero
+        $request->validate(['tiempo' => 'required|integer']);
+    
+        // Buscar la partida activa para el usuario
+        $partida = Partida::where('id_usuario', $id)
+            ->where('completado', false) // Solo partida activa
+            ->first();
+    
+        // Verificar si existe una partida activa
+        if (!$partida) {
+            return response()->json(['error' => 'No hay partida activa para este usuario.'], 404);
+        }
+    
+        // Actualizar el tiempo de la partida activa
+        $partida->tiempo = $request->tiempo;
+        $partida->save();
+    
+        return response()->json(['message' => 'Tiempo actualizado con éxito.'], 200);
+    }
 }

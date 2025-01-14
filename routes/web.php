@@ -41,6 +41,9 @@ Route::post('/register', [AuthController::class, 'registro']);
 Route::post('/crear-partida', [PartidasController::class, 'crearPartida']);
 Route::put('/actualizar-partida/{id}', [PartidasController::class, 'actualizarPartida']);
 Route::get('/partida-activa/{idUsuario}', [PartidasController::class, 'obtenerPartidaActiva']);
+
+Route::get('/partida/{id}/tiempo', [PartidasController::class, 'getTiempoRestante']);
+Route::post('/partida/{id}/actualizarTiempo', [PartidasController::class, 'actualizarTiempo']);
 //CIFRADO CESAR
 Route::post('/cesar', [CesarController::class, 'translate']);
 //cifrado binario
