@@ -30,7 +30,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \App\Http\Middleware\AutenticadoMiddleware::class,  // Middleware personalizado
+        'auth' => \App\Http\Middleware\AutenticadoMiddleware::class, 
         
     ];
 }

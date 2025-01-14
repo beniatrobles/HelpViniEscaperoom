@@ -52,13 +52,26 @@ class AdminController extends Controller
             'contrasena' => 'required|min:3',
             'id_rol' => 'required|integer',
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ], [
+            'correo.required' => 'El campo correo es obligatorio.',
+            'correo.email' => 'El correo debe ser una dirección de correo válida.',
+            'correo.unique' => 'Este correo ya está registrado.',
+            'nombre_usuario.required' => 'El nombre de usuario es obligatorio.',
+            'nombre_usuario.string' => 'El nombre de usuario debe ser una cadena de texto.',
+            'nombre_usuario.max' => 'El nombre de usuario no puede exceder los 255 caracteres.',
+            'contrasena.required' => 'La contraseña es obligatoria.',
+            'contrasena.min' => 'La contraseña debe tener al menos 3 caracteres.',
+            'id_rol.required' => 'El rol es obligatorio.',
+            'id_rol.integer' => 'El rol debe ser un número entero.',
+            'avatar.image' => 'El avatar debe ser una imagen.',
+            'avatar.mimes' => 'El avatar debe ser un archivo de tipo: jpeg, png, jpg, gif.',
+            'avatar.max' => 'El avatar no puede pesar más de 2MB.',
         ]);
 
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
         }
 
-       
         $avatarPath = null;
         if ($request->hasFile('avatar')) {
             $avatar = $request->file('avatar');
@@ -93,6 +106,19 @@ class AdminController extends Controller
             'contrasena' => 'nullable|string|min:3',
             'id_rol' => 'required|exists:rols,id_rol',
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ], [
+            'nombre_usuario.required' => 'El nombre de usuario es obligatorio.',
+            'nombre_usuario.string' => 'El nombre de usuario debe ser una cadena de texto.',
+            'nombre_usuario.max' => 'El nombre de usuario no puede exceder los 255 caracteres.',
+            'correo.required' => 'El correo es obligatorio.',
+            'correo.email' => 'El correo debe ser una dirección de correo válida.',
+            'correo.unique' => 'Este correo ya está registrado.',
+            'contrasena.min' => 'La contraseña debe tener al menos 3 caracteres.',
+            'id_rol.required' => 'El rol es obligatorio.',
+            'id_rol.exists' => 'El rol seleccionado no existe.',
+            'avatar.image' => 'El avatar debe ser una imagen.',
+            'avatar.mimes' => 'El avatar debe ser un archivo de tipo: jpeg, png, jpg, gif.',
+            'avatar.max' => 'El avatar no puede pesar más de 2MB.',
         ]);
 
         $usuario = Usuario::findOrFail($id_usuario);
