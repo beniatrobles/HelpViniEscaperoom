@@ -68,7 +68,7 @@ const loginGmail = async () => {
 
 onMounted(async () => {
     const partida = await partidaStore.comprobarPartida()
-    const gmail = partida.data.tablet;
+    const gmail = partida.data.gmail;
     if (gmail) {
         router.push('/inicio/tablet/gmail');
     }

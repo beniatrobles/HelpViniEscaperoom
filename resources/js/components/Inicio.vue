@@ -117,10 +117,6 @@ const iniciarTemporizador = () => {
 onMounted(async () => {
   // Llamamos a la función checkToken para verificar el estado de la sesión
   authStore.checkToken();
-  userId.value = (authStore.user.id)  
-  await cargarTiempo(); // Carga la partida activa y su tiempo
-  iniciarTemporizador(); // Inicia el temporizador
-
   // Si no hay token o el usuario no está autenticado, redirigir a la página de login
   if (!authStore.token || !authStore.user) {
     router.push('/login'); // Redirigir a la página de login
@@ -139,6 +135,10 @@ onMounted(async () => {
     } catch (e) {
       console.error(e.request.responseText)
     }
+    userId.value = (authStore.user.id)
+    await cargarTiempo(); // Carga la partida activa y su tiempo
+    iniciarTemporizador(); // Inicia el temporizador
+
   }
 });
 
