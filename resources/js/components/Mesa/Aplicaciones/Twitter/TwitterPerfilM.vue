@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="mb-4 text-s">
-                        <p>Conozco un mono MUY tonto 🐵🤣🫵</p>
+                        <p>Conozco un tio MUY tonto 🤣🫵</p>
                     </div>
                     <div class="flex space-x-20 text-gray-400 text-sm items-center">
                         <div class="flex items-center space-x-1 w-[20px]">

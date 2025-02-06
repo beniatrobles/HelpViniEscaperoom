@@ -56,7 +56,7 @@
                                 <span class="font-bold">Kylian Mbappe</span>
                                 <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
                                 <img class="w-[15px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'"/>
-                                <span class="text-gray-400 text-sm">@KMbappe · 17 jul. 2024</span>
+                                <span class="text-gray-400 text-xs">@KMbappe · 17 jul. 2024</span>
                             </router-link>
                         </div>
                     </div>
