@@ -5,11 +5,13 @@
             <h1 class="absolute top-5 right-5 text-[30px]">X</h1>
         </router-link>
         <div
-            class="w-[1000px] h-[600px] rounded-3xl border-r-[40px] border-l-[30px] border-t-[15px] border-b-[15px] border-black shadow-md relative">
+            class=" w-[1000px] h-[600px] rounded-3xl border-r-[40px] border-l-[30px] border-t-[15px] border-b-[15px] border-black shadow-md relative">
             <div
                 class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer">
             </div>
-            <img class="absolute z-[-50] inset-0 w-[100%] blur" :src="'/storage/img/fondoTablet.jpg'" alt="">
+            <div class="absolute z-[-10] inset-0 bg-black"> 
+                <img class="w-full blur" :src="'/storage/img/fondoTablet.jpg'" alt="">
+            </div>
             <div class="absolute w-full h-full flex justify-center items-center flex-col bg-black bg-opacity-50">
                 <p>{{ alerta }}</p>
                 <input type="password" placeholder="PIN" readonly
