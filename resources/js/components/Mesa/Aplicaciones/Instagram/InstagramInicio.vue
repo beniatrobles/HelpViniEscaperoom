@@ -24,7 +24,7 @@
                 <p class="text-center text-sm">k.mbappe</p>
             </router-link>
             <router-link class="flex flex-col items-center">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15IRafVbIgby17P2PXOVL7KctiqZYtaNU2w&s" class="bg-white w-[50px] h-[50px] rounded-full border-[2px] border-red-600">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15IRafVbIgby17P2PXOVL7KctiqZYtaNU2w&s" class="bg-white w-[50px] h-[50px] rounded-full border-[2px] border-green-500">
                 <p class="text-center text-sm">isabella</p>
             </router-link>
         </header>
