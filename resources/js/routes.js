@@ -60,6 +60,8 @@ import Pinterest from "./components/Mesa/Aplicaciones/Pinterest.vue";
 
 // SPOTIFY 
 import Spotify from "./components/Mesa/Aplicaciones/Spotify.vue";
+import SpotifyInicio from "./components/Mesa/Aplicaciones/Spotify/SpotifyInicio.vue";
+import SpotifyPlaylist1 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist1.vue";
 
 // TRADUCTOR
 import Traductor from "./components/Mesa/Aplicaciones/Traductor.vue";
@@ -193,6 +195,15 @@ const routes = [
                     {
                         path: 'spotify',
                         component: Spotify,
+                        children: [
+                            {
+                                path: '',
+                                component: SpotifyInicio,
+                            },
+                        {
+                            path: 'playlist1',
+                            component: SpotifyPlaylist1,
+                        }]
                     },
                     {
                         path: 'traductor',
