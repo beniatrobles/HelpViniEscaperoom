@@ -15,10 +15,12 @@
                     <div class="h-[50px] w-full flex flex-row items-center justify-between">
                         <div class="h-full flex items-center">
                             <router-link to="/inicio/tablet/spotify/" class="h-full">
-                            <img class="h-full hover:cursor-pointer"
-                                :src="'/storage/img/apps/spotify/LogoSpotifyBlanco.png'" alt="">
+                                <img class="h-full hover:cursor-pointer"
+                                    :src="'/storage/img/apps/spotify/LogoSpotifyBlanco.png'" alt="">
                             </router-link>
-                            <h2 class="p-3 font-bold hover:cursor-pointer">Spotify</h2>
+                            <router-link to="/inicio/tablet/spotify/" class="h-full">
+                                <h2 class="p-3 font-bold hover:cursor-pointer">Spotify</h2>
+                            </router-link>
                         </div>
                         <img class="rounded-full h-full" :src="'/storage/img/vini.jpeg'" alt="">
                     </div>

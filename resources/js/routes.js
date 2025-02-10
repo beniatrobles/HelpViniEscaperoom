@@ -62,6 +62,13 @@ import Pinterest from "./components/Mesa/Aplicaciones/Pinterest.vue";
 import Spotify from "./components/Mesa/Aplicaciones/Spotify.vue";
 import SpotifyInicio from "./components/Mesa/Aplicaciones/Spotify/SpotifyInicio.vue";
 import SpotifyPlaylist1 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist1.vue";
+import SpotifyPlaylist2 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist2.vue";
+import SpotifyPlaylist3 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist3.vue";
+import SpotifyPlaylist4 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist4.vue";
+import SpotifyPlaylist5 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist5.vue";
+import SpotifyPlaylist6 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist6.vue";
+import SpotifyPlaylist7 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist7.vue";
+import SpotifyPlaylist8 from "./components/Mesa/Aplicaciones/Spotify/SpotifyPlaylist8.vue";
 
 // TRADUCTOR
 import Traductor from "./components/Mesa/Aplicaciones/Traductor.vue";
@@ -203,7 +210,36 @@ const routes = [
                         {
                             path: 'playlist1',
                             component: SpotifyPlaylist1,
-                        }]
+                        },
+                        {
+                            path: 'playlist2',
+                            component: SpotifyPlaylist2,
+                        },
+                        {
+                            path: 'playlist3',
+                            component: SpotifyPlaylist3,
+                        },
+                        {
+                            path: 'playlist4',
+                            component: SpotifyPlaylist4,
+                        },
+                        {
+                            path: 'playlist5',
+                            component: SpotifyPlaylist5,
+                        },
+                        {
+                            path: 'playlist6',
+                            component: SpotifyPlaylist6,
+                        },
+                        {
+                            path: 'playlist7',
+                            component: SpotifyPlaylist7,
+                        },
+                        {
+                            path: 'playlist8',
+                            component: SpotifyPlaylist8,
+                        }
+                    ]
                     },
                     {
                         path: 'traductor',
