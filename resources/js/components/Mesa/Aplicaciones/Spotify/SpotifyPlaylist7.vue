@@ -6,13 +6,14 @@
         <div class="flex flex-row">
 
             <div class="w-[25%]">
-                <img class="rounded-lg" :src="'/storage/img/apps/spotify/top50global.png'" alt="">
+                <img class="rounded-lg" :src="'https://images.vexels.com/media/users/3/278708/isolated/preview/4817b6f5fe60b466f5a7e3a677d7811f-palabras-populares-relajarse-letras.png'"
+                alt="">
             </div>
 
             <div class="p-10">
                 <h2 class="text-gray-400">Lista</h2>
 
-                <h2 class="text-[50px]">Top 50: Global</h2>
+                <h2 class="text-[50px]">Top 50: España</h2>
 
                 <h2>Spotify</h2>
             </div>
@@ -68,15 +69,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion1.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion13.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Die With A Smile</p>
-                        <p class="text-gray-400 text-xs">Lady Gaga, Bruno Mars</p>
+                        <p>I Wanna Be Yours</p>
+                        <p class="text-gray-400 text-xs">Artic Monkeys</p>
 
                     </div>
                 </div>
@@ -84,14 +85,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">Die With A Smile</p>
+                    <p class="text-gray-400 text-xs">AM</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">4:11</p>
+                    <p class="text-gray-400 text-xs">3:03</p>
 
                 </div>
 
@@ -112,15 +113,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion2.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion14.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>APT.</p>
-                        <p class="text-gray-400 text-xs">ROSÉ, Bruno Mars</p>
+                        <p>Lovely (with Khalid)</p>
+                        <p class="text-gray-400 text-xs">Billie Eilish, Khalid</p>
 
                     </div>
                 </div>
@@ -128,14 +129,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">rosie</p>
+                    <p class="text-gray-400 text-xs">Lovely (with Khalid)</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:49</p>
+                    <p class="text-gray-400 text-xs">3:20</p>
 
                 </div>
 
@@ -156,15 +157,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion3.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion15.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>BIRDS OF A FEATHER</p>
-                        <p class="text-gray-400 text-xs">Billie Eilish</p>
+                        <p>Off My Face</p>
+                        <p class="text-gray-400 text-xs">Justin Bieber</p>
 
                     </div>
                 </div>
@@ -172,14 +173,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">HIT ME HARD AND SOFT</p>
+                    <p class="text-gray-400 text-xs">Justice</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:30</p>
+                    <p class="text-gray-400 text-xs">2:36</p>
 
                 </div>
 
@@ -200,15 +201,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion16.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>DtMF</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Video Games</p>
+                        <p class="text-gray-400 text-xs">Lana Del Rey</p>
 
                     </div>
                 </div>
@@ -216,14 +217,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">Born To Die - The Paradise Edition</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:57</p>
+                    <p class="text-gray-400 text-xs">4:41</p>
 
                 </div>
 
@@ -244,15 +245,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion5.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion17.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Abracadabra</p>
-                        <p class="text-gray-400 text-xs">Lady Gaga</p>
+                        <p>Estamos Bien</p>
+                        <p class="text-gray-400 text-xs">Bad Bunny</p>
 
                     </div>
                 </div>
@@ -260,14 +261,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">Abracadabra</p>
+                    <p class="text-gray-400 text-xs">X 100PRE</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:43</p>
+                    <p class="text-gray-400 text-xs">3:28</p>
 
                 </div>
 
@@ -288,15 +289,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion18.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>BAILE INoLVIDABLE</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Vuelve</p>
+                        <p class="text-gray-400 text-xs">Beret</p>
 
                     </div>
                 </div>
@@ -304,51 +305,7 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
-
-                </div>
-
-                <!-- TIEMPO  -->
-                <div class="flex items-center justify-end pr-2">
-
-                    <p class="text-gray-400 text-xs">6:07</p>
-
-                </div>
-
-            </div>
-
-            <!-- CANCION -->
-            <div class="w-full grid grid-cols-3 hover:bg-zinc-700 hover:cursor-pointer rounded-md">
-
-                <!-- PARTE DE LA IZQUIERDA -->
-                <div class="h-[50px] flex flex-row items-center">
-                    <!-- NUMERO DE LA CANCION -->
-                    <div class="p-2">
-
-                        <p> 7 </p>
-
-                    </div>
-
-                    <!-- IMAGEN DE LA CANCION  -->
-                    <div class="h-full p-1">
-
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion6.png'" alt="">
-
-                    </div>
-
-                    <!-- TITULO Y ARTISTA -->
-                    <div class="flex flex-col p-1">
-
-                        <p>That's So True</p>
-                        <p class="text-gray-400 text-xs">Gracie Abrams</p>
-
-                    </div>
-                </div>
-
-                <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">The Secret of Us (Deluxe)</p>
+                    <p class="text-gray-400 text-xs">Prisma</p>
 
                 </div>
 
@@ -369,22 +326,22 @@
                     <!-- NUMERO DE LA CANCION -->
                     <div class="p-2">
 
-                        <p> 8 </p>
+                        <p> 7 </p>
 
                     </div>
 
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion7.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion19.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>luther (with sza)</p>
-                        <p class="text-gray-400 text-xs">Kendrick Lamar, SZA</p>
+                        <p>I Like Me Better</p>
+                        <p class="text-gray-400 text-xs">Lauv</p>
 
                     </div>
                 </div>
@@ -392,14 +349,58 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">GNX</p>
+                    <p class="text-gray-400 text-xs">I Like Me Better</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:57</p>
+                    <p class="text-gray-400 text-xs">3:17</p>
+
+                </div>
+
+            </div>
+
+            <!-- CANCION -->
+            <div class="w-full grid grid-cols-3 hover:bg-zinc-700 hover:cursor-pointer rounded-md">
+
+                <!-- PARTE DE LA IZQUIERDA -->
+                <div class="h-[50px] flex flex-row items-center">
+                    <!-- NUMERO DE LA CANCION -->
+                    <div class="p-2">
+
+                        <p> 8 </p>
+
+                    </div>
+
+                    <!-- IMAGEN DE LA CANCION  -->
+                    <div class="h-full p-1">
+
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion20.png'" alt="">
+
+                    </div>
+
+                    <!-- TITULO Y ARTISTA -->
+                    <div class="flex flex-col p-1">
+
+                        <p>Nunca Estoy</p>
+                        <p class="text-gray-400 text-xs">C. Tangana</p>
+
+                    </div>
+                </div>
+
+                <!-- ALBUM AL QUE PERTENECE  -->
+                <div class="flex pl-24 items-center justify-start">
+
+                    <p class="text-gray-400 text-xs">Nunca Estoy</p>
+
+                </div>
+
+                <!-- TIEMPO  -->
+                <div class="flex items-center justify-end pr-2">
+
+                    <p class="text-gray-400 text-xs">2:42</p>
 
                 </div>
 
@@ -420,15 +421,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion8.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion21.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Born Again (feat. Doja Cat...</p>
-                        <p class="text-gray-400 text-xs">LISA, Doja Cat, RAYE</p>
+                        <p>Imagine</p>
+                        <p class="text-gray-400 text-xs">John Lennon Experience</p>
 
                     </div>
                 </div>
@@ -436,14 +437,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">Born Again (feat. Doja Cat & RAYE)</p>
+                    <p class="text-gray-400 text-xs">Imagine - Remembering Lennon 40th Anniversary</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:51</p>
+                    <p class="text-gray-400 text-xs">3:08</p>
 
                 </div>
 

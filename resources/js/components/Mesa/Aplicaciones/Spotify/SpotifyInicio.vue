@@ -29,7 +29,7 @@
             </router-link>
 
             <!-- LISTA DE REPRODUCCIÓN -->
-            <div class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
+            <router-link to="/inicio/tablet/spotify/playlist2" class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
 
                 <div class="h-[150px] p-3">
 
@@ -42,10 +42,10 @@
                     <h2> Top 50: España </h2>
                 </div>
 
-            </div>
+            </router-link>
 
             <!-- LISTA DE REPRODUCCIÓN -->
-            <div class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-xl">
+            <router-link to="/inicio/tablet/spotify/playlist3" class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
 
                 <div class="h-[150px] p-3">
 
@@ -58,10 +58,10 @@
                     <h2 class="w-full break-words whitespace-normal"> Top Canciones 2024 España </h2>
                 </div>
 
-            </div>
+            </router-link>
 
             <!-- LISTA DE REPRODUCCIÓN -->
-            <div class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
+            <router-link to="/inicio/tablet/spotify/playlist4" class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
 
                 <div class="h-[150px] p-3">
 
@@ -75,7 +75,7 @@
                     <h2 class="text-gray-400 text-sm">Jordi Wild</h2>
                 </div>
 
-            </div>
+            </router-link>
 
         </div>
 
@@ -94,7 +94,7 @@
         <div class="p-3 flex flex-row space-x-5">
 
             <!-- LISTA DE REPRODUCCIÓN -->
-            <div class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
+            <router-link to="/inicio/tablet/spotify/playlist5" class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
 
                 <div class="h-[150px] p-3">
 
@@ -109,10 +109,10 @@
 
                 </div>
 
-            </div>
+            </router-link>
 
             <!-- LISTA DE REPRODUCCIÓN -->
-            <div class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
+            <router-link to="/inicio/tablet/spotify/playlist6" class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
 
                 <div class="h-[150px] p-3">
 
@@ -125,10 +125,10 @@
                     <h2 class=""> This Is MC L Da Vinte </h2>
                 </div>
 
-            </div>
+            </router-link>
 
             <!-- LISTA DE REPRODUCCIÓN -->
-            <div class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
+            <router-link to="/inicio/tablet/spotify/playlist7" class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
 
                 <div class="h-[150px] p-3">
 
@@ -143,10 +143,10 @@
                     <h2 class=""> Playlist relajante </h2>
                 </div>
 
-            </div>
+            </router-link>
 
             <!-- LISTA DE REPRODUCCIÓN -->
-            <div class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg ">
+            <router-link to="/inicio/tablet/spotify/playlist8" class="flex flex-col w-[150px] hover:bg-zinc-700 hover:cursor-pointer rounded-lg">
 
                 <div class="h-[150px] p-3">
 
@@ -159,7 +159,7 @@
                     <h2 class=""> Mix diario 1</h2>
                 </div>
 
-            </div>
+            </router-link>
 
         </div>
 
