@@ -38,6 +38,30 @@
         :src="'/storage/img/trapo.png'" alt="">
     </router-link>
 
+    <router-link to="/inicio/morado">
+      <img
+        class="absolute w-[15px] top-[7%] left-[23%] rotate-[3deg] brightness-90 hover:scale-[1.1] hover:rotate-[10deg] transition duration-200"
+        :src="'/storage/img/morado.png'" alt="">
+    </router-link>
+
+    <router-link to="/inicio/rojo">
+      <img
+        class="absolute w-[15px] top-[7%] left-[24%] rotate-[-2deg] brightness-90 hover:scale-[1.1] hover:rotate-[-10deg] transition duration-200"
+        :src="'/storage/img/rojo.png'" alt="">
+    </router-link>
+
+    <router-link to="/inicio/verde">
+      <img
+        class="absolute w-[14px] top-[7%] left-[25%] rotate-[4deg] brightness-90 hover:scale-[1.1] hover:rotate-[10deg] transition duration-200"
+        :src="'/storage/img/verde.png'" alt="">
+    </router-link>
+
+    <router-link to="/inicio/azul">
+      <img
+        class="absolute w-[15px] top-[7%] left-[26.5%] rotate-[-15deg] brightness-90 hover:scale-[1.1] hover:rotate-[-5deg] transition duration-200"
+        :src="'/storage/img/azul.png'" alt="">
+    </router-link>
+
     <router-link to="/inicio/mechero"
       class="absolute w-[75px] top-[300px] right-[10%] z-[100] rotate-[20deg] hover:scale-[1.1] hover:rotate-[5deg] transition duration-200">
       <img :src="'/storage/img/mechero.png'">

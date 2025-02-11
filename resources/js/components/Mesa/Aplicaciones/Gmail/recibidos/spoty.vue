@@ -11,13 +11,12 @@
                 </div>
             </div>
             <div class="mt-4">
-                <p>Hemos creado una playlist personalizada, para que disfrutes en tus ratos libres o con amigos o y familia. Esperamos que te guste.</p>
+                <p>¿Te has levantado con el pie <span class="font-bold"> izquierdo</span>? Hemos creado una playlist personalizada, para que disfrutes en tus ratos libres o con amigos o con tu familia. Esperamos que te guste.</p>
                 <div class="bg-zinc-950 w-[80%] mx-auto mt-4 flex flex-col justify-center items-center p-3">
                     <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_White.png" class="w-[150px]">
                     <div class="w-[150px] h-[150px] bg-black my-4 flex items-center justify-center p-2 outline-double outline-purple-300">
                         <img src="https://images.vexels.com/media/users/3/278708/isolated/preview/4817b6f5fe60b466f5a7e3a677d7811f-palabras-populares-relajarse-letras.png" >
                     </div>
-                    <button class="px-4 py-2 bg-green-500 rounded-full">VER PLAYLIST</button>
                 </div>
             </div>
         </div>
