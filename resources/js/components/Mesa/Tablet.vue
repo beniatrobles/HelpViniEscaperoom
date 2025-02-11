@@ -36,7 +36,7 @@
                     <img :src="'/storage/img/apps/gmail.png'" alt="Gmail" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Gmail</p>
                 </router-link>
-                <router-link to="/inicio/tablet/instagram" class="flex flex-col items-center">
+                <router-link to="/inicio/tablet/instagramL" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/instagram.png'" alt="Instagram" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Instagram</p>
                 </router-link>

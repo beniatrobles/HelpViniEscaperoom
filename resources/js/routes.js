@@ -17,6 +17,10 @@ import Platano from "./components/Mesa/Platano.vue";
 import Mechero from "./components/Mesa/Mechero.vue";
 import Clips from "./components/Mesa/Clips.vue";
 import Boli from "./components/Mesa/Boli.vue";
+import Lapiz_morado from "./components/Mesa/Lapiz_morado.vue";
+import Lapiz_rojo from "./components/Mesa/Lapiz_rojo.vue";
+import Lapiz_verde from "./components/Mesa/Lapiz_verde.vue";
+import Lapiz_azul from "./components/Mesa/Lapiz_azul.vue";
 
 /* ----------------------------------------APLICACIONES DE LA TABLET----------------------------------------------*/
 
@@ -42,6 +46,7 @@ import mensajeSpoty from "./components/Mesa/Aplicaciones/Gmail/recibidos/spoty.v
 
 // INSTAGRAM 
 import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
+import InstagramLogin from "./components/Mesa/Aplicaciones/Instagram/InstagramL.vue"
 import InstagramInicio from "./components/Mesa/Aplicaciones/Instagram/InstagramInicio.vue";
 import InstagramMensajes from "./components/Mesa/Aplicaciones/Instagram/InsragramMensajes.vue";
 import InstagramPerfil from "./components/Mesa/Aplicaciones/Instagram/InstagramPerfil.vue";
@@ -156,6 +161,10 @@ const routes = [
                                 component: GmailBorradores,
                             },
                         ]
+                    },
+                    {
+                        path: 'instagramL',
+                        component: InstagramLogin,
                     },
                     {
                         path: 'instagram',
@@ -335,6 +344,22 @@ const routes = [
             {
                 path: 'boli',
                 component: Boli,
+            },
+            {
+                path: 'morado',
+                component: Lapiz_morado,
+            },
+            {
+                path: 'rojo',
+                component: Lapiz_rojo,
+            },
+            {
+                path: 'verde',
+                component: Lapiz_verde,
+            },
+            {
+                path: 'azul',
+                component: Lapiz_azul,
             },
         ],
     },

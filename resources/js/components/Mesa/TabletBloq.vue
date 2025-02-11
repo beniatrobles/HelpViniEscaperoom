@@ -53,9 +53,9 @@ const alerta = ref('Introduce el PIN')
 const pin = ref('')
 
 const probarContra = async () => {
-    pin.value === "1234" ? router.push('/inicio/tablet') : alerta.value = 'Pin Incorrecto'
+    pin.value === "8742" ? router.push('/inicio/tablet') : alerta.value = 'Pin Incorrecto'
 
-    if (pin.value === "1234") {
+    if (pin.value === "8742") {
         try {
             //sacamos el numero de la partida actual
             const partidaActual = await partidaStore.comprobarPartida()
