@@ -4,11 +4,16 @@
 <template>
 
     <div class="flex justify-center items-center min-h-screen bg-white bg-opacity-10">
-        <router-link to="/inicio"><h1 class="absolute top-5 right-5 text-[30px]">X</h1></router-link>
-        <div class="w-[1000px] h-[600px] rounded-3xl border-r-[40px] border-l-[30px] border-t-[15px] border-b-[15px] border-black shadow-md relative">
+        <router-link to="/inicio">
+            <h1 class="absolute top-5 right-5 text-[30px]">X</h1>
+        </router-link>
+        <div
+            class="w-[1000px] h-[600px] rounded-3xl border-r-[40px] border-l-[30px] border-t-[15px] border-b-[15px] border-black shadow-md relative">
             <img class="absolute z-[-50] inset-0 w-[100%]" :src="'/storage/img/fondoTablet.jpg'" alt="">
-            <div class="bg-black bg-opacity-25 h-5">
-                <p class="ml-2 text-[10px] text-white"> 9:47 PM </p>
+            <div class="bg-black bg-opacity-25 h-5 flex flex-row justify-between">
+                <p class="ml-2 text-[10px] text-white p-1"> 9:47 PM </p>
+
+                <img class="pr-2" :src="'/storage/img/bateria.png'" alt="">
             </div>
             <div class="grid grid-cols-4 gap-8 p-8">
                 <router-link to="/inicio/tablet/calculadora" class="flex flex-col items-center">
@@ -60,12 +65,13 @@
                     <p class="text-sm font-semibold">Whatsapp</p>
                 </router-link>
             </div>
-        <div class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer"></div>
+            <div
+                class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer">
+            </div>
         </div>
-    <router-view class="absolute inset-0 z-[100]"></router-view>
+        <router-view class="absolute inset-0 z-[100]"></router-view>
     </div>
 </template>
 
 
-<style scoped>
-</style>
+<style scoped></style>
