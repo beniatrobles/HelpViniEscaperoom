@@ -56,7 +56,7 @@
                     <img :src="'/storage/img/apps/traductor.png'" alt="Traductor" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Traductor</p>
                 </router-link>
-                <router-link to="/inicio/tablet/twitter" class="flex flex-col items-center">
+                <router-link to="/inicio/tablet/twitterL" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/twitter.png'" alt="Twitter" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Twitter</p>
                 </router-link>

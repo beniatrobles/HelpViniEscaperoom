@@ -134,6 +134,7 @@ const iniciarTemporizador = () => {
     } else {
       clearInterval(intervalo);
       alert('¡La partida ha terminado!');
+      router.push("/");
     }
   }, 1000); // Cada segundo
 };
