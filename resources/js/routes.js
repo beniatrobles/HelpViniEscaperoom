@@ -80,6 +80,7 @@ import Traductor from "./components/Mesa/Aplicaciones/Traductor.vue";
 
 // TWITTER
 import Twitter from "./components/Mesa/Aplicaciones/Twitter.vue";
+import TwitterLogin from "./components/Mesa/Aplicaciones/Twitter/TwitterL.vue"
 import TwitterInicio from "./components/Mesa/Aplicaciones/Twitter/TwitterInicio.vue";
 import TwitterNotificaciones from "./components/Mesa/Aplicaciones/Twitter/TwitterNotificaciones.vue";
 import TwitterMensajes from "./components/Mesa/Aplicaciones/Twitter/TwitterMensajes.vue";
@@ -253,6 +254,10 @@ const routes = [
                     {
                         path: 'traductor',
                         component: Traductor
+                    },
+                    {
+                        path: 'twitterL',
+                        component: TwitterLogin,
                     },
                     {
                         path: 'twitter',
