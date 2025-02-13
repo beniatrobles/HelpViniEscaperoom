@@ -18,7 +18,7 @@
         <p class="z-[10] text-center w-[100%]">Login</p>
       </button>
     </form>
-    <router-link to="/registro" class="mt-3 hover:text-[#0ED800]">No tienes una cuenta?</router-link>
+    <router-link to="/registro" class="mt-3 hover:text-[#0ED800]">¿No tienes cuenta?</router-link>
   </div>
 </template>
 

@@ -7,33 +7,33 @@
             class="w-[1000px] h-[600px] rounded-3xl border-r-[40px] border-l-[30px] border-t-[15px] border-b-[15px] border-black shadow-md relative">
 
             <!-- CONTENEDOR GENERAL -->
-            <div class="flex bg-gray-950 h-[100%] flex-col">
+            <div class="flex bg-gray-950 h-[100%] flex-row">
 
                 <!-- APARTADO DE LA IZQUIERDA -->
                 <div class="w-[25%] h-full bg-zinc-800 flex flex-col p-4">
 
                     <!-- LOGO -->
-                    <div class="flex h-[10%] items-center justify-start space-x-2">
+                    <router-link to="/inicio/tablet/drive" class="flex h-[10%] items-center justify-start space-x-2">
                         <img class="w-[20%]" :src="'/storage/img/apps/drive/driveicon.png'" alt="">
                         <h2 class="text-gray-300 font-bold text-2xl">Drive</h2>
 
-                    </div>
+                    </router-link>
 
                     <hr class="mt-3">
 
                     <!-- NAV -->
                     <div class="flex flex-col pt-3 space-y-3">
 
-                        <div class="rounded-xl hover:bg-zinc-600 hover:cursor-pointer flex p-1">
+                        <router-link to="/inicio/tablet/drive" class="rounded-xl hover:bg-zinc-600 hover:cursor-pointer flex p-1">
                             <img class="w-[15%] mx-2" :src="'/storage/img/apps/drive/casa.png'" alt="">
                             <p>Página Principal</p>
-                        </div>
+                        </router-link>
 
                         <!-- Papelera -->
-                        <div class="rounded-xl hover:bg-zinc-600 hover:cursor-pointer flex p-1">
+                        <router-link to="/inicio/tablet/drive/papelera" class="rounded-xl hover:bg-zinc-600 hover:cursor-pointer flex p-1">
                             <img class="w-[15%] mx-2" :src="'/storage/img/apps/drive/basura.png'" alt="">
                             <p>Papelera</p>
-                        </div>
+                        </router-link>
 
                         <!-- Almacenamiento -->
                         <div class="flex flex-col">
@@ -56,6 +56,12 @@
                         </div>
 
                     </div>
+
+                </div>
+
+                <div class="flex flex-col w-[75%]">
+
+                    <router-view></router-view>
 
                 </div>
 
