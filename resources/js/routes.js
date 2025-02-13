@@ -29,6 +29,9 @@ import Calculadora from "./components/Mesa/Aplicaciones/Calculadora.vue";
 
 // DRIVE
 import Drive from "./components/Mesa/Aplicaciones/Drive.vue";
+import DriveL from "./components/Mesa/Aplicaciones/Drive/DriveL.vue";
+import DrivePapelera from "./components/Mesa/Aplicaciones/Drive/DrivePapelera.vue";
+import DriveInicio from "./components/Mesa/Aplicaciones/Drive/DriveInicio.vue";
 
 // EL TIEMPO
 import ElTiempo from "./components/Mesa/Aplicaciones/ElTiempo.vue";
@@ -120,9 +123,24 @@ const routes = [
 
                     },
                     {
+                        path: 'driveL',
+                        component: DriveL,
+
+                    },
+                    {
                         path: 'drive',
                         component: Drive,
+                        children: [
+                            {
+                                path: '',
+                                component: DriveInicio,
 
+                            },
+                            {
+                                path: 'papelera',
+                                component: DrivePapelera,
+                            },
+                        ]
                     },
                     {
                         path: 'eltiempo',
@@ -217,39 +235,39 @@ const routes = [
                                 path: '',
                                 component: SpotifyInicio,
                             },
-                        {
-                            path: 'playlist1',
-                            component: SpotifyPlaylist1,
-                        },
-                        {
-                            path: 'playlist2',
-                            component: SpotifyPlaylist2,
-                        },
-                        {
-                            path: 'playlist3',
-                            component: SpotifyPlaylist3,
-                        },
-                        {
-                            path: 'playlist4',
-                            component: SpotifyPlaylist4,
-                        },
-                        {
-                            path: 'playlist5',
-                            component: SpotifyPlaylist5,
-                        },
-                        {
-                            path: 'playlist6',
-                            component: SpotifyPlaylist6,
-                        },
-                        {
-                            path: 'playlist7',
-                            component: SpotifyPlaylist7,
-                        },
-                        {
-                            path: 'playlist8',
-                            component: SpotifyPlaylist8,
-                        }
-                    ]
+                            {
+                                path: 'playlist1',
+                                component: SpotifyPlaylist1,
+                            },
+                            {
+                                path: 'playlist2',
+                                component: SpotifyPlaylist2,
+                            },
+                            {
+                                path: 'playlist3',
+                                component: SpotifyPlaylist3,
+                            },
+                            {
+                                path: 'playlist4',
+                                component: SpotifyPlaylist4,
+                            },
+                            {
+                                path: 'playlist5',
+                                component: SpotifyPlaylist5,
+                            },
+                            {
+                                path: 'playlist6',
+                                component: SpotifyPlaylist6,
+                            },
+                            {
+                                path: 'playlist7',
+                                component: SpotifyPlaylist7,
+                            },
+                            {
+                                path: 'playlist8',
+                                component: SpotifyPlaylist8,
+                            }
+                        ]
                     },
                     {
                         path: 'traductor',

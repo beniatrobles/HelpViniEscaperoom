@@ -20,7 +20,7 @@
                 <p class="z-[10] text-center w-[100%]">Registrarme</p>
             </button>
         </form>
-        <router-link to="/login" class="mt-3 hover:text-[#0ED800]">No tienes una cuenta?</router-link>
+        <router-link to="/login" class="mt-3 hover:text-[#0ED800]">¿Tienes ya cuenta?</router-link>
     </div>
 </template>
 
