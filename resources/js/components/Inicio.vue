@@ -77,6 +77,13 @@
       <img :src="'/storage/img/cuaderno.png'"> </router-link>
     <router-view class="absolute inset-0 z-[100]"></router-view>
 
+    <router-link to="/"
+      class="absolute left-[1%] top-[5%] w-[30px] flex flex-col items-center space-y-3">
+      <img :src="'/storage/img/exit.png'" alt="">
+      <h1 class="text-[10px]">SALIR</h1>
+
+    </router-link>
+
 
   </div>
 </template>
