@@ -32,7 +32,7 @@
                         <router-link to="/inicio/tablet/twitter/mensajes" class="my-1 flex flex-row items-center">
                             
                             <img :src="'/storage/img/apps/iconos/icon-msj-tw.png'" alt="" class="w-[30px] mr-3">
-                            <p> Mensajes </p>
+                            <p> Mensajes </p> 
                         
                         </router-link>
 

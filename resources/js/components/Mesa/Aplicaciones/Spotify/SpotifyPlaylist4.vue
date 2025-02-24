@@ -10,11 +10,11 @@
             </div>
 
             <div class="p-10">
-                <h2 class="text-gray-400">Lista</h2>
+                <h2 class="text-gray-400">Podcast</h2>
 
-                <h2 class="text-[50px]">Top 50: España</h2>
+                <h2 class="text-[50px]">The Wild Project</h2>
 
-                <h2>Spotify</h2>
+                <h2>Jordi Wild</h2>
             </div>
 
         </div>
