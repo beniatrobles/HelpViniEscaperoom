@@ -97,12 +97,12 @@
                                 <!-- INFORMACION -->
                                 <div class="flex flex-col justify-center h-full">
 
-                                    <p class="font-bold text-black text-sm">El chamaquito 🥷</p>
+                                    <p class="font-bold text-black text-sm">O garotinho 🥷</p>
                                     <!-- MENSAJE -->
                                     <div class="h-1/2 flex items-center">
 
                                         <img class="h-full" :src="'/storage/img/apps/whatsapp/double_check.png'" alt="">
-                                        <p class="text-gray-400 text-xs">No te lo vas a creer brother KKKKKK</p>
+                                        <p class="text-gray-400 text-xs">No te lo vai a creer brother KKKKKK</p>
 
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
 
-                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp1.jpg'"
+                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp5.jpg'"
                                         alt="">
 
                                 </div>
@@ -153,12 +153,17 @@
                                 <!-- INFORMACION -->
                                 <div class="flex flex-col justify-center h-full">
 
-                                    <p class="font-bold text-black text-sm">Floren</p>
+                                    <p class="font-bold text-black text-sm">HALA MADRID ⚪️💪🔝</p>
                                     <!-- MENSAJE -->
-                                    <div class="h-1/2 flex items-center">
+                                    <div class="h-1/2 flex items-center space-x-1">
 
-                                        <img class="h-full" :src="'/storage/img/apps/whatsapp/double_check.png'" alt="">
-                                        <p class="text-gray-400 text-xs">Dale, vamos hablando crack</p>
+                                        <div
+                                            class="flex items-center justify-center h-2/3 w-[20px] rounded-full bg-green-600">
+
+                                            <p class="text-[10px]">26</p>
+
+                                        </div>
+                                        <p class="text-gray-400 text-xs">Judi: I'm late today 😓</p>
 
                                     </div>
                                 </div>
@@ -173,7 +178,7 @@
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
 
-                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp1.jpg'"
+                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp6.jpg'"
                                         alt="">
 
                                 </div>
@@ -181,12 +186,16 @@
                                 <!-- INFORMACION -->
                                 <div class="flex flex-col justify-center h-full">
 
-                                    <p class="font-bold text-black text-sm">Floren</p>
+                                    <p class="font-bold text-black text-sm">Judi</p>
                                     <!-- MENSAJE -->
-                                    <div class="h-1/2 flex items-center">
+                                    <div class="h-1/2 flex items-center space-x-1">
+                                        <div
+                                            class="flex items-center justify-center h-2/3 w-[15px] rounded-full bg-green-600">
 
-                                        <img class="h-full" :src="'/storage/img/apps/whatsapp/double_check.png'" alt="">
-                                        <p class="text-gray-400 text-xs">Dale, vamos hablando crack</p>
+                                            <p class="text-[10px]">2</p>
+
+                                        </div>
+                                        <p class="text-gray-400 text-xs">It's amazing what's happening 😂😂</p>
 
                                     </div>
                                 </div>
@@ -201,7 +210,7 @@
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
 
-                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp1.jpg'"
+                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp7.jpg'"
                                         alt="">
 
                                 </div>
@@ -209,12 +218,12 @@
                                 <!-- INFORMACION -->
                                 <div class="flex flex-col justify-center h-full">
 
-                                    <p class="font-bold text-black text-sm">Floren</p>
+                                    <p class="font-bold text-black text-sm">Mãe ❤️</p>
                                     <!-- MENSAJE -->
                                     <div class="h-1/2 flex items-center">
 
-                                        <img class="h-full" :src="'/storage/img/apps/whatsapp/double_check.png'" alt="">
-                                        <p class="text-gray-400 text-xs">Dale, vamos hablando crack</p>
+                                        <img class="h-full" :src="'/storage/img/apps/whatsapp/double_checkR.png'" alt="">
+                                        <p class="text-gray-400 text-xs">Eu farei isso mãe, acalme-se</p>
 
                                     </div>
                                 </div>
@@ -229,7 +238,7 @@
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
 
-                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp1.jpg'"
+                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp8.jpg'"
                                         alt="">
 
                                 </div>
@@ -237,12 +246,12 @@
                                 <!-- INFORMACION -->
                                 <div class="flex flex-col justify-center h-full">
 
-                                    <p class="font-bold text-black text-sm">Floren</p>
+                                    <p class="font-bold text-black text-sm">Rodrynho</p>
                                     <!-- MENSAJE -->
                                     <div class="h-1/2 flex items-center">
 
                                         <img class="h-full" :src="'/storage/img/apps/whatsapp/double_check.png'" alt="">
-                                        <p class="text-gray-400 text-xs">Dale, vamos hablando crack</p>
+                                        <p class="text-gray-400 text-xs">Ei, como vai isso Rodry</p>
 
                                     </div>
                                 </div>
