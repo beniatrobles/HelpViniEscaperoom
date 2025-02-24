@@ -20,7 +20,7 @@
             </div>
         </header>
         <section class="flex gap-[35px] mt-8">
-            <router-link to="" class="flex flex-col items-center">
+            <router-link to="/inicio/tablet/instagram/perfil/destacada1" class="flex flex-col items-center">
                 <div class="w-[65px] h-[65px] bg-black rounded-full overflow-hidden"><img src="https://img.freepik.com/vector-gratis/nuevo-diseno-icono-x-logotipo-twitter-2023_1017-45418.jpg" alt=""></div>
                 <p class="text-center">twt</p>
             </router-link>
@@ -32,27 +32,15 @@
             <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
             <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
             <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
-            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
-            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
         </section>
         <div class="mt-6 opacity-0">.</div>
     </div>
     <router-view class="absolute inset-0"></router-view>
 </template>
 
-<style scoped>
-    /* .publicacion::after{
-        content: '';
-        background: black;
-        opacity: .5;
-        width: 100%;
-        height: 100%;
-    }
-    .publicacion:hover::after{
-        display: block;
-    } */
-</style>
-
 <script setup>
 
 </script>
+
+<style scoped>
+</style>
