@@ -10,6 +10,15 @@
             <div class="bg-zinc-900 w-[100%] h-[100%] overflow-auto">
 
 
+                <div class="fixed top-0 left-0 w-full h-full flex justify-center items-center" :class="{'hidden': !mensajeVisible}">
+            <div class="bg-zinc-800 flex justify-center items-center flex-col p-4 max-w-[450px] rounded-lg">
+                <img :src="'/storage/img/alerta.png'" class="w-[50px] mb-5">
+                <p class="text-center font-bold">Ha ocurrido un problema </p>
+                <p class="text-center mt-3">Parece que la aplicación de Spotify está dañada y no permite reproducir canciones, sentimos las molestias.</p>
+                <button class="px-2 bg-zinc-700 rounded mt-5" @click="ocultarMensaje">Entendido</button>
+            </div>
+        </div>
+
                 <!-- Header de la aplicación de Spotify -->
                 <div class="p-5">
                     <div class="h-[50px] w-full flex flex-row items-center justify-between">
@@ -36,4 +45,13 @@
 
 
 <script setup>
+
+
+import { ref } from 'vue';
+const mensajeVisible = ref(true)
+
+const ocultarMensaje = () => {
+    mensajeVisible.value = false
+}
+
 </script>
