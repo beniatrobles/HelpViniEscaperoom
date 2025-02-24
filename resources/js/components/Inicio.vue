@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen relative overflow-hidden">
     <div class="absolute">
-      Tiempo restante: {{ tiempoFormateado }}
+      <h1>{{ tiempoFormateado }}</h1>
     </div>
     <img :src="'/storage/img/mesa.jpg'" class="w-[100%] h-[100%] z-[-10]">
     <router-link to="/inicio/tabletBloq"
@@ -78,7 +78,7 @@
     <router-view class="absolute inset-0 z-[100]"></router-view>
 
     <router-link to="/"
-      class="absolute left-[1%] top-[5%] w-[30px] flex flex-col items-center space-y-3">
+      class="absolute left-[1%] top-[5%] w-[30px] flex flex-col items-center space-y-3 hover:text-[#0ED800]">
       <img :src="'/storage/img/exit.png'" alt="">
       <h1 class="text-[10px]">SALIR</h1>
 

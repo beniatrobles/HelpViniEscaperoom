@@ -99,6 +99,7 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
+import Destacada1 from "./components/Mesa/Aplicaciones/Instagram/perfil/Destacada1.vue";
 
 const routes = [
     {
@@ -215,6 +216,10 @@ const routes = [
                                         path: 'publicacion1',
                                         component: PublicacionPista
                                     },
+                                    {
+                                        path: 'destacada1',
+                                        component: Destacada1
+                                    }
                                 ]
                             },
                         ]
