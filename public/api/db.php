@@ -1,6 +1,6 @@
 <?php
 // Datos de conexión
-$servername = "localhost"; // El servidor de la base de datos
+$servername = "127.0.0.1"; // El servidor de la base de datos
 $username = "root"; // Nombre de usuario de MySQL
 $password = ""; // Contraseña de MySQL (por defecto en XAMPP es vacío)
 $dbname = "escaperoom"; // Nombre de la base de datos
