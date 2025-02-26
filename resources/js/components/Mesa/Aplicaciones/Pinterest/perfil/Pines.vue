@@ -1,6 +1,5 @@
 <template>
-    <div class="w-full overflow-auto py-5 px-12">
-        <p class="text-xl font-extrabold mt-3 mb-6">Para tí</p>
+    <div>
         <div class="grid grid-cols-3 gap-6 justify-items-center items-center">
             <div class="w-full h-72 bg-zinc-950 rounded-lg overflow-hidden flex items-center"><img src="https://i.pinimg.com/736x/50/96/fb/5096fbdde64681e02236537f24020ddd.jpg"></div>
             <div class="w-full h-72 bg-zinc-950 rounded-lg overflow-hidden flex items-center"><img src="https://i.pinimg.com/736x/7e/e1/09/7ee1090a69866f3dc9e98ded872b2794.jpg"></div>
@@ -30,30 +29,9 @@
             <div class="w-full h-72 bg-zinc-950 rounded-lg overflow-hidden flex items-center"><img src="https://i.pinimg.com/736x/58/b0/c3/58b0c3244f9c76134d018f89c5fc454b.jpg"></div>
             <div class="w-full h-72 bg-zinc-950 rounded-lg overflow-hidden flex items-center"><img src="https://i.pinimg.com/736x/f6/62/95/f66295aaa660b282c3a2ce7c3bebf506.jpg"></div>
         </div>
-
-        <div class="mt-4 flex gap-3 justify-center items-center relative">
-            <img :src="'/storage/img/apps/iconos/icon-refresh.png'" :class="{'rotate-[360deg]' : rotar}" class="w-10 cursor-pointer transition-transform duration-200 hover:bg-zinc-700 rounded-full p-2" @click="mostrarError">
-            <p :class="{'scale-0' : !errorVisible}" class="text-center text-xs text-gray-200 absolute -top-8 bg-zinc-900 p-1 rounded bg-opacity-80 duration-100">Se produjo un error</p>
-        </div>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-const errorVisible = ref(false);
-const rotar = ref(false)
-const mostrarError = () => {
-    rotar.value = true
-    //mostramos el error
-    errorVisible.value = true
-    //1.5 segundos despues lo ocultamos
-    setTimeout(() => {
-        errorVisible.value = false
-        rotar.value = false
-    }, 1500);
-}
-</script>
 
-<style scoped>
-    
-</style>
+</script>

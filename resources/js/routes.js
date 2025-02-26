@@ -103,6 +103,9 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
+import Pines from "./components/Mesa/Aplicaciones/Pinterest/perfil/Pines.vue";
+import Tableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/Tableros.vue";
+import PinterestNotif from "./components/Mesa/Aplicaciones/Pinterest/PinterestNotif.vue";
 
 
 const routes = [
@@ -249,7 +252,23 @@ const routes = [
                             },
                             {
                                 path: 'perfil',
-                                component : PinterestPerfil
+                                component : PinterestPerfil,
+                                children : [
+                                    {
+                                        path : 'pines',
+                                        component : Pines,
+                                        name : 'pines'
+                                    },
+                                    {
+                                        path : '',
+                                        component : Tableros,
+                                        name : 'tableros'
+                                    }
+                                ]
+                            },
+                            {
+                                path: 'notificaciones',
+                                component: PinterestNotif
                             }
                         ]
                     },

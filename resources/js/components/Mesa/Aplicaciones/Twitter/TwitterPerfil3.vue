@@ -14,7 +14,7 @@
                 <img class="w-[100%]" :src="'/storage/img/apps/iconos/bannerMadrid.jpg'" alt="">
                 <div class="absolute inset-0 flex items-end">
                     <!-- ICONO -->
-                    <img :src="'/storage/img/apps/iconos/RealMadrid.jpg'" class="w-24 h-24 rounded-full border-4 border-gray-900 ml-5 mb-[-50px]"> 
+                    <img :src="'/storage/img/apps/iconos/realmadrid.jpg'" class="w-24 h-24 rounded-full border-4 border-gray-900 ml-5 mb-[-50px]"> 
                 </div>
             </div>
 
