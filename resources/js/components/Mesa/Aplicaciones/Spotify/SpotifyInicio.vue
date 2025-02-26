@@ -10,17 +10,6 @@
 
         </div>
 
-        <div class="fixed top-0 left-0 w-full h-full flex justify-center items-center" :class="{'hidden': !mensajeVisible}">
-            <div class="bg-zinc-800 flex justify-center items-center flex-col p-4 max-w-[450px]">
-                <img :src="'/storage/img/alerta.png'" class="w-[50px] mb-5">
-                <p class="text-center">Recuerda que esta cuenta no te pertenece. Es ilegal enviar mensajes haciendote
-                    pasar por alguién sin su autorización. </p>
-                <p class="text-center mt-3">Las poróximas veces que intentes enviar un mensaje serás penalizado con una
-                    reducción del tiempo</p>
-                <button class="px-2 bg-blue-600 rounded mt-5" @click="ocultarMensaje">Entendido</button>
-            </div>
-        </div>
-
         <div class="p-3 flex flex-row space-x-5">
 
             <!-- LISTA DE REPRODUCCIÓN -->
@@ -181,8 +170,5 @@
 
 <script setup>
 
-const ocultarMensaje = () => {
-    mensajeVisible.value = false
-}
 
 </script>

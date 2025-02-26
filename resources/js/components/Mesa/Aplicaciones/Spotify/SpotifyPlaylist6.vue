@@ -12,7 +12,7 @@
             <div class="p-10">
                 <h2 class="text-gray-400">Lista</h2>
 
-                <h2 class="text-[50px]">Top 50: España</h2>
+                <h2 class="text-[50px]">This Is MC L da Vinte</h2>
 
                 <h2>Spotify</h2>
             </div>
@@ -68,15 +68,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion9.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion31.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>capaz (merengueton)</p>
-                        <p class="text-gray-400 text-xs">Alleh, Yorghaki</p>
+                        <p>Parado no Bailão</p>
+                        <p class="text-gray-400 text-xs">MC L da Vinte, MC Gury</p>
 
                     </div>
                 </div>
@@ -84,14 +84,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">LA CIUDAD</p>
+                    <p class="text-gray-400 text-xs">Parado no Bailão</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:53</p>
+                    <p class="text-gray-400 text-xs">2:51</p>
 
                 </div>
 
@@ -112,15 +112,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion32.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>NUEVAYoL</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Que Saudade de Você</p>
+                        <p class="text-gray-400 text-xs">Mc Kaio, MC L da Vinte</p>
 
                     </div>
                 </div>
@@ -128,14 +128,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">Que Saudade de Você</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:03</p>
+                    <p class="text-gray-400 text-xs">2:03</p>
 
                 </div>
 
@@ -156,15 +156,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion33.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>DtMF</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Set Do Dj 2W, Vol. 2</p>
+                        <p class="text-gray-400 text-xs">MC L da Vinte, MC Luan da BS...</p>
 
                     </div>
                 </div>
@@ -172,14 +172,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">Set do Dj 2W, Vol. 2</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:57</p>
+                    <p class="text-gray-400 text-xs">5:59</p>
 
                 </div>
 
@@ -200,15 +200,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion10.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion34.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Angelito</p>
-                        <p class="text-gray-400 text-xs">Bad Gyal, Trueno</p>
+                        <p>Tanto Faz</p>
+                        <p class="text-gray-400 text-xs">MC L da Vinte, Mc Kaio</p>
 
                     </div>
                 </div>
@@ -216,14 +216,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">Angelito</p>
+                    <p class="text-gray-400 text-xs">Tanto Faz</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:10</p>
+                    <p class="text-gray-400 text-xs">2:29</p>
 
                 </div>
 
@@ -244,15 +244,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion35.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>BAILE INoLVIDABLE</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Sou de todas</p>
+                        <p class="text-gray-400 text-xs">Dj Tg Da Inestan, DJ PH DA...</p>
 
                     </div>
                 </div>
@@ -260,14 +260,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">Sou de Todas</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">6:07</p>
+                    <p class="text-gray-400 text-xs">2:59</p>
 
                 </div>
 
@@ -288,15 +288,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion36.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>VeLDÁ</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny, Omar Courtz, Dei V</p>
+                        <p>Colocando Nela</p>
+                        <p class="text-gray-400 text-xs">MC L da Vinte, Mc Kaio, DJ...</p>
 
                     </div>
                 </div>
@@ -304,14 +304,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">Colocando Nela</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:55</p>
+                    <p class="text-gray-400 text-xs">2:20</p>
 
                 </div>
 
@@ -332,15 +332,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion11.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion37.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Mi Refe</p>
-                        <p class="text-gray-400 text-xs">Beéle, Ovy On The Drums</p>
+                        <p>Fala Que Me Ama É Cedo...</p>
+                        <p class="text-gray-400 text-xs">DJ TOPO, MC L da Vinte, Mc...</p>
 
                     </div>
                 </div>
@@ -348,14 +348,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">Mi Refe</p>
+                    <p class="text-gray-400 text-xs">Fala Que Me Ama É Cedo Demais...</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:39</p>
+                    <p class="text-gray-400 text-xs">2:58</p>
 
                 </div>
 
@@ -376,15 +376,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion38.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>VOY A LLeVARTE PA PR</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Amizade Colorida</p>
+                        <p class="text-gray-400 text-xs">MC L da Vinte, MC Josh</p>
 
                     </div>
                 </div>
@@ -392,14 +392,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">Amizade Colorida</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:36</p>
+                    <p class="text-gray-400 text-xs">2:38</p>
 
                 </div>
 
@@ -420,15 +420,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion12.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion39.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>DONDE TE ESCONDES?</p>
-                        <p class="text-gray-400 text-xs">Yapi</p>
+                        <p>Tu Sentando</p>
+                        <p class="text-gray-400 text-xs">MC L da Vinte</p>
 
                     </div>
                 </div>
@@ -436,14 +436,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DONDE TE ESCONDES?</p>
+                    <p class="text-gray-400 text-xs">Tu Sentando</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:14</p>
+                    <p class="text-gray-400 text-xs">2:39</p>
 
                 </div>
 

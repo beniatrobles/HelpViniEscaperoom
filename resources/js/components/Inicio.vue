@@ -1,8 +1,15 @@
 <template>
   <div class="h-screen relative overflow-hidden">
-    <div class="absolute">
+    <div class="absolute m-3">
       <h1>{{ tiempoFormateado }}</h1>
     </div>
+
+    <router-link to="/"
+      class="absolute left-[2%] top-[6%] w-[30px] flex flex-col items-center space-y-3 hover:text-[#0ED800]">
+      <img :src="'/storage/img/exit.png'" alt="">
+      <h1 class="text-[10px]">SALIR</h1>
+    </router-link>
+    
     <img :src="'/storage/img/mesa.jpg'" class="w-[100%] h-[100%] z-[-10]">
     <router-link to="/inicio/tabletBloq"
       class="absolute w-[350px] rotate-[-80deg] top-0 right-[25%]  z-10 hover:scale-[1.05] hover:z-20 duration-200 hover:rotate-[-83deg]">
@@ -76,14 +83,6 @@
       class="absolute right-[25%] bottom-[0] w-[200px] rotate-[82deg] hover:scale-[1.05] hover:z-20 duration-200 hover:rotate-[80deg]">
       <img :src="'/storage/img/cuaderno.png'"> </router-link>
     <router-view class="absolute inset-0 z-[100]"></router-view>
-
-    <router-link to="/"
-      class="absolute left-[1%] top-[5%] w-[30px] flex flex-col items-center space-y-3 hover:text-[#0ED800]">
-      <img :src="'/storage/img/exit.png'" alt="">
-      <h1 class="text-[10px]">SALIR</h1>
-
-    </router-link>
-
 
   </div>
 </template>
