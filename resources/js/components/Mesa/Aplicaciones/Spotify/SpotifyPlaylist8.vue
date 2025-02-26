@@ -12,7 +12,7 @@
             <div class="p-10">
                 <h2 class="text-gray-400">Lista</h2>
 
-                <h2 class="text-[50px]">Top 50: España</h2>
+                <h2 class="text-[50px]">Mix Diario 1</h2>
 
                 <h2>Spotify</h2>
             </div>
@@ -68,15 +68,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion9.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion31.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>capaz (merengueton)</p>
-                        <p class="text-gray-400 text-xs">Alleh, Yorghaki</p>
+                        <p>Parado no Bailão</p>
+                        <p class="text-gray-400 text-xs">MC L da Vinte, MC Gury</p>
 
                     </div>
                 </div>
@@ -84,14 +84,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">LA CIUDAD</p>
+                    <p class="text-gray-400 text-xs">Parado no Bailão</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:53</p>
+                    <p class="text-gray-400 text-xs">2:51</p>
 
                 </div>
 
@@ -112,15 +112,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion40.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>NUEVAYoL</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Candy</p>
+                        <p class="text-gray-400 text-xs">Plan B</p>
 
                     </div>
                 </div>
@@ -128,14 +128,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">Love And Sex</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:03</p>
+                    <p class="text-gray-400 text-xs">3:27</p>
 
                 </div>
 
@@ -156,15 +156,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion17.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>DtMF</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>MIA</p>
+                        <p class="text-gray-400 text-xs">Bad Bunny, Drake</p>
 
                     </div>
                 </div>
@@ -172,14 +172,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">X 100PRE</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:57</p>
+                    <p class="text-gray-400 text-xs">3:30</p>
 
                 </div>
 

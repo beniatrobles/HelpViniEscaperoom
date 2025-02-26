@@ -12,9 +12,9 @@
             <div class="p-10">
                 <h2 class="text-gray-400">Lista</h2>
 
-                <h2 class="text-[50px]">Top 50: España</h2>
+                <h2 class="text-[50px]">40 Éxitos: Brasileños</h2>
 
-                <h2>Spotify</h2>
+                <h2>Varios artistas</h2>
             </div>
 
         </div>
@@ -34,10 +34,7 @@
             </div>
 
             <!-- ALBUM AL QUE PERTENECE -->
-            <div class="flex items-center justify-center text-gray-400 text-md">
-
-                <p>Álbum</p>
-
+            <div>
             </div>
 
             <!-- TIEMPO DE LA CANCION  -->
@@ -68,30 +65,27 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion9.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>capaz (merengueton)</p>
-                        <p class="text-gray-400 text-xs">Alleh, Yorghaki</p>
+                        <p>Bola Rebola</p>
+                        <p class="text-gray-400 text-xs">Tropkillaz, J Balvin, Anitta, ZAAC</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">LA CIUDAD</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:53</p>
+                    <p class="text-gray-400 text-xs">3:13</p>
 
                 </div>
 
@@ -112,30 +106,27 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>NUEVAYoL</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Qué Pasa</p>
+                        <p class="text-gray-400 text-xs">Projota, Mario Bautista, Orishas</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:03</p>
+                    <p class="text-gray-400 text-xs">3:16</p>
 
                 </div>
 
@@ -156,24 +147,21 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>DtMF</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Liberdade Provisória -Li...</p>
+                        <p class="text-gray-400 text-xs">Henrique & Juliano</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
@@ -200,30 +188,27 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion10.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Angelito</p>
-                        <p class="text-gray-400 text-xs">Bad Gyal, Trueno</p>
+                        <p>Meu Abrigo</p>
+                        <p class="text-gray-400 text-xs">Melim</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">Angelito</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:10</p>
+                    <p class="text-gray-400 text-xs">3:51</p>
 
                 </div>
 
@@ -244,30 +229,27 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>BAILE INoLVIDABLE</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Quero Que Tu Vá (Inter...)</p>
+                        <p class="text-gray-400 text-xs">Ananda, Mala Rodríguez, Joker...</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">6:07</p>
+                    <p class="text-gray-400 text-xs">2:19</p>
 
                 </div>
 
@@ -288,30 +270,27 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>VeLDÁ</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny, Omar Courtz, Dei V</p>
+                        <p>Amiga Da Minha Mulher</p>
+                        <p class="text-gray-400 text-xs">Seu Jorge</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:55</p>
+                    <p class="text-gray-400 text-xs">4:08</p>
 
                 </div>
 
@@ -332,30 +311,27 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion11.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Mi Refe</p>
-                        <p class="text-gray-400 text-xs">Beéle, Ovy On The Drums</p>
+                        <p>Pupila</p>
+                        <p class="text-gray-400 text-xs">ANAVITÓRIA, Vitor Kley</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">Mi Refe</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:39</p>
+                    <p class="text-gray-400 text-xs">3:22</p>
 
                 </div>
 
@@ -376,30 +352,27 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>VOY A LLeVARTE PA PR</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Preciso Me Encontrar</p>
+                        <p class="text-gray-400 text-xs">Cartola</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:36</p>
+                    <p class="text-gray-400 text-xs">2:58</p>
 
                 </div>
 
@@ -420,30 +393,27 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion12.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/40exitos.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>DONDE TE ESCONDES?</p>
-                        <p class="text-gray-400 text-xs">Yapi</p>
+                        <p>Deixa A Vida Me Levar</p>
+                        <p class="text-gray-400 text-xs">Zeca Pagodinho</p>
 
                     </div>
                 </div>
 
                 <!-- ALBUM AL QUE PERTENECE  -->
-                <div class="flex pl-24 items-center justify-start">
-
-                    <p class="text-gray-400 text-xs">DONDE TE ESCONDES?</p>
-
+                <div>
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:14</p>
+                    <p class="text-gray-400 text-xs">4:35</p>
 
                 </div>
 
