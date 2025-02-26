@@ -59,12 +59,16 @@ import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/Pu
 // import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 // import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 // import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
+import Destacada1 from "./components/Mesa/Aplicaciones/Instagram/perfil/Destacada1.vue";
+import Historias from "./components/Mesa/Aplicaciones/Instagram/inicio/Historias.vue";
 
 // NOTAS 
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
 
 // PINTEREST 
 import Pinterest from "./components/Mesa/Aplicaciones/Pinterest.vue";
+import PinterestInicio from "./components/Mesa/Aplicaciones/Pinterest/PinterestInicio.vue";
+import PinterestPerfil from "./components/Mesa/Aplicaciones/Pinterest/PinterestPerfil.vue";
 
 // SPOTIFY 
 import Spotify from "./components/Mesa/Aplicaciones/Spotify.vue";
@@ -99,7 +103,7 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
-import Destacada1 from "./components/Mesa/Aplicaciones/Instagram/perfil/Destacada1.vue";
+
 
 const routes = [
     {
@@ -193,6 +197,13 @@ const routes = [
                             {
                                 path: '',
                                 component: InstagramInicio,
+                                children: [
+                                    {
+                                        path: 'historias/:id',
+                                        name: 'historias',
+                                        component: Historias
+                                    }
+                                ],
                             },
                             {
                                 path: 'mensajes',
@@ -231,6 +242,16 @@ const routes = [
                     {
                         path: 'pinterest',
                         component: Pinterest,
+                        children : [
+                            {
+                                path: '',
+                                component: PinterestInicio
+                            },
+                            {
+                                path: 'perfil',
+                                component : PinterestPerfil
+                            }
+                        ]
                     },
                     {
                         path: 'spotify',

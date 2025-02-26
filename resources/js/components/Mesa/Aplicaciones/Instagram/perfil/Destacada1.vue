@@ -5,8 +5,8 @@
             class="absolute top-5 right-5 text-2xl font-bold">X</router-link>
 
         <img :src="'/storage/img/apps/iconos/icon-pasar_historia.png'"
-            class="bg-gray-50 bg-opacity-75 w-5 p-1 rounded-full hover:bg-opacity-100 rotate-[180deg] cursor-pointer"
-            :class="{ 'bg-opacity-30 hover:bg-opacity-30 cursor-default': historiaSeleccionada == 1 }"
+            class="bg-gray-50 w-5 p-1 rounded-full hover:bg-opacity-100 rotate-[180deg]"
+            :class="{ 'bg-opacity-30 hover:bg-opacity-30 cursor-default': historiaSeleccionada == 1, 'bg-opacity-75 cursor-pointer' : historiaSeleccionada != 1 }"
             @click="anterior">
 
         <div class="w-[35%] h-full relative">
@@ -22,8 +22,8 @@
 
         <!-- <router-link to=""> -->
         <img :src="'/storage/img/apps/iconos/icon-pasar_historia.png'"
-            class="bg-gray-50 bg-opacity-75 w-5 p-1 rounded-full hover:bg-opacity-100 cursor-pointer"
-            :class="{ 'bg-opacity-30 hover:bg-opacity-30 cursor-default': historiaSeleccionada == 4 }"
+            class="bg-gray-50 w-5 p-1 rounded-full hover:bg-opacity-100"
+            :class="{ 'bg-opacity-30 hover:bg-opacity-30 cursor-default': historiaSeleccionada == 4, 'bg-opacity-75 cursor-pointer' : historiaSeleccionada != 4 }"
             @click="siguiente">
         <!-- </router-link> -->
     </div>
