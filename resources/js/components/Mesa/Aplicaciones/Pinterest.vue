@@ -16,7 +16,7 @@
                 <router-link to="/inicio/tablet/pinterest/perfil" :class="{'hidden' : linkSeleccionado != 'perfil'}" class="hover:bg-zinc-700 rounded p-3"><img :src="'/storage/img/apps/iconos/icon-perfil-twF.png'"></router-link>
             </div>
 
-            <router-view></router-view>
+            <router-view class="relative"></router-view>
 
             <router-link to="/inicio/tablet" class="absolute top-[280px] right-[-32px] w-[25px] h-[25px] border-white border-[1px] rounded-3xl bg-black cursor-pointer"></router-link>
         </div>

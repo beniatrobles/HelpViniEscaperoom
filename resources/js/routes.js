@@ -106,12 +106,18 @@ import Login from "./components/Login.vue";
 import Pines from "./components/Mesa/Aplicaciones/Pinterest/perfil/Pines.vue";
 import Tableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/Tableros.vue";
 import PinterestNotif from "./components/Mesa/Aplicaciones/Pinterest/PinterestNotif.vue";
+import FotosTableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/FotosTableros.vue";
+import StoryTelling from "./components/StoryTelling.vue";
 
 
 const routes = [
     {
         path: '/',
         component: Home,
+    },
+    {
+        path: '/story',
+        component : StoryTelling
     },
     {
         path: '/inicio',
@@ -262,7 +268,14 @@ const routes = [
                                     {
                                         path : '',
                                         component : Tableros,
-                                        name : 'tableros'
+                                        name : 'tableros',
+                                        children : [
+                                            {
+                                                path : ':nombre',
+                                                component : FotosTableros,
+                                                name : 'fotosTableros'
+                                            },
+                                        ]
                                     }
                                 ]
                             },
