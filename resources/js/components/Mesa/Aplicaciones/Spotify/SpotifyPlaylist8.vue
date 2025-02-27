@@ -200,15 +200,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion10.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion42.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Angelito</p>
-                        <p class="text-gray-400 text-xs">Bad Gyal, Trueno</p>
+                        <p>Espresso</p>
+                        <p class="text-gray-400 text-xs">Sabrina Carpenter</p>
 
                     </div>
                 </div>
@@ -216,14 +216,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">Angelito</p>
+                    <p class="text-gray-400 text-xs">Short n'Sweet</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:10</p>
+                    <p class="text-gray-400 text-xs">2:55</p>
 
                 </div>
 
@@ -251,7 +251,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>BAILE INoLVIDABLE</p>
+                        <p>DtMF</p>
                         <p class="text-gray-400 text-xs">Bad Bunny</p>
 
                     </div>
@@ -267,7 +267,7 @@
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">6:07</p>
+                    <p class="text-gray-400 text-xs">3:57</p>
 
                 </div>
 
@@ -288,15 +288,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion43.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>VeLDÁ</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny, Omar Courtz, Dei V</p>
+                        <p>Columbia</p>
+                        <p class="text-gray-400 text-xs">Quevedo</p>
 
                     </div>
                 </div>
@@ -304,14 +304,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">Columbia</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">3:55</p>
+                    <p class="text-gray-400 text-xs">3:06</p>
 
                 </div>
 
@@ -332,15 +332,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion11.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion44.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Mi Refe</p>
-                        <p class="text-gray-400 text-xs">Beéle, Ovy On The Drums</p>
+                        <p>Luck Ra: Bzrp Music Se...</p>
+                        <p class="text-gray-400 text-xs">Bizarrap, Luck Ra</p>
 
                     </div>
                 </div>
@@ -348,14 +348,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">Mi Refe</p>
+                    <p class="text-gray-400 text-xs">Luck Ra: Bzrp Music Sessions...</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:39</p>
+                    <p class="text-gray-400 text-xs">2:50</p>
 
                 </div>
 
@@ -376,15 +376,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion4.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion45.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>VOY A LLeVARTE PA PR</p>
-                        <p class="text-gray-400 text-xs">Bad Bunny</p>
+                        <p>Nueva Era</p>
+                        <p class="text-gray-400 text-xs">Duki, Myke Towers</p>
 
                     </div>
                 </div>
@@ -392,14 +392,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DeBÍ TiRAR MáS FOToS</p>
+                    <p class="text-gray-400 text-xs">AMERI</p>
 
                 </div>
-
+ 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:36</p>
+                    <p class="text-gray-400 text-xs">3:37</p>
 
                 </div>
 
@@ -420,15 +420,15 @@
                     <!-- IMAGEN DE LA CANCION  -->
                     <div class="h-full p-1">
 
-                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion12.png'" alt="">
+                        <img class="h-full rounded-md" :src="'/storage/img/apps/spotify/cancion32.png'" alt="">
 
                     </div>
 
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>DONDE TE ESCONDES?</p>
-                        <p class="text-gray-400 text-xs">Yapi</p>
+                        <p>Que Saudade de Você</p>
+                        <p class="text-gray-400 text-xs">Mc Kaio, MC L da Vinte</p>
 
                     </div>
                 </div>
@@ -436,14 +436,14 @@
                 <!-- ALBUM AL QUE PERTENECE  -->
                 <div class="flex pl-24 items-center justify-start">
 
-                    <p class="text-gray-400 text-xs">DONDE TE ESCONDES?</p>
+                    <p class="text-gray-400 text-xs">Que Saudade de Você</p>
 
                 </div>
 
                 <!-- TIEMPO  -->
                 <div class="flex items-center justify-end pr-2">
 
-                    <p class="text-gray-400 text-xs">2:14</p>
+                    <p class="text-gray-400 text-xs">2:03</p>
 
                 </div>
 
