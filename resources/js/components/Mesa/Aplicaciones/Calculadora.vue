@@ -33,7 +33,7 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 
 const input = ref('');
 
@@ -58,7 +58,25 @@ const calcularResultado = () => {
 const limpiar = () => {
     input.value = '';
 };
+
+const numeroTeclado = (e) => {
+    if (e.key >= 0 && e.key <= 9) {
+        agregarNumero(e.key);
+    } else if (['+', '-', '*', '/'].includes(e.key)) {
+        agregarOperacion(e.key);
+    } else if (e.key === 'Enter') {
+        calcularResultado();
+    } else if (e.key === 'Backspace') {
+        limpiar();
+    }
+};
+
+onMounted( () => document.addEventListener('keydown', numeroTeclado))
+
+onUnmounted( () => document.removeEventListener('keydown', numeroTeclado))
 </script>
+
+
 
 <style scoped>
     button{
