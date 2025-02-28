@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="{{asset('/img/logo.png')}}" type="image/x-icon">
     @vite('resources/js/app.js') <!-- Esto carga el archivo JavaScript que contiene Vue -->
 </head>
-<body>
+<body class="overflow-hidden">
     <div id="app"></div> <!-- Este es el contenedor donde Vue montará la aplicación -->
 </body>
 </html>

@@ -1,4 +1,5 @@
 <template>
+  <loading v-if="loaderVisible"></loading>
   <div class="h-screen relative overflow-hidden">
     <div class="absolute m-3">
       <h1>{{ tiempoFormateado }}</h1>
@@ -91,14 +92,19 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/stores/authStore'
+import { usePartidaStore } from '@/stores/partidaStore';
 import axios from 'axios';
+import loading from './loading.vue';
 
 const router = useRouter();
 const authStore = useAuthStore();
+const partidaStore = usePartidaStore();
 
+const yaCargado = ref(false)
 const tiempoRestante = ref(0); // Tiempo en segundos
 const userId = ref(0); // Cambia este valor al ID del usuario autenticado
 let intervalo; // Controla el temporizador
+const loaderVisible = ref(true)
 
 // Formatea el tiempo en formato MM:SS
 const tiempoFormateado = computed(() => {
@@ -170,6 +176,20 @@ onMounted(async () => {
     await cargarTiempo(); // Carga la partida activa y su tiempo
     iniciarTemporizador(); // Inicia el temporizador
 
+    //comprobamos que no sea la primera vez que entra (para que no le salga el loader cada vez que actualiza)
+    const partida = await partidaStore.comprobarPartida()
+    const NoPrimeraVez = partida.data.whatsapp; //de momento se utiliza whatsapp para probar, falta crear el campo en la base de datos
+   
+    if (NoPrimeraVez) {
+      loaderVisible.value=false
+    }else{
+      setTimeout(() => {
+      loaderVisible.value=false
+    }, 4000);
+    }
+    
+    //AQUI TENDRIAMOS QUE CAMBIAR EL VALOR EN LA BASE DE DATOS
+    //...
   }
 });
 
