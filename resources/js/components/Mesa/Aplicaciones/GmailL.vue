@@ -9,7 +9,7 @@
                 <div
                     class="flex bg-zinc-800 w-[500px] h-[300px] drop-shadow-2xl rounded-2xl items-center justify-center">
                     <div class="flex h-[100%] w-[50%] items-center justify-center">
-                        <img :src="'/storage/img/logo.png'" alt="" class="w-[50px] h-[50px] relative">
+                        <img :src="'/storage/img/apps/gmailF.png'" alt="" class="w-[50px] h-[50px] mr-1 relative">
                         <h2 class="">Inicio de sesión</h2>
                     </div>
                     <div class="flex flex-col h-[100%] w-[50%] items-center justify-center">

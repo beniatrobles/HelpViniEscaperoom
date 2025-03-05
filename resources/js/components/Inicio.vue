@@ -100,7 +100,6 @@ const router = useRouter();
 const authStore = useAuthStore();
 const partidaStore = usePartidaStore();
 
-const yaCargado = ref(false)
 const tiempoRestante = ref(0); // Tiempo en segundos
 const userId = ref(0); // Cambia este valor al ID del usuario autenticado
 let intervalo; // Controla el temporizador
@@ -160,6 +159,7 @@ onMounted(async () => {
   } else {
     try {
       const respuesta = await axios.post('/crear-partida', {
+        primera_vez : false,
         tablet: false,
         gmail: false,
         instagram: false,
@@ -178,18 +178,21 @@ onMounted(async () => {
 
     //comprobamos que no sea la primera vez que entra (para que no le salga el loader cada vez que actualiza)
     const partida = await partidaStore.comprobarPartida()
-    const NoPrimeraVez = partida.data.whatsapp; //de momento se utiliza whatsapp para probar, falta crear el campo en la base de datos
+    const NoPrimeraVez = partida.data.primera_vez;
    
     if (NoPrimeraVez) {
       loaderVisible.value=false
-    }else{
+    }else{ 
       setTimeout(() => {
       loaderVisible.value=false
-    }, 4000);
+      }, 4000);
+      
+      try{
+        await partidaStore.cambiarEstado('primera_vez', partida.data.id_partida)//modificamos el campo de la BD
+      }catch(error) {
+        console.error(error)
+      }
     }
-    
-    //AQUI TENDRIAMOS QUE CAMBIAR EL VALOR EN LA BASE DE DATOS
-    //...
   }
 });
 
