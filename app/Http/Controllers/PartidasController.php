@@ -7,6 +7,39 @@ use Illuminate\Http\Request;
 
 class PartidasController extends Controller
 {
+
+    public function index()
+    {
+        $partidas = Partida::with('usuario')->paginate(10);
+        return view('admin.partidas', compact('partidas'));
+    }
+
+    public function destroy($id)
+    {
+        $partida = Partida::findOrFail($id);
+        $partida->delete();
+        return redirect()->route('admin.partidas')->with('success', 'Partida eliminada correctamente.');
+    }
+    public function destroyPartida($id)
+    {
+        $partida = Partida::findOrFail($id);
+        $usuarioId = $partida->id_usuario; 
+
+        
+        $partida->delete();
+
+        
+        return redirect()->route('admin.show', ['id' => $usuarioId])
+            ->with('success', 'Partida eliminada correctamente.');
+    }
+
+    public function confirmarEliminacionPartida($id)
+    {
+        $partida = Partida::findOrFail($id);
+        return view('admin.confirmarEliminacionPartida', compact('partida'));
+    }
+
+
     public function crearPartida(Request $request)
     {
         $requestt = $request->validate([
@@ -93,34 +126,34 @@ class PartidasController extends Controller
         $partida = Partida::where('id_usuario', $id)
             ->where('completado', false) // Solo partidas activas
             ->first();
-    
+
         if (!$partida) {
             return response()->json(['error' => 'No hay partida activa para este usuario.'], 404);
         }
-    
+
         return response()->json(['tiempo' => $partida->tiempo]);
     }
-    
+
     // Actualizar tiempo restante
     public function actualizarTiempo(Request $request, $id)
     {
         // Validar que el campo 'tiempo' esté presente y sea un entero
         $request->validate(['tiempo' => 'required|integer']);
-    
+
         // Buscar la partida activa para el usuario
         $partida = Partida::where('id_usuario', $id)
             ->where('completado', false) // Solo partida activa
             ->first();
-    
+
         // Verificar si existe una partida activa
         if (!$partida) {
             return response()->json(['error' => 'No hay partida activa para este usuario.'], 404);
         }
-    
+
         // Actualizar el tiempo de la partida activa
         $partida->tiempo = $request->tiempo;
         $partida->save();
-    
+
         return response()->json(['message' => 'Tiempo actualizado con éxito.'], 200);
     }
 }

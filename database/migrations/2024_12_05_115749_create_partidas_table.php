@@ -20,11 +20,11 @@ return new class extends Migration
             $table->boolean('whatsapp');     
             $table->boolean('completado'); 
             $table->integer('tiempo'); 
-            $table->unsignedBigInteger('id_usuario'); 
-            $table->timestamps();
-
             
-            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios')->onDelete('cascade');
+            // Clave foránea correctamente definida
+            $table->foreignId('id_usuario')->constrained('usuarios', 'id_usuario')->onDelete('cascade');
+
+            $table->timestamps();
         });
     }
 
@@ -36,3 +36,4 @@ return new class extends Migration
         Schema::dropIfExists('partidas');
     }
 };
+
