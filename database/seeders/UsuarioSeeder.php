@@ -12,6 +12,7 @@ class UsuarioSeeder extends Seeder
     public function run()
     {
         DB::table('usuarios')->insert([
+            'id_usuario' => 1,
             'nombre_usuario' => 'admin',
             'correo' => 'admin@admin.com',
             'contrasena' => bcrypt('1234'),  

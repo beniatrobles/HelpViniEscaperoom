@@ -10,11 +10,16 @@ use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
-    public function index()
-    {
-        $usuarios = Usuario::with(['rol', 'partidas'])->paginate(10);
-        return view('admin.usuarios', compact('usuarios'));
-    }
+    public function index(Request $request)
+{
+    $search = $request->input('search');
+    
+    $usuarios = Usuario::when($search, function ($query, $search) {
+        return $query->where('nombre_usuario', 'like', "%$search%");
+    })->paginate(10);
+
+    return view('admin.usuarios', compact('usuarios'));
+}
 
     public function show($id)
     {

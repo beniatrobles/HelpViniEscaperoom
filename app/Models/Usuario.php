@@ -28,6 +28,16 @@ class Usuario extends Model implements Authenticatable
         return $this->hasMany(Partida::class, 'id_usuario');
     }
 
+    // Método para eliminar automáticamente las partidas cuando se borra un usuario
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function ($usuario) {
+            $usuario->partidas()->delete();  // Elimina las partidas del usuario antes de eliminarlo
+        });
+    }
+
     // Métodos que implementan la interfaz `Authenticatable`
 
     // Devuelve el nombre de la columna del identificador (usualmente `id` pero en tu caso es `id_usuario`)

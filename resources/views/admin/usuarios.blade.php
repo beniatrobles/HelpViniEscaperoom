@@ -1,4 +1,3 @@
-<!-- resources/views/admin/usuarios/index.blade.php -->
 @extends('layouts.app')
 
 @section('title', 'Listado de Usuarios')
@@ -10,7 +9,6 @@
         </div>
 
         <script>
-            // Espera 4 segundos y luego desaparece el mensaje con un efecto de desvanecimiento
             setTimeout(function() {
                 const alert = document.getElementById('success-alert');
                 if (alert) {
@@ -24,22 +22,19 @@
     @endif
 
     <div class="container mx-auto p-8">
-        
         <h1 class="text-4xl font-semibold text-gray-800 mb-8 text-center">Listado de Usuarios</h1>
 
-        
         <div class="flex justify-between items-center mb-6">
             <a href="{{ route('admin.create') }}"
                class="bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200">
                 Agregar Usuario
             </a>
-
-            
-            <form action="{{ route('logout') }}" method="POST">
-                @csrf
+            <form method="GET" action="{{ route('admin.usuarios') }}" class="mb-6 flex justify-center">
+                <input type="text" name="search" placeholder="Buscar por nombre..." value="{{ request('search') }}"
+                       class="border border-gray-300 p-2 rounded-lg shadow-sm focus:ring focus:ring-blue-200 w-1/3">
                 <button type="submit"
-                        class="bg-red-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200">
-                    Cerrar sesión
+                        class="ml-2 bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition duration-200">
+                    Buscar
                 </button>
             </form>
         </div>
@@ -95,4 +90,3 @@
         </div>
     </div>
 @endsection
-
