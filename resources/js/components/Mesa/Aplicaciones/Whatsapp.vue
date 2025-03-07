@@ -14,7 +14,7 @@
                         <!-- CABECERA -->
                         <div class="flex items-center justify-start">
                             <p class="text-black text-xl font-bold py-5 px-3">Chats</p>
-                            <div class="bg-green-500 rounded-full px-2">3</div>
+                            <div class="bg-green-500 rounded-full px-2">4</div>
                         </div>
 
                         <hr class="border-gray-400">
@@ -266,7 +266,7 @@
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
 
-                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp1.jpg'"
+                                    <img class="rounded-full h-full p-1" :src="'/storage/img/apps/whatsapp/pfp9.jpg'"
                                         alt="">
 
                                 </div>
@@ -274,12 +274,16 @@
                                 <!-- INFORMACION -->
                                 <div class="flex flex-col justify-center h-full">
 
-                                    <p class="font-bold text-black text-sm">Floren</p>
+                                    <p class="font-bold text-black text-sm">Asencio</p>
                                     <!-- MENSAJE -->
-                                    <div class="h-1/2 flex items-center">
+                                    <div class="h-1/2 flex items-center space-x-1">
+                                        <div
+                                            class="flex items-center justify-center h-2/3 w-[15px] rounded-full bg-green-600">
 
-                                        <img class="h-full" :src="'/storage/img/apps/whatsapp/double_check.png'" alt="">
-                                        <p class="text-gray-400 text-xs">Dale, vamos hablando crack</p>
+                                            <p class="text-[10px]">3</p>
+
+                                        </div>
+                                        <p class="text-gray-400 text-xs">Por qué tanta fijación con nosotros...</p>
 
                                     </div>
                                 </div>

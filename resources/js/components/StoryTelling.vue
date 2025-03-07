@@ -43,8 +43,10 @@
   import { onMounted, ref } from 'vue';
   import { useRouter } from 'vue-router';
   import { useAuthStore } from '@/stores/authStore';
+  import { usePartidaStore } from '../stores/partidaStore';
   const authStore = useAuthStore();
   const router = useRouter();
+  const partidaStore = usePartidaStore();
   
   const pantallaCarga = ref(true)
   const notaVisible = ref(false);
@@ -55,7 +57,7 @@
 
     "Recientemente ha sido víctima de un ataque de phising, revelando así la contraseña que otorga acceso a todas sus cuentas de redes sociales. Además, cuenta con una protección nula ante este tipo de ataques, pues no cuenta con ningún sistema de protección como la verificación en dos pasos, verificación multifactor etc.",
 
-    "Los atacantes están un uso indebido de sus redes sociales, compartiendo imágenes y textos que tratan de manchar la imagen pública de Vini. Esto está afectando directamente al rendimiento deportivo del jugador, imposibilitando su sueño. ¡Ganar el balón de oro!",
+    "Los atacantes están haciendo un uso indebido de sus redes sociales, compartiendo imágenes y textos que tratan de manchar la imagen pública de Vini. Esto está afectando directamente al rendimiento deportivo del jugador, imposibilitando su sueño. ¡Ganar el balón de oro!",
 
     "Necesitamos un verdadero profesional para tratar de solucionar esto antes de que la situación empeore y sea demasiado tarde. Creemos que tú, sí, TÚ, eres la persona perfecta para liderar esta misión y devolverle a Vini lo que le pertenece.",
 
@@ -85,12 +87,20 @@
   
   const noMeApeteceBtnStyle = ref({});
   
-  onMounted(() => {
+  onMounted(async () => {
     // Llamamos a la función checkToken para verificar el estado de la sesión
     authStore.checkToken();
     // Si no hay token o el usuario no está autenticado, redirigir a la página de login
     if (!authStore.token || !authStore.user) {
       router.push('/login'); // Redirigir a la página de login
+    }
+
+    //comprobamos que no sea la primera vez que entra (para que no le salga el loader cada vez que actualiza)
+    const partida = await partidaStore.comprobarPartida()
+    const NoPrimeraVez = partida.data.primera_vez;
+   
+    if (NoPrimeraVez) {
+      router.push('/inicio')
     }
 
     setTimeout(() => {
