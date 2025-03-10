@@ -96,10 +96,9 @@
     }
 
     //comprobamos que no sea la primera vez que entra (para que no le salga el loader cada vez que actualiza)
-    const partida = await partidaStore.comprobarPartida()
-    const NoPrimeraVez = partida.data.primera_vez;
-   
-    if (NoPrimeraVez) {
+    const partida = await partidaStore.comprobarPartida()  
+  //  console.log(partida)
+    if (partida) {
       router.push('/inicio')
     }
 
