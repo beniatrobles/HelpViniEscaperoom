@@ -6,7 +6,7 @@
 
             <div class=" flex w-[100%] h-[100%] bg-zinc-900">
                 <section class="w-[25%] border-r p-8">
-                    <router-link to="/inicio/tablet/instagram"><img :src="'/storage/img/logo-instagram.png'" ></router-link>
+                    <router-link to="/inicio/tablet/instagram" @click="activarLink('inicio')"><img :src="'/storage/img/logo-instagram.png'" ></router-link>
                     <br>
                     <nav class="flex flex-col gap-3" ref="menu">
                         <router-link to="/inicio/tablet/instagram" class="px-3 py-[10px] hover:bg-zinc-800 rounded flex items-center gap-1" :class="{'active': active === 'inicio'}" @click="activarLink('inicio')"><img :src="'/storage/img/icon-casa.png'" class="w-[20px]"> Inicio</router-link>

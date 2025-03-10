@@ -7,7 +7,7 @@
             class="w-[1000px] h-[600px] rounded-3xl border-r-[40px] border-l-[30px] border-t-[15px] border-b-[15px] border-black shadow-md relative">
             <div class="flex bg-zinc-900 h-[100%]">
                 <div class="h-[100%] border-r w-[25%]">
-                    <div class="flex py-8 px-[44px]">
+                    <div class="flex py-8 px-[44px] items-center">
                         <img :src="'/storage/img/apps/gmailF.png'" alt="" class="w-[40px] h-[40px]">
                         <h2 class="ml-3 text-2xl">Gmail</h2>
                     </div>

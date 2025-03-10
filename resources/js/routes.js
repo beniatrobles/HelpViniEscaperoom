@@ -108,6 +108,8 @@ import Tableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/Tableros.v
 import PinterestNotif from "./components/Mesa/Aplicaciones/Pinterest/PinterestNotif.vue";
 import FotosTableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/FotosTableros.vue";
 import StoryTelling from "./components/StoryTelling.vue";
+import Insta from "./components/Mesa/Aplicaciones/Gmail/recibidos/InstaInicioSesion.vue";
+import InstaCambioContrasena from "./components/Mesa/Aplicaciones/Gmail/recibidos/InstaCambioContrasena.vue";
 
 
 const routes = [
@@ -182,6 +184,14 @@ const routes = [
                                         path: 'spoty',
                                         component: mensajeSpoty
                                     },
+                                    {
+                                        path: 'inicio_sesion',
+                                        component: Insta
+                                    },
+                                    {
+                                        path: 'cambio_contrasena',
+                                        component: InstaCambioContrasena
+                                    }
                                 ]
                             },
                             {

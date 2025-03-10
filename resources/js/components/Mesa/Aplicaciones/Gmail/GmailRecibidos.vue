@@ -6,14 +6,14 @@
         <hr>
         <br>
         <section>
-            <div class="w-100% hover:bg-zinc-800 p-2 flex border-b border-zinc-800">
+            <router-link to="/inicio/tablet/gmail/cambio_contrasena" class="w-100% hover:bg-zinc-800 p-2 flex border-b border-zinc-800">
                 <div class="flex items-center gap-3 w-[40%]"><div class="h-[10px] w-[10px] bg-blue-600 rounded-full"></div> <p class="font-bold">Instagram</p></div>
-                <div class="flex w-[70%]"><p><span class="font-bold">Alerta de seguridad</span> - Mensaje</p></div>
-            </div>
-            <div class="w-100% hover:bg-zinc-800 p-2 flex border-b border-zinc-800">
-                <div class="flex items-center gap-3 w-[40%]"><div class="h-[10px] w-[10px] bg-blue-600 rounded-full"></div> <p class="font-bold">Remitente</p></div>
-                <div class="flex w-[70%]"><p><span class="font-bold">Asunto</span> - Mensaje</p></div>
-            </div>
+                <div class="flex w-[70%]"><p><span class="font-bold">Cambio de contraseña</span> - La contraseña se h...</p></div>
+            </router-link>
+            <router-link to="/inicio/tablet/gmail/inicio_sesion" class="w-100% hover:bg-zinc-800 p-2 flex border-b border-zinc-800">
+                <div class="flex items-center gap-3 w-[40%]"><div class="h-[10px] w-[10px] bg-blue-600 rounded-full"></div> <p class="font-bold">Instagram</p></div>
+                <div class="flex w-[70%]"><p><span class="font-bold">¡Nuevo inicio de sesión!</span> - Hemos detectado...</p></div>
+            </router-link>
             <div class="w-100% hover:bg-zinc-800 p-2 flex border-b border-zinc-800">
                 <div class="flex items-center gap-3 w-[40%]"><div class="h-[10px] w-[10px] bg-blue-600 rounded-full"></div> <p class="font-bold">Remitente</p></div>
                 <div class="flex w-[70%]"><p><span class="font-bold">Asunto</span> - Mensaje</p></div>
