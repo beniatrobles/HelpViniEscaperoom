@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // INICIO 
 import Home from "./components/Home.vue";
 import Inicio from "./components/Inicio.vue";
+import StoryTelling from "./components/StoryTelling.vue";
 
 // COMPONENTES DE LA MESA
 import Tablet from "./components/Mesa/Tablet.vue";
@@ -61,6 +62,8 @@ import PublicacionPista from "./components/Mesa/Aplicaciones/Instagram/perfil/Pu
 // import MensajeRonaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeRonaldo.vue";
 import Destacada1 from "./components/Mesa/Aplicaciones/Instagram/perfil/Destacada1.vue";
 import Historias from "./components/Mesa/Aplicaciones/Instagram/inicio/Historias.vue";
+import Insta from "./components/Mesa/Aplicaciones/Gmail/recibidos/InstaInicioSesion.vue";
+import InstaCambioContrasena from "./components/Mesa/Aplicaciones/Gmail/recibidos/InstaCambioContrasena.vue";
 
 // NOTAS 
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
@@ -69,6 +72,10 @@ import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
 import Pinterest from "./components/Mesa/Aplicaciones/Pinterest.vue";
 import PinterestInicio from "./components/Mesa/Aplicaciones/Pinterest/PinterestInicio.vue";
 import PinterestPerfil from "./components/Mesa/Aplicaciones/Pinterest/PinterestPerfil.vue";
+import PinterestNotif from "./components/Mesa/Aplicaciones/Pinterest/PinterestNotif.vue";
+import Pines from "./components/Mesa/Aplicaciones/Pinterest/perfil/Pines.vue";
+import Tableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/Tableros.vue";
+import FotosTableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/FotosTableros.vue";
 
 // SPOTIFY 
 import Spotify from "./components/Mesa/Aplicaciones/Spotify.vue";
@@ -96,6 +103,9 @@ import TwitterPerfil2 from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil
 import TwitterPerfil3 from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil3.vue";
 import TwitterPerfil4 from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil4.vue";
 import TwitterPerfilM from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfilM.vue";
+import TwitterChat1 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat1.vue";
+import TwitterChat2 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat2.vue";
+import TwitterChat3 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat3.vue";
 
 // WHATSAPP 
 import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
@@ -103,13 +113,6 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
-import Pines from "./components/Mesa/Aplicaciones/Pinterest/perfil/Pines.vue";
-import Tableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/Tableros.vue";
-import PinterestNotif from "./components/Mesa/Aplicaciones/Pinterest/PinterestNotif.vue";
-import FotosTableros from "./components/Mesa/Aplicaciones/Pinterest/perfil/FotosTableros.vue";
-import StoryTelling from "./components/StoryTelling.vue";
-import Insta from "./components/Mesa/Aplicaciones/Gmail/recibidos/InstaInicioSesion.vue";
-import InstaCambioContrasena from "./components/Mesa/Aplicaciones/Gmail/recibidos/InstaCambioContrasena.vue";
 
 
 const routes = [
@@ -360,6 +363,23 @@ const routes = [
                             {
                                 path: 'mensajes',
                                 component: TwitterMensajes,
+                                children: [ 
+                                {
+                                    path: 'chat1',
+                                    component: TwitterChat1,
+
+                                },
+                                {
+                                    path: 'chat2',
+                                    component: TwitterChat2,
+
+                                },
+                                {
+                                    path: 'chat3',
+                                    component: TwitterChat3,
+
+                                },
+                                ]
                             },
                             {
                                 path: 'perfil',

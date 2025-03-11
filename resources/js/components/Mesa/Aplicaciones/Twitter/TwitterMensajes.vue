@@ -9,7 +9,7 @@
 
             <!-- Mensajes -->
             <div>
-                <router-link to="" class="flex items-center space-x-3 hover:bg-gray-800 p-3">
+                <router-link to="/inicio/tablet/twitter/mensajes/chat1" class="flex items-center space-x-3 hover:bg-gray-800 p-3">
 
                     <!-- Foto de perfil -->
                     <div>
@@ -36,7 +36,7 @@
 
             
             <div>
-                <router-link to="" class="flex items-center space-x-3 hover:bg-gray-800 p-3">
+                <router-link to="/inicio/tablet/twitter/mensajes/chat2" class="flex items-center space-x-3 hover:bg-gray-800 p-3">
 
                     <!-- Foto de perfil -->
                     <div>
@@ -53,7 +53,7 @@
 
                         <!-- Mensaje -->
                         <div>
-                            <p class="text-white font-bold text-sm">¡Feliz año nuevo genio! 🥳🥳</p>
+                            <p class="text-gray-400 text-sm">¡Feliz año nuevo genio! 🥳🥳</p>
                         </div>
                     </div>
 
@@ -62,7 +62,7 @@
 
             
             <div>
-                <router-link to="" class="flex items-center space-x-3 hover:bg-gray-800 p-3">
+                <router-link to="/inicio/tablet/twitter/mensajes/chat3" class="flex items-center space-x-3 hover:bg-gray-800 p-3">
 
                     <!-- Foto de perfil -->
                     <div class="flex">
