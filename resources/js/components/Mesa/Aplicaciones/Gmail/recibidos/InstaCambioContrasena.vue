@@ -18,15 +18,12 @@
                         |
                         <img :src="'/storage/img/apps/Instagram/instagram.png'" class="w-[80px]">
                     </div>
-                    <div class="w-full text-sm mt-3 flex flex-col justify-center items-center text-center gap-3 pb-3 border-b">
-                        <p>Hemos detectado un inicio de sesión desde un dispositivo que normalmente no usas</p>
-                        <img :src="'/storage/img/apps/Instagram/icono-ordenador.png'" class="w-[100px]">
-                        <p class="font-bold">Kali Linux · Opera · Tallin, Estonia</p>
-                    </div>
-                    <div class="text-sm text-center mt-3 text-gray-400">
-                        <p clas>Si has sido tú, no podrás acceder a ciertas opciones de seguridad y a la configuración de la cuenta durante unos días. Podrás seguir accediendo a esta configuración desde un dispositivo en el que hayas iniciado sesión en el pasado.</p>
+                    <div class="w-full text-sm mt-3 flex flex-col justify-center items-center text-center gap-3 pb-3">
+                        <p>La solicitud de cambio de contraseña de tu cuenta se ha completado de forma correcta. </p>
                         <br>
-                        <p>Si no has sido tú, deberías tomar acción antes de que sea demasiado tarde y tengan acceso a toda tu información.</p>
+                        <p>Se cerrará la sesión en todos los dispositivos en los que tengas la sesión iniciada. Podrás acceder de nuevo con la nueva contraseña.</p>
+                        <br>
+                        <p class="font-bold">Si no has sido tú, deberías tomar acción antes de que sea demasiado tarde y tengan acceso a toda tu información.</p>
                     </div>
                 </div>
                 <br>

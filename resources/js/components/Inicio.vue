@@ -1,5 +1,6 @@
 <template>
   <loading v-if="loaderVisible"></loading>
+  <Informacion v-if="informacionVisible" @empezar="ocultarInformacion"></Informacion>
   <div class="h-screen relative overflow-hidden">
     <div class="absolute m-3">
       <h1>{{ tiempoFormateado }}</h1>
@@ -95,6 +96,7 @@ import { useAuthStore } from '@/stores/authStore'
 import { usePartidaStore } from '@/stores/partidaStore';
 import axios from 'axios';
 import loading from './loading.vue';
+import Informacion from './Informacion.vue';
 
 const router = useRouter();
 const authStore = useAuthStore();
@@ -104,6 +106,9 @@ const tiempoRestante = ref(0); // Tiempo en segundos
 const userId = ref(0); // Cambia este valor al ID del usuario autenticado
 let intervalo; // Controla el temporizador
 const loaderVisible = ref(true)
+const informacionVisible = ref(false)
+
+const ocultarInformacion = () => informacionVisible.value = false  
 
 // Formatea el tiempo en formato MM:SS
 const tiempoFormateado = computed(() => {
@@ -185,7 +190,8 @@ onMounted(async () => {
     }else{ 
       setTimeout(() => {
       loaderVisible.value=false
-      }, 4000);
+      informacionVisible.value = true //mostramos la información al usuario
+      }, 5000);
       
       try{
         await partidaStore.cambiarEstado('primera_vez', partida.data.id_partida)//modificamos el campo de la BD

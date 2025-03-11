@@ -43,6 +43,111 @@
                     </div>
                 </div>
         </section>
+        <section class="w-[100%] flex flex-col items-center">
+                <div class= "mt-6 w-[80%] border border-zinc-800 rounded">
+                    <div class="p-2 flex items-center gap-2">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="rounded-full w-[30px]">
+                        <p>Usuario</p>
+                    </div>
+                    <div class="">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="w-[100%]">
+                    </div>
+                    <div class="flex gap-2 p-2">
+                        <img :src="'/storage/img/icon-corazon.png'">
+                        <router-link to="" class="hover:opacity-50"><img :src="'/storage/img/icon-coment.png'"></router-link>
+                    </div>
+                </div>
+        </section>
+        <section class="w-[100%] flex flex-col items-center">
+                <div class= "mt-6 w-[80%] border border-zinc-800 rounded">
+                    <div class="p-2 flex items-center gap-2">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="rounded-full w-[30px]">
+                        <p>Usuario</p>
+                    </div>
+                    <div class="">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="w-[100%]">
+                    </div>
+                    <div class="flex gap-2 p-2">
+                        <img :src="'/storage/img/icon-corazon.png'">
+                        <router-link to="" class="hover:opacity-50"><img :src="'/storage/img/icon-coment.png'"></router-link>
+                    </div>
+                </div>
+        </section>
+        <section class="w-[100%] flex flex-col items-center">
+                <div class= "mt-6 w-[80%] border border-zinc-800 rounded">
+                    <div class="p-2 flex items-center gap-2">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="rounded-full w-[30px]">
+                        <p>Usuario</p>
+                    </div>
+                    <div class="">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="w-[100%]">
+                    </div>
+                    <div class="flex gap-2 p-2">
+                        <img :src="'/storage/img/icon-corazon.png'">
+                        <router-link to="" class="hover:opacity-50"><img :src="'/storage/img/icon-coment.png'"></router-link>
+                    </div>
+                </div>
+        </section>
+        <section class="w-[100%] flex flex-col items-center">
+                <div class= "mt-6 w-[80%] border border-zinc-800 rounded">
+                    <div class="p-2 flex items-center gap-2">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="rounded-full w-[30px]">
+                        <p>Usuario</p>
+                    </div>
+                    <div class="">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="w-[100%]">
+                    </div>
+                    <div class="flex gap-2 p-2">
+                        <img :src="'/storage/img/icon-corazon.png'">
+                        <router-link to="" class="hover:opacity-50"><img :src="'/storage/img/icon-coment.png'"></router-link>
+                    </div>
+                </div>
+        </section>
+        <section class="w-[100%] flex flex-col items-center">
+                <div class= "mt-6 w-[80%] border border-zinc-800 rounded">
+                    <div class="p-2 flex items-center gap-2">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="rounded-full w-[30px]">
+                        <p>Usuario</p>
+                    </div>
+                    <div class="">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="w-[100%]">
+                    </div>
+                    <div class="flex gap-2 p-2">
+                        <img :src="'/storage/img/icon-corazon.png'">
+                        <router-link to="" class="hover:opacity-50"><img :src="'/storage/img/icon-coment.png'"></router-link>
+                    </div>
+                </div>
+        </section>
+        <section class="w-[100%] flex flex-col items-center">
+                <div class= "mt-6 w-[80%] border border-zinc-800 rounded">
+                    <div class="p-2 flex items-center gap-2">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="rounded-full w-[30px]">
+                        <p>Usuario</p>
+                    </div>
+                    <div class="">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="w-[100%]">
+                    </div>
+                    <div class="flex gap-2 p-2">
+                        <img :src="'/storage/img/icon-corazon.png'">
+                        <router-link to="" class="hover:opacity-50"><img :src="'/storage/img/icon-coment.png'"></router-link>
+                    </div>
+                </div>
+        </section>
+        <section class="w-[100%] flex flex-col items-center">
+                <div class= "mt-6 w-[80%] border border-zinc-800 rounded">
+                    <div class="p-2 flex items-center gap-2">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="rounded-full w-[30px]">
+                        <p>Usuario</p>
+                    </div>
+                    <div class="">
+                        <img src="https://i1.sndcdn.com/artworks-000188509722-d50ce4-t240x240.jpg" class="w-[100%]">
+                    </div>
+                    <div class="flex gap-2 p-2">
+                        <img :src="'/storage/img/icon-corazon.png'">
+                        <router-link to="" class="hover:opacity-50"><img :src="'/storage/img/icon-coment.png'"></router-link>
+                    </div>
+                </div>
+        </section>
         <div class="mt-6 opacity-0">.</div>
     </div>
     <router-view class="absolute inset-0"></router-view>

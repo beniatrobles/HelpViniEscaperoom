@@ -15,6 +15,13 @@
 
                 <img class="pr-2" :src="'/storage/img/bateria.png'" alt="">
             </div>
+
+            <div class="mx-auto mt-10 mb-5 w-[70%] h-12 bg-white bg-opacity-95 rounded-full border border-black flex items-center px-3">
+                <img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" class="w-8">
+                <input type="text" class="w-full h-full pl-5 outline-none text-black bg-transparent " placeholder="Buscar...">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" class="w-4">
+            </div>
+
             <div class="grid grid-cols-4 gap-8 p-8">
                 <router-link to="/inicio/tablet/calculadora" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/calculadora.png'" alt="Calculadora" class="w-16 h-16 cursor-pointer">

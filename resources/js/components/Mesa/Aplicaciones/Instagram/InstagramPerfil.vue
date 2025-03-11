@@ -7,7 +7,7 @@
                     <p class="font-bold text-xl flex items-center gap-1">vinijr<img :src="'/storage/img/verificado.png'" class="w-[15px] h-[15px]"></p>
                 </div>
                 <div class="flex gap-3">
-                    <p><span class="font-bold">X</span> publicaciones</p>
+                    <p><span class="font-bold">4</span> publicaciones</p>
                     <p><span class="font-bold">52M</span> seguidores</p>
                     <p><span class="font-bold">1096</span> seguidos</p>
                 </div>
