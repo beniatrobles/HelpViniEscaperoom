@@ -6,7 +6,14 @@ module.exports = {
       './resources/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+
+        cuaderno: ['"Indie Flower"','cursive'],
+
+      }
+
+    },
   },
   plugins: [],
 }
