@@ -18,7 +18,7 @@ export const usePartidaStore = defineStore('partida', {
                 const partidaActual = await axios.get(`/partida-activa/${this.idUsuario}`);
                 return partidaActual
             } catch (error) {
-                console.log('Error al comprobar la partida:', error);
+                // console.log('Error al comprobar la partida:', error);
             }
 
         },
