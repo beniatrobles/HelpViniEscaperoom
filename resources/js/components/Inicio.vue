@@ -140,7 +140,7 @@ const sincronizarTiempo = async () => {
 
 // Iniciar temporizador
 const iniciarTemporizador = () => {
-  intervalo = setInterval(() => {
+  intervalo = setInterval(async () => {
     if (tiempoRestante.value > 0) {
       tiempoRestante.value--;
       // Sincronizar con el servidor cada 5 segundos
@@ -150,6 +150,13 @@ const iniciarTemporizador = () => {
     } else {
       clearInterval(intervalo);
       alert('¡La partida ha terminado!');
+      //terminamos la partida en la BD y redirigimos
+      try {
+        const partida = await partidaStore.comprobarPartida()
+        await partidaStore.cambiarEstado('terminado', partida.data.id_partida)
+      } catch (error) {
+        console.error(error)
+      }
       router.push("/");
     }
   }, 1000); // Cada segundo
@@ -173,6 +180,8 @@ onMounted(async () => {
         completado: false,
         tiempo: 1800,
         id_usuario: authStore.user.id,
+        terminado : 0,
+        penalizar : 0,
       })
     } catch (e) {
       console.error(e.request.responseText)
@@ -209,4 +218,6 @@ onUnmounted(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

@@ -15,7 +15,7 @@
         </div>
         <div class="mt-auto flex gap-2 pt-2">
             <input type="text" placeholder="Mensaje"
-                class="w-[100%] px-2 bg-transparent outline-none border border-zinc-600 rounded-full" v-model="mensaje">
+                class="w-[100%] px-2 bg-transparent outline-none border border-zinc-600 rounded-full" v-model="mensaje" @keydown.enter="mostrarMensaje">
             <button class="bg-blue-600 p-2 rounded-full"><img :src="'/storage/img/icon-direct.png'"
                     class="w-[35px]" @click="mostrarMensaje"></button>
         </div>

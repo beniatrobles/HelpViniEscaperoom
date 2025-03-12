@@ -8,7 +8,7 @@
                 </router-link>
                 <p class="text-2xl font-bold">Vini Jr.</p>
                 <img class="w-[20px]" :src="'/storage/img/verificado.png'" alt="">
-                <img class="w-[20px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" alt="">
+                <img class="w-[20px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" alt="">
             </div>
             <div class="relative">
                 <img class="w-[100%]" :src="'/storage/img/apps/iconos/Banner.jpg'" alt="">
@@ -22,7 +22,7 @@
                 <div class="flex items-center space-x-2">
                     <h2 class="font-bold text-xl">Vini Jr.</h2>
                     <img class="w-[20px]" :src="'/storage/img/verificado.png'" alt="">
-                    <img class="w-[20px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" alt="">
+                    <img class="w-[20px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" alt="">
                 </div>
                 <h3 class="text-gray-400">@vinijr</h3>
             </div>
@@ -211,7 +211,7 @@
                             <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
                                 <span class="font-bold">Vini Jr.</span>
                                 <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" />
                                 <span class="text-gray-400 text-sm">@vinijr · 3 ene.</span>
                             </router-link>
                         </div>
@@ -251,7 +251,7 @@
                             <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
                                 <span class="font-bold">Vini Jr.</span>
                                 <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" />
                                 <span class="text-gray-400 text-sm">@vinijr · 2 ene.</span>
                             </router-link>
                         </div>
@@ -293,7 +293,7 @@
                             <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
                                 <span class="font-bold">Vini Jr.</span>
                                 <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" />
                                 <span class="text-gray-400 text-sm">@vinijr · 27 dic. 2024</span>
                             </router-link>
                         </div>
@@ -333,7 +333,7 @@
                             <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
                                 <span class="font-bold">Vini Jr.</span>
                                 <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" />
                                 <span class="text-gray-400 text-sm">@vinijr · 22 dic. 2024</span>
                             </router-link>
                         </div>

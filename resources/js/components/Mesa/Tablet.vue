@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
 
     <div class="flex justify-center items-center min-h-screen bg-white bg-opacity-10">
@@ -16,10 +13,11 @@
                 <img class="pr-2" :src="'/storage/img/bateria.png'" alt="">
             </div>
 
-            <div class="mx-auto mt-10 mb-5 w-[70%] h-12 bg-white bg-opacity-95 rounded-full border border-black flex items-center px-3">
+            <div class="relative mx-auto mt-10 mb-5 w-[70%] h-12 bg-white bg-opacity-95 rounded-full border border-black flex items-center px-3">
                 <img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" class="w-8">
-                <input type="text" class="w-full h-full pl-5 outline-none text-black bg-transparent " placeholder="Buscar...">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" class="w-4">
+                <input type="text" class="w-full h-full pl-5 outline-none text-black bg-transparent " placeholder="Buscar..." v-model="google" @keydown.enter="buscarGoogle">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" class="w-4 cursor-pointer" @click="buscarGoogle">
+                <div :class="{'scale-100' : errroGoogle}" class="absolute inset-0 m-auto bg-zinc-800 bg-opacity-90 max-w-max max-h-max p-1 rounded scale-0 transition text-sm">Servicio no disponible</div>
             </div>
 
             <div class="grid grid-cols-4 gap-8 p-8">
@@ -80,5 +78,17 @@
     </div>
 </template>
 
+<script setup>
+import { ref } from 'vue';
+const google = ref('')
+const errroGoogle = ref(false)
+const buscarGoogle  = ()=> {
+    errroGoogle.value = true
+    setTimeout(()=>{
+        errroGoogle.value = false
+    }, 2000)
+}
+    
+</script>
 
 <style scoped></style>

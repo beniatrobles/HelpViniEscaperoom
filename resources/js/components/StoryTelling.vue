@@ -111,9 +111,10 @@
   
   <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
   
   .texto_story {
-    font-family: 'Grape Nuts', cursive;
+    font-family: 'Indie Flower', cursive;
   }
   
   .hoja {

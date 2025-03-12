@@ -13,7 +13,11 @@ class Partida extends Model
     protected $table = "partidas";
     protected $primaryKey = 'id_partida';
 
-    protected $fillable = ['primera_vez', 'completado', 'tiempo', 'gmail', 'instagram', 'twitter', 'whatsapp', 'tablet', 'id_usuario'];
+    protected $fillable = [
+        'tablet', 'gmail', 'instagram', 'twitter', 'whatsapp',
+        'completado', 'tiempo', 'id_usuario', 'primera_vez',
+        'terminado', 'penalizar'
+    ];
     public $timestamps = true;
 
     
