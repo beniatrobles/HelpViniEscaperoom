@@ -34,14 +34,31 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { usePartidaStore } from '@/stores/partidaStore';
+const partidaStore = usePartidaStore();
 
 const mensajeVisible = ref(false);
 const mensaje = ref('');
 const contenedorMensajes = ref(null);  // Añadimos una referencia al contenedor de mensajes
 
-const mostrarMensaje = () => {
-    if(mensaje.value !== '') {
-        mensajeVisible.value = true;
+const mostrarMensaje = async () => {
+    if (mensaje.value.trim() === '') return;
+
+    try {
+        // Consultamos en la BD si "penalizar" es true o false
+        const response = await partidaStore.comprobarPartida();
+        const penalizar = response.data.penalizar;
+        const idPartida = response.data.id_partida
+
+        if (penalizar) {
+            // Si está penalizado, reducimos el tiempo y mostramos el mensaje de advertencia
+            await partidaStore.reducirTiempo(180); // Penalización de 30 segundos
+        } else {
+            mensajeVisible.value = true;
+            await partidaStore.cambiarEstado('penalizar', idPartida)
+        }
+    } catch (error) {
+        console.error('Error al verificar la penalización:', error);
     }
 };
 
