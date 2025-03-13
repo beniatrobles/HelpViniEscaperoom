@@ -113,6 +113,7 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
+import PruebaFinal from "./components/PruebaFinal.vue";
 
 
 const routes = [
@@ -473,6 +474,10 @@ const routes = [
                 component: Lapiz_azul,
             },
         ],
+    },
+    {
+        path : '/final',
+        component : PruebaFinal,
     },
     {
         path: '/registro',

@@ -51,10 +51,21 @@ const loginGmail = async () => {
 
         try {
             //sacamos el numero de la partida actual
-            const partidaActual = await partidaStore.comprobarPartida()
+            let partidaActual = await partidaStore.comprobarPartida()
             const idPartida = partidaActual.data.id_partida
             //modificamos esa partida
             await partidaStore.cambiarEstado('gmail', idPartida)
+
+            //comprobamos si el resto de aplicaciones estan completadas
+            partidaActual = await partidaStore.comprobarPartida()
+            const gmail = partidaActual.data.gmail;
+            const instagram = partidaActual.data.instagram;
+            const whatsapp = partidaActual.data.whatsapp;
+            const twitter = partidaActual.data.twitter;
+
+            if(gmail && instagram && whatsapp && twitter){
+                await partidaStore.cambiarEstado('completado', idPartida)
+            }
         } catch (e) {
             console.log("ERROR", e)
         }
