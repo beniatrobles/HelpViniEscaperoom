@@ -75,7 +75,7 @@
         <!-- Campo de texto -->
         <div class="relative flex-1">
             <input type="text" placeholder="Escribe un mensaje"
-                class="w-full bg-gray-800 text-white outline-none pl-3 pr-10 py-1 rounded-full" v-model="mensaje">
+                class="w-full bg-gray-800 text-white outline-none pl-3 pr-10 py-1 rounded-full" v-model="mensaje" @keydown.enter="mostrarMensaje">
 
             <!-- Ícono SVG dentro del input -->
             <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-cyan-500" @click="mostrarMensaje">

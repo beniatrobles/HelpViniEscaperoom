@@ -1,5 +1,6 @@
 <template>
   <loading v-if="loaderVisible"></loading>
+  <Informacion v-if="informacionVisible" @empezar="ocultarInformacion"></Informacion>
   <div class="h-screen relative overflow-hidden">
     <div class="absolute m-3">
       <h1>{{ tiempoFormateado }}</h1>
@@ -95,6 +96,7 @@ import { useAuthStore } from '@/stores/authStore'
 import { usePartidaStore } from '@/stores/partidaStore';
 import axios from 'axios';
 import loading from './loading.vue';
+import Informacion from './Informacion.vue';
 
 const router = useRouter();
 const authStore = useAuthStore();
@@ -104,6 +106,9 @@ const tiempoRestante = ref(0); // Tiempo en segundos
 const userId = ref(0); // Cambia este valor al ID del usuario autenticado
 let intervalo; // Controla el temporizador
 const loaderVisible = ref(true)
+const informacionVisible = ref(false)
+
+const ocultarInformacion = () => informacionVisible.value = false  
 
 // Formatea el tiempo en formato MM:SS
 const tiempoFormateado = computed(() => {
@@ -135,7 +140,7 @@ const sincronizarTiempo = async () => {
 
 // Iniciar temporizador
 const iniciarTemporizador = () => {
-  intervalo = setInterval(() => {
+  intervalo = setInterval(async () => {
     if (tiempoRestante.value > 0) {
       tiempoRestante.value--;
       // Sincronizar con el servidor cada 5 segundos
@@ -145,6 +150,13 @@ const iniciarTemporizador = () => {
     } else {
       clearInterval(intervalo);
       alert('¡La partida ha terminado!');
+      //terminamos la partida en la BD y redirigimos
+      try {
+        const partida = await partidaStore.comprobarPartida()
+        await partidaStore.cambiarEstado('terminado', partida.data.id_partida)
+      } catch (error) {
+        console.error(error)
+      }
       router.push("/");
     }
   }, 1000); // Cada segundo
@@ -168,6 +180,8 @@ onMounted(async () => {
         completado: false,
         tiempo: 1800,
         id_usuario: authStore.user.id,
+        terminado : 0,
+        penalizar : 0,
       })
     } catch (e) {
       console.error(e.request.responseText)
@@ -185,7 +199,8 @@ onMounted(async () => {
     }else{ 
       setTimeout(() => {
       loaderVisible.value=false
-      }, 4000);
+      informacionVisible.value = true //mostramos la información al usuario
+      }, 5000);
       
       try{
         await partidaStore.cambiarEstado('primera_vez', partida.data.id_partida)//modificamos el campo de la BD
@@ -203,4 +218,6 @@ onUnmounted(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

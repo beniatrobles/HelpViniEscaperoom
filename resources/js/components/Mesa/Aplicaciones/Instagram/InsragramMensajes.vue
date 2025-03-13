@@ -62,7 +62,7 @@
                     <img :src="'/storage/img/icon-direct.png'">
                     <p>Tus mensajes</p>
                 </div>
-                <router-view class="absolute overflow-auto"></router-view>
+                <router-view class="absolute"></router-view>
             </div>
         </div>
     </div>

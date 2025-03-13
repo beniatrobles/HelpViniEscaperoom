@@ -8,7 +8,7 @@
                 </router-link>
                 <p class="text-2xl font-bold">Kylian Mbappe</p>
                 <img class="w-[20px]" :src="'/storage/img/verificado.png'" alt="">
-                <img class="w-[20px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" alt="">
+                <img class="w-[20px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" alt="">
             </div>
             <div class="relative">
                 <!-- BANNER -->
@@ -23,7 +23,7 @@
                 <div class="flex items-center space-x-2">
                     <h2 class="font-bold text-xl">Kylian Mbappe</h2>
                     <img class="w-[20px]" :src="'/storage/img/verificado.png'" alt="">
-                    <img class="w-[20px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" alt="">
+                    <img class="w-[20px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" alt="">
                 </div>
                 <h3 class="text-gray-400">@KMbappe</h3>
             </div>
