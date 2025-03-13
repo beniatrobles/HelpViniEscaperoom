@@ -34,9 +34,12 @@
             </div>
 
             <!-- TERCERA PARTE (Cambio de contraseña) -->
-            <div :class="completado ? 'text-gray-700 line-through' : 'text-gray-600 font-bold'">
+            <div :class="completado ? 'text-gray-700 font-bold' : 'text-gray-600 font-bold'">
 
                 <p>- Configurar una contraseña segura</p>
+                <p class="ml-4 text-sm font-normal mb-3">{{ msjContraseña }}</p>
+
+                <router-link to="/final" :class="{'hidden' : !completado}" class="ml-4 hover:underline">Cambiar Contraseña</router-link>
 
             </div>
 
@@ -64,6 +67,8 @@ const twitter = ref(null);
 const whass = ref(null);
 const completado = ref(null);
 
+const msjContraseña = ref('*Despues de desloquear todas las aplicaciones*');
+
 onMounted(async () => {
     try {
         const partida = await partidaStore.comprobarPartida();
@@ -73,6 +78,10 @@ onMounted(async () => {
         twitter.value = partida.data.twitter;
         whass.value = partida.data.whatsapp;
         completado.value = partida.data.completado;
+
+        if(completado.value){
+            msjContraseña.value = 'Todas las aplicaciones están desbloqueadas. ¡Es hora de cambiar la contraseña!';
+        }
     } catch (error) {
         console.error(error)
     }
