@@ -102,60 +102,32 @@ const router = useRouter();
 const authStore = useAuthStore();
 const partidaStore = usePartidaStore();
 
-const tiempoRestante = ref(0); // Tiempo en segundos
-const userId = ref(0); // Cambia este valor al ID del usuario autenticado
 let intervalo; // Controla el temporizador
-const loaderVisible = ref(true)
-const informacionVisible = ref(false)
+const loaderVisible = ref(true);
+const informacionVisible = ref(false);
 
-const ocultarInformacion = () => informacionVisible.value = false  
+const ocultarInformacion = () => informacionVisible.value = false;
 
 // Formatea el tiempo en formato MM:SS
 const tiempoFormateado = computed(() => {
-  const minutos = Math.floor(tiempoRestante.value / 60);
-  const segundos = tiempoRestante.value % 60;
+  const minutos = Math.floor(partidaStore.tiempoRestante / 60);
+  const segundos = partidaStore.tiempoRestante % 60;
   return `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
 });
-
-// Cargar tiempo restante desde la base de datos para la partida activa
-const cargarTiempo = async () => {
-  try {
-    const response = await axios.get(`/partida/${userId.value}/tiempo`);
-    tiempoRestante.value = response.data.tiempo; // Actualiza el tiempo desde la base de datos
-  } catch (error) {
-    console.error('Error al cargar el tiempo:', error);
-  }
-};
-
-// Sincronizar tiempo restante con el servidor
-const sincronizarTiempo = async () => {
-  try {
-    await axios.post(`/partida/${userId.value}/actualizarTiempo`, {
-      tiempo: tiempoRestante.value,
-    });
-  } catch (error) {
-    console.error('Error al sincronizar el tiempo:', error);
-  }
-};
 
 // Iniciar temporizador
 const iniciarTemporizador = () => {
   intervalo = setInterval(async () => {
-    if (tiempoRestante.value > 0) {
-      tiempoRestante.value--;
-      // Sincronizar con el servidor cada 5 segundos
-      if (tiempoRestante.value % 5 === 0) {
-        sincronizarTiempo();
-      }
+    if (partidaStore.tiempoRestante > 0) {
+      await partidaStore.reducirTiempo(1); // Reduce 1 segundo y sincroniza con BD
     } else {
       clearInterval(intervalo);
       alert('¡La partida ha terminado!');
-      //terminamos la partida en la BD y redirigimos
       try {
-        const partida = await partidaStore.comprobarPartida()
-        await partidaStore.cambiarEstado('terminado', partida.data.id_partida)
+        const partida = await partidaStore.comprobarPartida();
+        await partidaStore.cambiarEstado('terminado', partida.data.id_partida);
       } catch (error) {
-        console.error(error)
+        console.error(error);
       }
       router.push("/");
     }
@@ -163,14 +135,12 @@ const iniciarTemporizador = () => {
 };
 
 onMounted(async () => {
-  // Llamamos a la función checkToken para verificar el estado de la sesión
   authStore.checkToken();
-  // Si no hay token o el usuario no está autenticado, redirigir a la página de login
   if (!authStore.token || !authStore.user) {
-    router.push('/login'); // Redirigir a la página de login
+    router.push('/login');
   } else {
     try {
-      const respuesta = await axios.post('/crear-partida', {
+      await axios.post('/crear-partida', {
         primera_vez : false,
         tablet: false,
         gmail: false,
@@ -182,41 +152,40 @@ onMounted(async () => {
         id_usuario: authStore.user.id,
         terminado : 0,
         penalizar : 0,
-      })
+      });
     } catch (e) {
-      console.error(e.request.responseText)
+      console.error(e.request.responseText);
     }
-    userId.value = (authStore.user.id)
-    await cargarTiempo(); // Carga la partida activa y su tiempo
-    iniciarTemporizador(); // Inicia el temporizador
 
-    //comprobamos que no sea la primera vez que entra (para que no le salga el loader cada vez que actualiza)
-    const partida = await partidaStore.comprobarPartida()
+    partidaStore.idUsuario = authStore.user.id;
+    await partidaStore.cargarTiempo();
+    iniciarTemporizador();
+
+    const partida = await partidaStore.comprobarPartida();
     const NoPrimeraVez = partida.data.primera_vez;
-   
+
     if (NoPrimeraVez) {
-      loaderVisible.value=false
-    }else{ 
+      loaderVisible.value = false;
+    } else { 
       setTimeout(() => {
-      loaderVisible.value=false
-      informacionVisible.value = true //mostramos la información al usuario
+        loaderVisible.value = false;
+        informacionVisible.value = true;
       }, 5000);
       
-      try{
-        await partidaStore.cambiarEstado('primera_vez', partida.data.id_partida)//modificamos el campo de la BD
-      }catch(error) {
-        console.error(error)
+      try {
+        await partidaStore.cambiarEstado('primera_vez', partida.data.id_partida);
+      } catch (error) {
+        console.error(error);
       }
     }
   }
 });
 
-// Detener temporizador al salir del componente
 onUnmounted(() => {
   clearInterval(intervalo);
-  sincronizarTiempo(); // Sincroniza antes de salir
 });
 </script>
+
 
 <style scoped>
 
