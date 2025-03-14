@@ -119,6 +119,7 @@ import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
 import PruebaFinal from "./components/PruebaFinal.vue";
+import Phising from "./components/Mesa/Aplicaciones/Gmail/recibidos/Phising.vue";
 
 
 const routes = [
@@ -200,6 +201,10 @@ const routes = [
                                     {
                                         path: 'cambio_contrasena',
                                         component: InstaCambioContrasena
+                                    },
+                                    {
+                                        path : 'recuperar_contrasena',
+                                        component : Phising
                                     }
                                 ]
                             },
