@@ -106,6 +106,11 @@ import TwitterPerfilM from "./components/Mesa/Aplicaciones/Twitter/TwitterPerfil
 import TwitterChat1 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat1.vue";
 import TwitterChat2 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat2.vue";
 import TwitterChat3 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat3.vue";
+import TwitterChat4 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat4.vue";
+import TwitterChat5 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat5.vue";
+import TwitterChat6 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat6.vue";
+import TwitterChat7 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat7.vue";
+import TwitterChat8 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat8.vue";
 
 // WHATSAPP 
 import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
@@ -378,6 +383,31 @@ const routes = [
                                 {
                                     path: 'chat3',
                                     component: TwitterChat3,
+
+                                },
+                                {
+                                    path: 'chat4',
+                                    component: TwitterChat4,
+
+                                },
+                                {
+                                    path: 'chat5',
+                                    component: TwitterChat5,
+
+                                },
+                                {
+                                    path: 'chat6',
+                                    component: TwitterChat6,
+
+                                },
+                                {
+                                    path: 'chat7',
+                                    component: TwitterChat7,
+
+                                },
+                                {
+                                    path: 'chat8',
+                                    component: TwitterChat8,
 
                                 },
                                 ]

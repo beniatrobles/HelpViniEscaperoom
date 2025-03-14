@@ -2,69 +2,35 @@
 
     <!-- HEADER DEL CHAT -->
     <div class="flex items-center space-x-2 mt-3 p-1 border-gray-500 border-b-[0.5px]">
-        <p class="font-bold text-white text-xs">Kylian Mbappe</p>
+        <p class="font-bold text-white text-xs">Cristiano</p>
         <img class="rounded-full w-[15px]" :src="'/storage/img/verificado.png'" alt="">
-        <img class="w-[15px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" alt="">
     </div>
 
     <!-- CHAT -->
     <div class="overflow-auto flex flex-col-reverse gap-5 mt-3 h-[80%]">
 
-        <!-- MENSAJE OPUESTO -->
-        <div class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">
+        <!-- MENSAJE PROPIO -->
+        <div class="p-4 bg-cyan-500 max-w-[80%] rounded-[20px] w-max ml-auto">
 
-            <p>JAJJAJAJAJJAJAJAJJAJ</p>
+            <p> Tenha um bom feriado, você é meu ídolo 🫶🏿🫶🏿 </p>
 
         </div>
 
         <!-- MENSAJE OPUESTO -->
         <div class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">
 
-            <p>Eso habrá que ver, igual quitartelo yo</p>
+            <p> Muito obrigado Vini </p>
 
         </div>
 
         <!-- MENSAJE PROPIO -->
         <div class="p-4 bg-cyan-500 max-w-[80%] rounded-[20px] w-max ml-auto">
 
-            <p>Sim, é isso, el año que viene ganaré el balón d' or</p>
+            <p> Feliz Natal Cristiano 🫶🏿 </p>
 
         </div>
 
-        <!-- MENSAJE OPUESTO -->
-        <div class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">
 
-            <p>Bien dicho hermano, a darlo todo</p>
-
-        </div>
-
-        <!-- MENSAJE PROPIO -->
-        <div class="p-4 bg-cyan-500 max-w-[80%] rounded-[20px] w-max ml-auto">
-
-            <p>Me da igual, volveré mais forte y tendrán que calar a boca</p>
-
-        </div>
-
-        <!-- MENSAJE OPUESTO -->
-        <div class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">
-
-            <p>Es lamentable a lo que está llegando...</p>
-
-        </div>
-
-        <!-- MENSAJE PROPIO -->
-        <div class="p-4 bg-cyan-500 max-w-[80%] rounded-[20px] w-max ml-auto">
-
-            <p>Sím</p>
-
-        </div>
-
-        <!-- MENSAJE OPUESTO -->
-        <div class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">
-
-            <p>Viste lo que están diciendo de ti?</p>
-
-        </div>
 
     </div>
 
@@ -75,7 +41,8 @@
         <!-- Campo de texto -->
         <div class="relative flex-1">
             <input type="text" placeholder="Escribe un mensaje"
-                class="w-full bg-gray-800 text-white outline-none pl-3 pr-10 py-1 rounded-full" v-model="mensaje" @keydown.enter="mostrarMensaje">
+                class="w-full bg-gray-800 text-white outline-none pl-3 pr-10 py-1 rounded-full" v-model="mensaje"
+                @keydown.enter="mostrarMensaje">
 
             <!-- Ícono SVG dentro del input -->
             <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-cyan-500" @click="mostrarMensaje">
@@ -85,12 +52,14 @@
             </button>
         </div>
 
-        <div class="fixed top-0 left-0 w-full h-full flex justify-center items-center" :class="{'hidden': !mensajeVisible}">
+        <div class="fixed top-0 left-0 w-full h-full flex justify-center items-center"
+            :class="{ 'hidden': !mensajeVisible }">
             <div class="bg-gray-800 flex justify-center items-center flex-col p-4 max-w-[450px] rounded">
                 <img :src="'/storage/img/alerta.png'" class="w-[50px] mb-5">
                 <p class="text-center">Recuerda que esta cuenta no te pertenece. Es ilegal enviar mensajes haciendote
                     pasar por alguién sin su autorización. </p>
-                <p class="text-center mt-3">Las próximas veces que intentes enviar un mensaje a cualquier persona serás penalizado con una
+                <p class="text-center mt-3">Las próximas veces que intentes enviar un mensaje a cualquier persona serás
+                    penalizado con una
                     reducción del tiempo</p>
                 <button class="px-2 bg-cyan-500 rounded mt-5" @click="ocultarMensaje">Entendido</button>
             </div>
@@ -106,7 +75,7 @@ const mensajeVisible = ref(false)
 const mensaje = ref('')
 
 const mostrarMensaje = () => {
-    if(mensaje.value !== '')
+    if (mensaje.value !== '')
         mensajeVisible.value = true
 }
 
