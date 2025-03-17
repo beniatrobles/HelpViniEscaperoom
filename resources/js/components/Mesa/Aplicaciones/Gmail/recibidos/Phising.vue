@@ -15,21 +15,35 @@
                 <div class="bg-gray-100 w-[80%] mx-auto mt-4 flex flex-col p-3 text-black">
                     
                     <img src="https://edisenius.com/wp-content/uploads/2017/07/new-instagram-text-logo.png" class="w-[100px]">
-                    <div class="max-w-max m-auto text-sm mt-3 flex flex-col justify-center items-center gap-3 pb-5">
+                    <form class="max-w-max m-auto text-sm mt-3 flex flex-col justify-center items-center gap-3 pb-5" @submit.prevent="submit">
                         <div class="flex flex-col gap-1 text-xs">
                             <label for="mail" class="text-gray-600">Correo electronico</label>
-                            <input type="text" id="mail" class="border pl-1">
+                            <input type="text" id="mail" class="border pl-1" v-model="mail">
                         </div>
                         <div class="flex flex-col gap-1 text-xs">
                             <label for="pass" class="text-gray-600">Contraseña</label>
-                            <input type="password" id="pass" class="border pl-1">
+                            <input type="password" id="pass" class="border pl-1" v-model="pass">
                         </div>
 
                         <button class="text-xs bg-blue-400 text-white w-full">Entrar</button>
                         
-                    </div>
+                    </form>
                 </div>
                 <br>
+            </div>
+        </div>
+
+        <div class="fixed top-0 left-0 w-full h-full flex justify-center items-center" :class="{'hidden': !avisoVisible}">
+            <div class="bg-zinc-800 flex justify-center items-center flex-col p-4 max-w-[450px]">
+                <div class="flex flex-col items-center justify-center mb-3">
+                    <img :src="'/storage/img/alerta.png'" class="w-[50px] mb-5">
+                    <p class="font-bold -mt-2">¡Advertencia!</p>
+                </div>
+                <p class="text-center">El formulario que enviaste parece ser un intento de phishing, diseñado para robar tu información personal. Nunca envíes tus datos confidenciales ni hagas clic en enlaces sospechosos.</p>
+                <p class="text-center mt-3">Este correo podría estar relacionado con el ataque a Vini. Asegúrate de que los correos que envías provengan de fuentes oficiales y seguras.</p>
+                <p class="text-center mt-3">¡Tu seguridad es lo más importante!</p>
+
+                <button class="px-2 bg-blue-600 rounded mt-5" @click="ocultarMensaje">Entendido</button>
             </div>
         </div>
     </div>
@@ -37,4 +51,17 @@
 
 
 <script setup>
+import { ref } from 'vue'
+const mail = ref('')
+const pass = ref('')
+const avisoVisible = ref(false)
+
+const submit = () => {
+    if (mail.value.trim() != '' && pass.value != '') {
+        avisoVisible.value = true
+    } 
+}
+
+const ocultarMensaje = () => avisoVisible.value = false
+
 </script>
