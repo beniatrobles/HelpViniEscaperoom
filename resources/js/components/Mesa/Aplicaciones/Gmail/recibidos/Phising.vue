@@ -6,7 +6,7 @@
             <div class="flex items-center gap-2">
                 <img :src="'https://cdn-icons-png.flaticon.com/512/4847/4847985.png'" class="w-[50px] rounded-full">
                 <div>
-                    <p>Instragram <span class="text-sm text-zinc-400">&lt;istragramsupport@maily.pro&gt;</span></p>
+                    <p>Instragam <span class="text-sm text-zinc-400">&lt;istragramsupport@maily.pro&gt;</span></p>
                     <p class="text-xs text-zinc-400">para mi</p>
                 </div>
             </div>

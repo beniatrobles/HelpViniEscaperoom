@@ -218,43 +218,43 @@ onMounted(async () => {
     /////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////// API 1//////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////
-    // const url = 'https://deep-translate1.p.rapidapi.com/language/translate/v2/languages';
-    // try {
-    //     const get = await axios(url, {
-    //         headers: {
-    //             'x-rapidapi-key': 'd2260ef91dmshbde673dd9b9bf3ep115196jsn0d3c3fca0430',
-    //             'x-rapidapi-host': 'deep-translate1.p.rapidapi.com'
-    //         }
-    //     });
-    //     idiomasDisponibles.value.unshift(...get.data.languages)
+    const url = 'https://deep-translate1.p.rapidapi.com/language/translate/v2/languages';
+    try {
+        const get = await axios(url, {
+            headers: {
+                'x-rapidapi-key': 'd2260ef91dmshbde673dd9b9bf3ep115196jsn0d3c3fca0430',
+                'x-rapidapi-host': 'deep-translate1.p.rapidapi.com'
+            }
+        });
+        idiomasDisponibles.value.unshift(...get.data.languages)
 
-    // } catch (error) {
-    //     console.error(error);
-    // }
+    } catch (error) {
+        console.error(error);
+    }
     /////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////// API 2//////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////
 
-    try {
-        const get = await axios.get('https://openl-translate.p.rapidapi.com/translate/languages', {
-        headers: {
-            'x-rapidapi-key': 'd2260ef91dmshbde673dd9b9bf3ep115196jsn0d3c3fca0430',
-            'x-rapidapi-host': 'openl-translate.p.rapidapi.com'
-        } 
-    });
+    // try {
+    //     const get = await axios.get('https://openl-translate.p.rapidapi.com/translate/languages', {
+    //     headers: {
+    //         'x-rapidapi-key': 'd2260ef91dmshbde673dd9b9bf3ep115196jsn0d3c3fca0430',
+    //         'x-rapidapi-host': 'openl-translate.p.rapidapi.com'
+    //     } 
+    // });
 
-    // Mapeamos los datos para adaptarlos al formato que esperamos
-    const idiomasTransformados = get.data.languages.map((item) => ({
-        language: item.code,  // asignamos el valor de 'code' a 'language'
-        name: item.name       // asignamos el valor de 'name' a 'name'
-    }));
+    // // Mapeamos los datos para adaptarlos al formato que esperamos
+    // const idiomasTransformados = get.data.languages.map((item) => ({
+    //     language: item.code,  // asignamos el valor de 'code' a 'language'
+    //     name: item.name       // asignamos el valor de 'name' a 'name'
+    // }));
 
-    // Agregamos los idiomas transformados al principio de idiomasDisponibles
-    idiomasDisponibles.value.unshift(...idiomasTransformados);
+    // // Agregamos los idiomas transformados al principio de idiomasDisponibles
+    // idiomasDisponibles.value.unshift(...idiomasTransformados);
 
-    } catch (error) {
-        console.error(error);   
-    }
+    // } catch (error) {
+    //     console.error(error);   
+    // }
     
 })
 </script>

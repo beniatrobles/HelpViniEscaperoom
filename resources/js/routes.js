@@ -120,6 +120,13 @@ import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
 import PruebaFinal from "./components/PruebaFinal.vue";
 import Phising from "./components/Mesa/Aplicaciones/Gmail/recibidos/Phising.vue";
+import Duolingo from "./components/Mesa/Aplicaciones/Gmail/recibidos/Duolingo.vue";
+import GlovoGmail from "./components/Mesa/Aplicaciones/Gmail/recibidos/Glovo.vue";
+import Nike from "./components/Mesa/Aplicaciones/Gmail/recibidos/Nike.vue";
+import Enviado1 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado1.vue";
+import Enviado2 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado2.vue";
+import Enviado3 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado3.vue";
+import Borrador1 from "./components/Mesa/Aplicaciones/Gmail/borradores/Borrador1.vue";
 
 
 const routes = [
@@ -205,17 +212,49 @@ const routes = [
                                     {
                                         path : 'recuperar_contrasena',
                                         component : Phising
+                                    },
+                                    {
+                                        path : 'duolingo',
+                                        component : Duolingo
+                                    },
+                                    {
+                                        path : 'glovo',
+                                        component : GlovoGmail 
+                                    },
+                                    {
+                                        path : 'nike',
+                                        component : Nike
                                     }
                                 ]
                             },
                             {
                                 path: 'enviados',
                                 component: GmailEnviados,
+                                children: [
+                                    {
+                                        path : 'enviado1',
+                                        component : Enviado1
+                                    },
+                                    {
+                                        path : 'enviado2',
+                                        component : Enviado2
+                                    },
+                                    {
+                                        path : 'enviado3',
+                                        component : Enviado3
+                                    }
+                                ]
 
                             },
                             {
                                 path: 'borradores',
                                 component: GmailBorradores,
+                                children : [
+                                    {
+                                        path : 'borrador1',
+                                        component : Borrador1
+                                    },
+                                ]
                             },
                         ]
                     },
