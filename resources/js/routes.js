@@ -47,6 +47,14 @@ import GmailRecibidos from "./components/Mesa/Aplicaciones/Gmail/GmailRecibidos.
 import GmailEnviados from "./components/Mesa/Aplicaciones/Gmail/GmailEnviados.vue";
 import GmailBorradores from "./components/Mesa/Aplicaciones/Gmail/GmailBorradores.vue";
 import mensajeSpoty from "./components/Mesa/Aplicaciones/Gmail/recibidos/spoty.vue";
+import Phising from "./components/Mesa/Aplicaciones/Gmail/recibidos/Phising.vue";
+import Duolingo from "./components/Mesa/Aplicaciones/Gmail/recibidos/Duolingo.vue";
+import GlovoGmail from "./components/Mesa/Aplicaciones/Gmail/recibidos/Glovo.vue";
+import Nike from "./components/Mesa/Aplicaciones/Gmail/recibidos/Nike.vue";
+import Enviado1 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado1.vue";
+import Enviado2 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado2.vue";
+import Enviado3 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado3.vue";
+import Borrador1 from "./components/Mesa/Aplicaciones/Gmail/borradores/Borrador1.vue";
 
 // INSTAGRAM 
 import Instagram from "./components/Mesa/Aplicaciones/Instagram.vue";
@@ -114,19 +122,22 @@ import TwitterChat8 from "./components/Mesa/Aplicaciones/Twitter/TwitterChat8.vu
 
 // WHATSAPP 
 import Whatsapp from "./components/Mesa/Aplicaciones/Whatsapp.vue";
+import WhatsappChat1 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat1.vue";
+import WhatsappChat2 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat2.vue";
+import WhatsappChat3 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat3.vue";
+import WhatsappChat4 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat4.vue";
+import WhatsappChat5 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat5.vue";
+import WhatsappChat6 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat6.vue";
+import WhatsappChat7 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat7.vue";
+import WhatsappChat8 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat8.vue";
+import WhatsappChat9 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat9.vue";
 
 // LOGIN 
 import Registro from "./components/Registro.vue";
 import Login from "./components/Login.vue";
+
+// FINAL
 import PruebaFinal from "./components/PruebaFinal.vue";
-import Phising from "./components/Mesa/Aplicaciones/Gmail/recibidos/Phising.vue";
-import Duolingo from "./components/Mesa/Aplicaciones/Gmail/recibidos/Duolingo.vue";
-import GlovoGmail from "./components/Mesa/Aplicaciones/Gmail/recibidos/Glovo.vue";
-import Nike from "./components/Mesa/Aplicaciones/Gmail/recibidos/Nike.vue";
-import Enviado1 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado1.vue";
-import Enviado2 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado2.vue";
-import Enviado3 from "./components/Mesa/Aplicaciones/Gmail/enviados/Enviado3.vue";
-import Borrador1 from "./components/Mesa/Aplicaciones/Gmail/borradores/Borrador1.vue";
 
 
 const routes = [
@@ -487,6 +498,53 @@ const routes = [
                     {
                         path: 'whatsapp',
                         component: Whatsapp,
+                        children: [ 
+                            {
+                                path: 'chat1',
+                                component: WhatsappChat1,
+
+                            },
+                            {
+                                path: 'chat2',
+                                component: WhatsappChat2,
+
+                            },
+                            {
+                                path: 'chat3',
+                                component: WhatsappChat3,
+
+                            },
+                            {
+                                path: 'chat4',
+                                component: WhatsappChat4,
+
+                            },
+                            {
+                                path: 'chat5',
+                                component: WhatsappChat5,
+
+                            },
+                            {
+                                path: 'chat6',
+                                component: WhatsappChat6,
+
+                            },
+                            {
+                                path: 'chat7',
+                                component: WhatsappChat7,
+
+                            },
+                            {
+                                path: 'chat8',
+                                component: WhatsappChat8,
+
+                            },
+                            {
+                                path: 'chat9',
+                                component: WhatsappChat9,
+
+                            },
+                        ]
                     },
                 ],
             },

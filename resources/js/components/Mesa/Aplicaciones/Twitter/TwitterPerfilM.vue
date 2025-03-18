@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="mb-4 text-s">
-                        <p>01100101 01001110 01100101 01111001 00110111</p>
+                        <p>01010111 01010011 01010000 00111010 00100000</p>
                     </div>
                     <div class="flex space-x-20 text-gray-400 text-sm items-center">
                         <div class="flex items-center space-x-1 w-[20px]">
