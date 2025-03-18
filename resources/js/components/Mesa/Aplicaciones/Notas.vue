@@ -11,7 +11,7 @@
                 <br>
                 <div class="grid grid-cols-3 gap-7 justify-center items-center text-center">
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="font-bold">Charla con Floren</h2>
                         <br>
                         <p class="text-xs">-Pedir subida de contrato</p>
@@ -21,13 +21,13 @@
                         <p class="text-xs">-Recordarle que su estrella soy yo y no Kilian</p>
                     </div>
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="font-bold">Recordatorio</h2>
                         <br>
                         <p class="text-xs">Reservar mesa para 4 (5?) en el restaurante de siempre para el sábado a las 14:00</p>
                     </div>
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="font-bold">Cumpleaños</h2>
                         <br>
                         <p class="text-xs">Rodrygo: 9 Enero</p>
@@ -38,19 +38,19 @@
                         <p class="text-xs">Cristiano Ronaldo: 5 Febrero</p>
                     </div>
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="font-bold">Cita peluqueria</h2>
                         <br>
                         <p class="text-xs">Sábado a las 11:30</p>
                     </div>
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="font-bold">Estadios de mierda</h2>
                         <br>
                         <p class="text-xs">Mestalla, San Mamés, Camp Nou, Metropolitano, Reale Seguros Arena... </p>
                     </div>
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="font-bold">Ranking mulheres</h2>
                         <br>
                         <p class="text-xs">1 - Isabella</p>
@@ -60,7 +60,7 @@
                         <p class="text-xs">5 - Fernanda</p>
                     </div>
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="mb-5 font-bold text-l">IMPORTANTE</h2>
                         <br>
                         <p class="text-xs">Correo electónico: vinijr07@gmail.com </p>
@@ -68,13 +68,13 @@
                         <p class="text-xs">Contraseña: viniJRbalondior2024* </p>
                     </div>
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="font-bold">Manifiesto</h2>
                         <br>
                         <p class="text-xs">Voy a ganar el balón de oro</p>
                     </div>
                     <div
-                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center hover:cursor-pointer p-5 aspect-square">
+                        class="flex flex-col bg-zinc-700 w-[100%] rounded-md items-center justify-center p-5 aspect-square">
                         <h2 class="font-bold">Discurso balón de oro</h2>
                         <br>
                         <p class="text-xs">Boa noite a todos.

@@ -76,7 +76,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>I Wanna Be Yours</p>
+                        <p><b>I</b> Wanna Be Yours</p>
                         <p class="text-gray-400 text-xs">Artic Monkeys</p>
 
                     </div>
@@ -120,7 +120,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Lovely (with Khalid)</p>
+                        <p><b>L</b>ovely (with Khalid)</p>
                         <p class="text-gray-400 text-xs">Billie Eilish, Khalid</p>
 
                     </div>
@@ -164,7 +164,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Off My Face</p>
+                        <p><b>O</b>ff My Face</p>
                         <p class="text-gray-400 text-xs">Justin Bieber</p>
 
                     </div>
@@ -208,7 +208,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Video Games</p>
+                        <p><b>V</b>ideo Games</p>
                         <p class="text-gray-400 text-xs">Lana Del Rey</p>
 
                     </div>
@@ -252,7 +252,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Estamos Bien</p>
+                        <p><b>E</b>stamos Bien</p>
                         <p class="text-gray-400 text-xs">Bad Bunny</p>
 
                     </div>
@@ -296,7 +296,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Vuelve</p>
+                        <p><b>V</b>uelve</p>
                         <p class="text-gray-400 text-xs">Beret</p>
 
                     </div>
@@ -340,7 +340,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>I Like Me Better</p>
+                        <p><b>I</b> Like Me Better</p>
                         <p class="text-gray-400 text-xs">Lauv</p>
 
                     </div>
@@ -384,7 +384,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Nunca Estoy</p>
+                        <p><b>N</b>unca Estoy</p>
                         <p class="text-gray-400 text-xs">C. Tangana</p>
 
                     </div>
@@ -428,7 +428,7 @@
                     <!-- TITULO Y ARTISTA -->
                     <div class="flex flex-col p-1">
 
-                        <p>Imagine</p>
+                        <p><b>I</b>magine</p>
                         <p class="text-gray-400 text-xs">John Lennon Experience</p>
 
                     </div>

@@ -45,8 +45,8 @@
             </div>
 
             <div class="font-mono flex flex-col justify-center items-center mt-5 gap-2 m-auto overflow-hidden">
-                <p :class="{'translate-y-[-200px]' : !pasosVisibles}" class="transition">Recuerda que una contraseña segura debe contener al menos:</p>
-                <ul :class="{'translate-y-[-200px]' : !pasosVisibles}" class="w-[50%] text-left transition">
+                <p :class="{'translate-y-[-200px]' : !pasosVisibles}" class="transition duration-500">Recuerda que una contraseña segura debe contener al menos:</p>
+                <ul :class="{'translate-y-[-200px]' : !pasosVisibles}" class="w-[50%] text-left transition duration-500">
                     <li :class="{'text-blue-500' : caracteres}"><span :class="{'hidden' : !caracteres}">✓</span><span :class="{'hidden' : caracteres}">✗</span> 12 caracteres</li>
                     <li :class="{'text-blue-500' : mayuscula}"><span :class="{'hidden' : !mayuscula}">✓</span><span :class="{'hidden' : mayuscula}">✗</span> 1 letra mayúscula</li>
                     <li :class="{'text-blue-500' : minuscula}"><span :class="{'hidden' : !minuscula}">✓</span><span :class="{'hidden' : minuscula}">✗</span> 1 letra minúscula</li>
