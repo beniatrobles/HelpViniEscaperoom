@@ -2,15 +2,24 @@
     <div class="flex flex-col w-[100%] h-[100%] bg-zinc-900 border-r border-zinc-800 pr-2 relative">
         <div class="flex h-full pb-4 overflow-auto" ref="contenedorMensajes">
             <div class="flex flex-col gap-5 mt-auto w-full">
-                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">olá linda menina!!😽</p>
-                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">oláááááá</p>
-                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">Você gostaria de vir me ver no meu
-                    jogo e depois iremos para o meu quarto?🙈</p>
-                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">ah sim, eu adoraria. Como fazemos isso?</p>
-                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">Eu pago, não se preocupe😽. escreva
-                    para mim no whatsapp
-                    <b class="underline">627 158 155</b>
-                </p>
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">Hermanito vas a venir al madrid?</p>
+                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">No lo tengo claro todavía, debo pensarlo</p>
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">Hermano no lo pienses tanto, vente al mejor club del mundo</p>
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max -mt-4">Aquí ganarás la champions🏆🤩</p>
+                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">Si hermano lo sé</p>
+                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max -mt-4">ya te diré</p>
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">Aquí te esperamos</p>
+                <p class="text-xs text-center text-gray-400">1 jun, 12:21</p>
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">Sabía que vendrías🤣🤣💪</p>
+                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">Si hermano, nos vemos pronto</p>
+                <p class="text-xs text-center text-gray-400">4 jul, 12:21</p>
+                <p class="text-xs pl-2 border-l text-gray-400 border-gray-400">Te mencionó en su historia</p>
+                <div class="flex flex-col items-end">
+                    <p class="text-xs pr-2 border-r text-gray-400 border-gray-400">Has respondido a su historia</p>
+                    <p class="text-[10px] pr-2 border-r text-gray-400 border-gray-400">Historia no disponible</p>
+                    <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">El mejor duo 🐢x🥷</p>
+                    <p class="bg-zinc-800 px-1 py-[2px] text-xs rounded-full -mt-2 mr-3 outline outline-zinc-900">❤️</p>
+                </div>
                 <p class="ml-auto -mt-3 text-sm text-gray-400">visto</p>
             </div>
         </div>

@@ -138,6 +138,15 @@ import Login from "./components/Login.vue";
 
 // FINAL
 import PruebaFinal from "./components/PruebaFinal.vue";
+import MensajeMadrid from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeMadrid.vue";
+import MensajeMbappe from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeMbappe.vue";
+import InstagramChats from "./components/Mesa/Aplicaciones/Instagram/InstagramChats.vue";
+import InstagramSolicitudes from "./components/Mesa/Aplicaciones/Instagram/InstagramSolicitudes.vue";
+import Solicitud1 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud1.vue";
+import Solicitud2 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud2.vue";
+import Solicitud3 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud3.vue";
+import Solicitud4 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud4.vue";
+import Solicitud5 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud5.vue";
 
 
 const routes = [
@@ -293,13 +302,53 @@ const routes = [
                                 component: InstagramMensajes,
                                 children: [
                                     {
-                                        path: 'mensaje1',
-                                        component: MensajeRonaldo
+                                        path : '',
+                                        component : InstagramChats,
+                                        children : [
+                                            {
+                                                path: 'mensaje1',
+                                                component: MensajeRonaldo
+                                            },
+                                            {
+                                                path: 'mensaje2',
+                                                component: MensajePista
+                                            },
+                                            {
+                                                path: 'mensaje3',
+                                                component: MensajeMadrid
+                                            },
+                                            {
+                                                path: 'mensaje4',
+                                                component : MensajeMbappe
+                                            }
+                                        ]
                                     },
                                     {
-                                        path: 'mensaje2',
-                                        component: MensajePista
-                                    },
+                                        path : 'solicitudes',
+                                        component : InstagramSolicitudes,
+                                        children : [
+                                            {
+                                                path : 'solicitud1',
+                                                component : Solicitud1
+                                            },
+                                            {
+                                                path : 'solicitud2',
+                                                component : Solicitud2
+                                            },
+                                            {
+                                                path : 'solicitud3',
+                                                component : Solicitud3
+                                            },
+                                            {
+                                                path : 'solicitud4',
+                                                component : Solicitud4
+                                            },
+                                            {
+                                                path : 'solicitud5',
+                                                component : Solicitud5
+                                            },
+                                        ]
+                                    }
                                 ]
                             },
                             {

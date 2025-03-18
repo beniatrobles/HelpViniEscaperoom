@@ -1,24 +1,28 @@
 <template>
     <div class="flex justify-center items-center flex-col h-screen">
-        <div class=" w-[300px] mb-2">
-            <router-link to="/" class="hover:text-[#0ED800] flex items-center font-bold max-w-max"><span
-                    class="text-2xl -translate-y-1">←</span>
-                Volver</router-link>
+        <div class="w-[300px] mb-2">
+            <router-link to="/" class="hover:text-[#0ED800] flex items-center font-bold max-w-max">
+                <span class="text-2xl -translate-y-1">←</span> Volver
+            </router-link>
         </div>
         <form @submit.prevent="enviarFormulario"
-            class="bg-zinc-1000 flex flex-col justify-center items-center border-[1px]  max-w-[300px] w-[100%] h-[350px] rounded gap-3">
-            <h1 class=" mb-6 text-xl">Registrate</h1>
-            <input type="text" v-model="nombre" name="nombre" placeholder="Nombre de Usuario" @blur="comprobarNombre"/>
+            class="bg-zinc-1000 flex flex-col justify-center items-center border-[1px] max-w-[300px] w-[100%] h-[430px] rounded gap-3">
+            <h1 class="mb-6 text-xl">Registrate</h1>
+
+            <input type="text" v-model="nombre" name="nombre" placeholder="Nombre de Usuario" @blur="comprobarNombre" />
             <p class="-mt-1 text-xs text-red-500">{{ errorNombre }}</p>
 
-            <input type="email" v-model="email" name="email" placeholder="Email" @blur="comprobarEmail"/>
+            <input type="email" v-model="email" name="email" placeholder="Email" @blur="comprobarEmail" />
             <p class="-mt-1 text-xs text-red-500">{{ errorEmail }}</p>
 
-            <input type="password" v-model="password" name="password" placeholder="Contraseña" @blur="comprobarContra"/>
+            <input type="password" v-model="password" name="password" placeholder="Contraseña" @blur="comprobarContra" />
             <p class="-mt-1 text-xs text-red-500 text-center">{{ errorPassword }}</p>
-            
+
+            <input type="password" v-model="repetirPassword" name="repetirPassword" placeholder="Repetir Contraseña" @blur="comprobarRepetirContra" />
+            <p class="-mt-1 text-xs text-red-500 text-center">{{ errorRepetirPassword }}</p>
+
             <button type="submit"
-                class=" relative p-[5px] bg-white text-black w-[50%] rounded flex hover:text-white font-bold">
+                class="relative p-[5px] bg-white text-black w-[50%] rounded flex hover:text-white font-bold">
                 <p class="z-[10] text-center w-[100%]">Registrarme</p>
             </button>
         </form>
@@ -30,76 +34,76 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from 'vue-router';
-const router = useRouter();
 
+const router = useRouter();
 
 const nombre = ref("");
 const email = ref("");
 const password = ref("");
+const repetirPassword = ref("");
 
-const errorNombre = ref('')
-const errorEmail = ref('')
-const errorPassword = ref('')
+const errorNombre = ref('');
+const errorEmail = ref('');
+const errorPassword = ref('');
+const errorRepetirPassword = ref('');
 
 const enviarFormulario = () => {
-    if(nombre.value.trim() === ""){
-        errorNombre.value = 'El campo nombre no puede estar vacio'
-    }
+    comprobarNombre();
+    comprobarEmail();
+    comprobarContra();
+    comprobarRepetirContra();
 
-    if (email.value.trim() === "") {
-    errorEmail.value = "El email no puede estar vacío.";
-    }
-
-    if (password.value.trim() === "") {
-        errorPassword.value = "La contraseña no puede estar vacía.";
-    }
-    
-    if(!errorNombre.value && !errorEmail.value && !errorPassword.value){ //si no hay ningun error
+    if (!errorNombre.value && !errorEmail.value && !errorPassword.value && !errorRepetirPassword.value) {
         axios
-        .post("/register", {
-            nombre_usuario: nombre.value,
-            correo: email.value,
-            contraseña: password.value,
-            id_rol: 2
-        })
-        .then((res) => {
-            // Redirect to login upon success
-            router.push("/login");
-            alert("Usuario registrado correctamente")
-        })
-        .catch((err) => {
-            // Show an alert on error
-            alert("Error al registrar al usuario " + err);
-        });
+            .post("/register", {
+                nombre_usuario: nombre.value,
+                correo: email.value,
+                contraseña: password.value,
+                id_rol: 2
+            })
+            .then((res) => {
+                router.push("/login");
+                alert("Usuario registrado correctamente");
+            })
+            .catch((err) => {
+                alert("Error al registrar al usuario " + err);
+            });
     }
-    
 };
 
-const comprobarNombre = () =>{
-    if(nombre.value.trim() == ''){
-        errorNombre.value = 'El nombre no puede estar vacío'
-    }else errorNombre.value = '';
- 
-}
+const comprobarNombre = () => {
+    if (nombre.value.trim() === '') {
+        errorNombre.value = 'El nombre no puede estar vacío';
+    } else errorNombre.value = '';
+};
 
-const comprobarEmail = () =>{
-    const regex = /^[a-zA-Z0-9]{1,}@[a-zA-Z]{1,}.[a-zA-Z]{2,4}$/
-    if(email.value == ''){
-        errorEmail.value = 'El correo no puede estar vacío.'
-    }else if(!regex.test(email.value)){
-        errorEmail.value = 'Introduce un correo válido.'
-    }else errorEmail.value = ''
-}
+const comprobarEmail = () => {
+    const regex = /^[a-zA-Z0-9]{1,}@[a-zA-Z]{1,}\.[a-zA-Z]{2,4}$/;
+    if (email.value.trim() === '') {
+        errorEmail.value = 'El correo no puede estar vacío.';
+    } else if (!regex.test(email.value)) {
+        errorEmail.value = 'Introduce un correo válido.';
+    } else errorEmail.value = '';
+};
 
-const comprobarContra = () =>{
-    const regex = /^(?=.*\d)(?=.*[A-Z]).{6,}$/
-    if(password.value.trim() == ''){
-        errorPassword.value = 'Intrduce una contraseña.'
-    }else if(!regex.test(password.value)){
-        errorPassword.value = 'La contraseña debe tener al menos 6 caracteres, una letra mayúscula y un número.'
-    }else errorPassword.value = '';
-}
+const comprobarContra = () => {
+    const regex = /^(?=.*\d)(?=.*[A-Z]).{6,}$/;
+    if (password.value.trim() === '') {
+        errorPassword.value = 'Introduce una contraseña.';
+    } else if (!regex.test(password.value)) {
+        errorPassword.value = 'La contraseña debe tener al menos 6 caracteres, una letra mayúscula y un número.';
+    } else errorPassword.value = '';
+};
+
+const comprobarRepetirContra = () => {
+    if (repetirPassword.value.trim() === '') {
+        errorRepetirPassword.value = 'Repite la contraseña.';
+    } else if (repetirPassword.value !== password.value) {
+        errorRepetirPassword.value = 'Las contraseñas no coinciden.';
+    } else errorRepetirPassword.value = '';
+};
 </script>
+
 <style scoped>
 input {
     color: black;
