@@ -16,7 +16,7 @@
                             <p class="font-bold flex items-center gap-1">cristiano<img
                                     :src="'/storage/img/verificado.png'" class="w-[10px] h-[10px]"></p>
                         </div>
-                        <p class="whitespace-nowrap">recibido</p>
+                        <p class="whitespace-nowrap text-sm text-gray-300">recibido</p>
                     </div>
 
                 </router-link>
@@ -27,32 +27,32 @@
                         class="w-[50px] h-[50px] rounded-full">
                     <div>
                         <p class="font-bold">Isabella</p>
-                        <p class="whitespace-nowrap">enviado</p>
+                        <p class="whitespace-nowrap text-sm text-gray-300">visto</p>
                     </div>
                 </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" :class="{ 'bg-[#2f2f2f]': linkActivo === 3 }"
+                <router-link to="/inicio/tablet/instagram/mensajes/mensaje3" :class="{ 'bg-[#2f2f2f]': linkActivo === 3 }"
                     class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800" @click="activarLink(3)">
-                    <img :src="'/storage/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
+                    <img :src="'https://img.uefa.com/imgml/TP/teams/logos/240x240/50051.png'" class="w-[50px] h-[50px] rounded-full bg-white">
                     <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
+                        <p class="font-bold">realmadrid</p>
+                        <p class="whitespace-nowrap text-sm text-gray-300">te mencionó...</p>
                     </div>
                 </router-link>
 
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" :class="{ 'bg-[#2f2f2f]': linkActivo === 4 }"
+                <router-link to="/inicio/tablet/instagram/mensajes/mensaje4" :class="{ 'bg-[#2f2f2f]': linkActivo === 4 }"
                     class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800" @click="activarLink(4)">
-                    <img :src="'/storage/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
+                    <img :src="'https://img.uefa.com/imgml/TP/players/1/2025/324x324/250076574.jpg'" class="w-[50px] h-[50px] rounded-full">
                     <div>
-                        <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
+                        <p class="font-bold">k.mbappe</p>
+                        <p class="whitespace-nowrap text-sm text-gray-300">visto</p>
                     </div>
                 </router-link>
-                <router-link to="/inicio/tablet/instagram/mensajes/uno" :class="{ 'bg-[#2f2f2f]': linkActivo === 5 }"
+                <router-link to="/inicio/tablet/instagram/mensajes/" :class="{ 'bg-[#2f2f2f]': linkActivo === 5 }"
                     class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800" @click="activarLink(5)">
                     <img :src="'/storage/img/vini.jpeg'" class="w-[50px] h-[50px] rounded-full">
                     <div>
                         <p class="font-bold">Usuario</p>
-                        <p class="whitespace-nowrap">mensaje</p>
+                        <p class="whitespace-nowrap text-sm text-gray-300">mensaje</p>
                     </div>
                 </router-link>
             </div>

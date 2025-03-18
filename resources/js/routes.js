@@ -138,6 +138,8 @@ import Login from "./components/Login.vue";
 
 // FINAL
 import PruebaFinal from "./components/PruebaFinal.vue";
+import MensajeMadrid from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeMadrid.vue";
+import MensajeMbappe from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeMbappe.vue";
 
 
 const routes = [
@@ -300,6 +302,14 @@ const routes = [
                                         path: 'mensaje2',
                                         component: MensajePista
                                     },
+                                    {
+                                        path: 'mensaje3',
+                                        component: MensajeMadrid
+                                    },
+                                    {
+                                        path: 'mensaje4',
+                                        component : MensajeMbappe
+                                    }
                                 ]
                             },
                             {
