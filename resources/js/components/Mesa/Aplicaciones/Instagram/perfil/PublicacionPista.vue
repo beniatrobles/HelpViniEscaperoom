@@ -35,6 +35,16 @@
                     <p>xax: ZmrmSqiplsv123</p>
                 </div>
 
+                <div class="flex items-center gap-1 py-3">
+                    <img :src="'/storage/img/apps/Instagram/pfpig1.png'"
+                        class="w-[30px] rounded-full">
+                    <div class="flex items-center gap-2">
+                        <p class="font-bold flex items-center gap-1">mostopapi<img :src="'/storage/img/verificado.png'"
+                                class="w-[15px] h-[15px] mr-5"></p>
+                    </div>
+                    <p>Pero traduce que no se entiende 😂😂</p>
+                </div>
+
                 <div class="mt-auto text-center border-t border-zinc-800 pt-3">Los comentarios están deshabilitados
                 </div>
             </div>

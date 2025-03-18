@@ -41,12 +41,6 @@
       <img :src="'/storage/img/platano.png'">
     </router-link>
 
-    <router-link to="">
-      <img
-        class="absolute w-[250px] bottom-[20%] left-[15%] rotate-[15deg] brightness-90 hover:scale-[1.1] hover:rotate-[25deg] transition duration-200"
-        :src="'/storage/img/trapo.png'" alt="">
-    </router-link>
-
     <router-link to="/inicio/morado">
       <img
         class="absolute w-[15px] top-[7%] left-[23%] rotate-[3deg] brightness-90 hover:scale-[1.1] hover:rotate-[10deg] transition duration-200"

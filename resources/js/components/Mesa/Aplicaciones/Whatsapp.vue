@@ -23,7 +23,7 @@
                         <nav class="flex flex-col font-bold">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat1" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -51,7 +51,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat2" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -84,7 +84,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat3" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -112,7 +112,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat4" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -140,7 +140,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat5" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -173,7 +173,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat6" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -205,7 +205,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat7" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -233,7 +233,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat8" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -261,7 +261,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link class=" w-full h-[50px] flex items-center my-[1px]">
+                            <router-link to="/inicio/tablet/whatsapp/chat9" class=" w-full h-[50px] flex items-center my-[1px]">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -299,7 +299,7 @@
                     <hr class="h-full border-gray-400 border">
 
                     <div class="h-[100%] w-[65%]">
-                        <router-view class="overflow-auto"></router-view>
+                        <router-view class="overflow-auto flex"></router-view>
                     </div>
 
                 </div>
