@@ -9,55 +9,55 @@
                     <div class="flex items-center gap-2">
                         <p class="font-bold flex items-center gap-1">aitorlpgn</p>
                     </div>
-                    <p class="whitespace-nowrap text-sm text-gray-300">recibido</p>
+                    <p class="whitespace-nowrap text-sm text-gray-300">Que es eso q...</p>
                 </div>
 
             </router-link>
             <router-link to="/inicio/tablet/instagram/mensajes/solicitudes/solicitud2"
                 :class="{ 'bg-[#2f2f2f]': linkActivo === 2 }"
                 class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800" @click="activarLink(2)">
-                <img :src="'https://ih1.redbubble.net/image.420452072.3078/st,small,507x507-pad,600x600,f8f8f8.u5.jpg'" class="w-[50px] h-[50px] rounded-full">
+                <img :src="'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png'" class="w-[50px] h-[50px] rounded-full object-cover">
                 <div>
                     <div class="flex items-center gap-2">
-                        <p class="font-bold flex items-center gap-1">usuario</p>
+                        <p class="font-bold flex items-center gap-1">alba mikealson</p>
                     </div>
-                    <p class="whitespace-nowrap text-sm text-gray-300">recibido</p>
+                    <p class="whitespace-nowrap text-sm text-gray-300">Que ha pasa c...</p>
                 </div>
 
             </router-link>
             <router-link to="/inicio/tablet/instagram/mensajes/solicitudes/solicitud3"
                 :class="{ 'bg-[#2f2f2f]': linkActivo === 3 }"
                 class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800" @click="activarLink(3)">
-                <img :src="'https://ih1.redbubble.net/image.420452072.3078/st,small,507x507-pad,600x600,f8f8f8.u5.jpg'" class="w-[50px] h-[50px] rounded-full">
+                <img :src="'https://i.pinimg.com/736x/48/ee/e5/48eee5cda6a21eee0e938b27a72ce1f1.jpg'" class="w-[50px] h-[50px] rounded-full object-cover">
                 <div>
                     <div class="flex items-center gap-2">
-                        <p class="font-bold flex items-center gap-1">usuario</p>
+                        <p class="font-bold flex items-center gap-1">trow__</p>
                     </div>
-                    <p class="whitespace-nowrap text-sm text-gray-300">recibido</p>
+                    <p class="whitespace-nowrap text-sm text-gray-300">Quien es legoiv...</p>
                 </div>
 
             </router-link>
             <router-link to="/inicio/tablet/instagram/mensajes/solicitudes/solicitud4"
                 :class="{ 'bg-[#2f2f2f]': linkActivo === 4 }"
                 class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800" @click="activarLink(4)">
-                <img :src="'https://ih1.redbubble.net/image.420452072.3078/st,small,507x507-pad,600x600,f8f8f8.u5.jpg'" class="w-[50px] h-[50px] rounded-full">
+                <div class="w-[50px] h-[50px] rounded-full bg-black"></div>
                 <div>
                     <div class="flex items-center gap-2">
-                        <p class="font-bold flex items-center gap-1">usuario</p>
+                        <p class="font-bold flex items-center gap-1">beniatrobles</p>
                     </div>
-                    <p class="whitespace-nowrap text-sm text-gray-300">recibido</p>
+                    <p class="whitespace-nowrap text-sm text-gray-300">Que significa?</p>
                 </div>
 
             </router-link>
             <router-link to="/inicio/tablet/instagram/mensajes/solicitudes/solicitud5"
                 :class="{ 'bg-[#2f2f2f]': linkActivo === 5 }"
                 class="flex gap-3 p-1 rounded cursor-pointer hover:bg-zinc-800" @click="activarLink(5)">
-                <img :src="'https://ih1.redbubble.net/image.420452072.3078/st,small,507x507-pad,600x600,f8f8f8.u5.jpg'" class="w-[50px] h-[50px] rounded-full">
+                <img :src="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgEaIAF5HWV82N5WZcqBcSLl09fOInemIpw&s'" class="w-[50px] h-[50px] rounded-full object-cover object-top">
                 <div>
                     <div class="flex items-center gap-2">
-                        <p class="font-bold flex items-center gap-1">usuario</p>
+                        <p class="font-bold flex items-center gap-1">Chema</p>
                     </div>
-                    <p class="whitespace-nowrap text-sm text-gray-300">recibido</p>
+                    <p class="whitespace-nowrap text-sm text-gray-300">Ha enviado un...</p>
                 </div>
 
             </router-link>
