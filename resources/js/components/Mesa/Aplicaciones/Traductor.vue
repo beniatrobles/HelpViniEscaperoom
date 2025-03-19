@@ -69,10 +69,15 @@
 
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 import axios from 'axios';
 
-const texto = ref('')
+const texto = ref(localStorage.getItem('texto') || '');
+//controlamos el cambio de texto    
+watch(texto, (nuevoValor) => {
+  localStorage.setItem('texto', nuevoValor);
+});
+
 const idiomaTexto = ref('en')
 const traduccion = ref('')
 const idiomaTraduccion = ref('es')
