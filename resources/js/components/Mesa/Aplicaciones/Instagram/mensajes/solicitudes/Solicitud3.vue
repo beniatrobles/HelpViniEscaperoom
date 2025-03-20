@@ -2,7 +2,7 @@
     <div class="flex flex-col w-[100%] h-[100%] bg-zinc-900 border-r border-zinc-800 pr-2">
         <div class="flex h-full pb-4">
             <div class="flex flex-col gap-1 mt-auto w-full">
-                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">Quien es "nombreUsuario hacker"?</p>
+                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">Quien es legoiv? por que dejas su comentario?</p>
             </div>
         </div>
         <div class="mt-auto flex gap-2">

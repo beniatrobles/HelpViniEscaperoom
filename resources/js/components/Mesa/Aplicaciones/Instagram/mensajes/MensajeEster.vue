@@ -1,12 +1,14 @@
 <template>
-    <div class="flex flex-col w-[100%] h-[100%] bg-zinc-900 border-r border-zinc-800 pr-2 relative">
+    <div class="flex flex-col w-[100%] h-[100%] bg-zinc-900 border-r border-zinc-800 pr-2">
         <div class="flex h-full pb-4">
-            <div class="flex flex-col gap-1 mt-auto w-full">
-                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">P*to mono🦍🍌</p>
-                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">Que eres un payaso🖕🖕</p>
-                <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">Y feo</p>
-                <!-- esta imagen chatgpt -->
-                <img  src="https://pbs.twimg.com/media/FqEqV1YXwAIsNR9.jpg:large" class="w-[130px] rounded-lg border border-zinc-800 cursor-pointer" @click="mostrarImagen">
+            <div class="flex flex-col gap-5 mt-auto w-full">
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">Holaaaaa</p>
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto -mt-4 w-max">Que tal???</p>
+                <p class="text-xs text-center text-gray-400">22 may, 14:18</p>
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto w-max">Te apetece que quedemos algún día para cenar?</p>
+                <p class="p-4 bg-blue-700 max-w-[80%] rounded-[20px] ml-auto -mt-4 w-max">Y lo que surja🙈🙈</p>
+                
+                <p class="ml-auto -mt-3 text-sm text-gray-400">visto</p>
             </div>
         </div>
         <div class="mt-auto flex gap-2">
@@ -25,9 +27,6 @@
                 <button class="px-2 bg-blue-600 rounded mt-5" @click="ocultarMensaje">Entendido</button>
             </div>
         </div>
-        <div :class="{'scale-0' : !imagen}" class="bg-black bg-opacity-35 absolute inset-0 m-auto flex justify-center items-center transition duration-75" @click="mostrarImagen">
-            <img src="https://pbs.twimg.com/media/FqEqV1YXwAIsNR9.jpg:large" class="w-[80%] object-cover">
-        </div>
     </div>
 </template>
 
@@ -37,7 +36,6 @@ import { usePartidaStore } from '@/stores/partidaStore';
 const partidaStore = usePartidaStore();
 const mensajeVisible = ref(false)
 const mensaje = ref('')
-const imagen = ref(false);
 
 const mostrarMensaje = async () => {
     if (mensaje.value.trim() === '') return;
@@ -62,10 +60,9 @@ const mostrarMensaje = async () => {
     }
 };
 
-const ocultarMensaje = () => mensajeVisible.value = false
-
-
-const mostrarImagen = () => imagen.value = !imagen.value
+const ocultarMensaje = () => {
+    mensajeVisible.value = false
+}
 </script>
 
 <style scoped></style>

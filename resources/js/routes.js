@@ -147,6 +147,9 @@ import Solicitud2 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solici
 import Solicitud3 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud3.vue";
 import Solicitud4 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud4.vue";
 import Solicitud5 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud5.vue";
+import MensajeIbai from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeIbai.vue";
+import MensajeOswaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeOswaldo.vue";
+import MensajeEster from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeEster.vue";
 
 
 const routes = [
@@ -306,6 +309,10 @@ const routes = [
                                         component : InstagramChats,
                                         children : [
                                             {
+                                                path : 'mensaje0',
+                                                component : MensajeOswaldo
+                                            },
+                                            {
                                                 path: 'mensaje1',
                                                 component: MensajeRonaldo
                                             },
@@ -320,6 +327,14 @@ const routes = [
                                             {
                                                 path: 'mensaje4',
                                                 component : MensajeMbappe
+                                            },
+                                            {
+                                                path : 'mensaje5',
+                                                component : MensajeIbai
+                                            },
+                                            {
+                                                path : 'mensaje6',
+                                                component : MensajeEster
                                             }
                                         ]
                                     },
