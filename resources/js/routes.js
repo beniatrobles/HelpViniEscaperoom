@@ -72,6 +72,18 @@ import Destacada1 from "./components/Mesa/Aplicaciones/Instagram/perfil/Destacad
 import Historias from "./components/Mesa/Aplicaciones/Instagram/inicio/Historias.vue";
 import Insta from "./components/Mesa/Aplicaciones/Gmail/recibidos/InstaInicioSesion.vue";
 import InstaCambioContrasena from "./components/Mesa/Aplicaciones/Gmail/recibidos/InstaCambioContrasena.vue";
+import MensajeMadrid from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeMadrid.vue";
+import MensajeMbappe from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeMbappe.vue";
+import InstagramChats from "./components/Mesa/Aplicaciones/Instagram/InstagramChats.vue";
+import InstagramSolicitudes from "./components/Mesa/Aplicaciones/Instagram/InstagramSolicitudes.vue";
+import Solicitud1 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud1.vue";
+import Solicitud2 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud2.vue";
+import Solicitud3 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud3.vue";
+import Solicitud4 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud4.vue";
+import Solicitud5 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud5.vue";
+import MensajeIbai from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeIbai.vue";
+import MensajeOswaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeOswaldo.vue";
+import MensajeEster from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeEster.vue";
 
 // NOTAS 
 import Notas from "./components/Mesa/Aplicaciones/Notas.vue";
@@ -131,6 +143,8 @@ import WhatsappChat6 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat6
 import WhatsappChat7 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat7.vue";
 import WhatsappChat8 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat8.vue";
 import WhatsappChat9 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappChat9.vue";
+import WhatsappL from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappL.vue";
+import WhatsappL2 from "./components/Mesa/Aplicaciones/Whatsapp/WhatsappL2.vue";
 
 // LOGIN 
 import Registro from "./components/Registro.vue";
@@ -138,18 +152,6 @@ import Login from "./components/Login.vue";
 
 // FINAL
 import PruebaFinal from "./components/PruebaFinal.vue";
-import MensajeMadrid from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeMadrid.vue";
-import MensajeMbappe from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeMbappe.vue";
-import InstagramChats from "./components/Mesa/Aplicaciones/Instagram/InstagramChats.vue";
-import InstagramSolicitudes from "./components/Mesa/Aplicaciones/Instagram/InstagramSolicitudes.vue";
-import Solicitud1 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud1.vue";
-import Solicitud2 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud2.vue";
-import Solicitud3 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud3.vue";
-import Solicitud4 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud4.vue";
-import Solicitud5 from "./components/Mesa/Aplicaciones/Instagram/mensajes/solicitudes/Solicitud5.vue";
-import MensajeIbai from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeIbai.vue";
-import MensajeOswaldo from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeOswaldo.vue";
-import MensajeEster from "./components/Mesa/Aplicaciones/Instagram/mensajes/MensajeEster.vue";
 
 
 const routes = [
@@ -608,7 +610,16 @@ const routes = [
                                 component: WhatsappChat9,
 
                             },
-                        ]
+                        ],
+                        
+                    },
+                    {
+                        path: 'whassL',
+                        component: WhatsappL,
+                    },
+                    {
+                        path: 'whassL2',
+                        component: WhatsappL2,
                     },
                 ],
             },

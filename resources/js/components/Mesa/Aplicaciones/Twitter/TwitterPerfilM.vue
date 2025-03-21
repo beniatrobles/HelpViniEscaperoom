@@ -152,11 +152,11 @@
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
                             <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
-                            <span>5</span>
+                            <span>3</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
                             <img :src="'/storage/img/apps/iconos/icon-grafico.png'" alt="">
-                            <span>402</span>
+                            <span>82</span>
                         </div>
                     </div>
                 </div>
