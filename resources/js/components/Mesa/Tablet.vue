@@ -65,7 +65,7 @@
                     <img :src="'/storage/img/apps/twitter.png'" alt="Twitter" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Twitter</p>
                 </router-link>
-                <router-link to="/inicio/tablet/whatsapp" class="flex flex-col items-center">
+                <router-link to="/inicio/tablet/whassL" class="flex flex-col items-center">
                     <img :src="'/storage/img/apps/whatsapp.png'" alt="Whatsapp" class="w-16 h-16 cursor-pointer">
                     <p class="text-sm font-semibold">Whatsapp</p>
                 </router-link>

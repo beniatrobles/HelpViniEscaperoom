@@ -137,7 +137,7 @@
                             <span>0</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/apps/iconos/icon-corazon.png'" alt="">
+                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
                             <span>3</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
@@ -293,7 +293,7 @@
                             <span>0</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[20px]">
-                            <img :src="'/storage/img/apps/iconos/icon-corazonR.png'" alt="">
+                            <img :src="'/storage/img/apps/iconos/icon-corazon.png'" alt="">
                             <span>5</span>
                         </div>
                         <div class="flex items-center space-x-1 w-[15px]">
