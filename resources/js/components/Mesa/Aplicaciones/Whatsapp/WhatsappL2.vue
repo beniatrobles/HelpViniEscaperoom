@@ -66,6 +66,9 @@ const loginGmail = async () => {
 
             if (gmail && instagram && whatsapp && twitter) {
                 await partidaStore.cambiarEstado('completado', idPartida)
+                setTimeout(() =>{
+                   router.push('/final') 
+                }, 2000)
             }
         } catch (e) {
             console.log("ERROR", e)
