@@ -25,9 +25,12 @@
             <h1 class="texto7 opacity-0 text-center text-xs">¡RÁPIDO! NO HAY TIEMPO QUE PERDER</h1>
         </div>
         
-        <div class="flex items-center justify-center text-sm pt-10 flex-col max-w-[90%] m-auto">
-            <button class="boton bg-[#0ED800] m-auto px-[100px] py-[25px] rounded opacity-0" @click="oultarInicio">
-                <h1>Vamos</h1>
+        <div class="flex justify-center gap-10 text-sm pt-10 max-w-[90%] m-auto">
+            <button class="boton bg-[#0ED800] px-[100px] py-[25px] rounded opacity-0" @click="seguirExplorando">
+                <h1>Quiero seguir explorando</h1>
+            </button>
+            <button class="boton bg-[#0ED800] px-[100px] py-[25px] rounded opacity-0" @click="oultarInicio">
+                <h1>Vamos!</h1>
             </button>
         </div>
     </div>
@@ -70,7 +73,8 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import { useRouter } from 'vue-router';
+const router = useRouter();
 const password = ref('');
 
 const inicioOculto = ref(localStorage.getItem('inicioOculto') === 'true' || false); 
@@ -95,6 +99,10 @@ const comprobarPassword = () => {
     minuscula.value = /[a-z]/.test(password.value);
     numero.value = /[0-9]/.test(password.value);
     especial.value = specialCharRegex.test(password.value);
+}
+
+const seguirExplorando = () => {
+    router.push('/inicio')
 }
 
 </script>
