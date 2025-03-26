@@ -151,4 +151,4 @@ const seguirExplorando = () => {
         opacity: 1;
     }
 }
-</style>1
+</style>

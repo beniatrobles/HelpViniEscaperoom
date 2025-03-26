@@ -6,11 +6,11 @@
       <h1>{{ tiempoFormateado }}</h1>
     </div>
 
-    <router-link to="/"
+    <div @click="salirPartida"
       class="absolute left-[2%] top-[6%] w-[30px] flex flex-col items-center space-y-3 hover:text-[#0ED800]">
       <img :src="'/storage/img/exit.png'" alt="">
       <h1 class="text-[10px]">SALIR</h1>
-    </router-link>
+    </div>
     
     <img :src="'/storage/img/mesa.jpg'" class="w-[100%] h-[100%] z-[-10]">
     <router-link to="/inicio/tabletBloq"
@@ -127,6 +127,23 @@ const iniciarTemporizador = () => {
     }
   }, 1000); // Cada segundo
 };
+
+const salirPartida = async ()=>{
+
+  if(confirm('¿Estás seguro de que quieres salir de la partida?')) {
+    const salir = confirm('Desea guardar la pártida para recuperarla en cualquier momento?');
+    if(salir){
+      try {
+        const partida = await partidaStore.comprobarPartida();
+        await partidaStore.cambiarEstado('terminado', partida.data.id_partida);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    
+    router.push("/");
+  } 
+}
 
 onMounted(async () => {
   authStore.checkToken();
