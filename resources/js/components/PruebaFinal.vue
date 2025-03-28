@@ -15,7 +15,7 @@
         </div>
 
         <div class="flex items-center justify-center text-sm pt-10 flex-col max-w-[90%] m-auto">
-            <h1 class="texto5 opacity-0 text-center mb-2">PARA QUE SEA MÁS SEGURO UTILIZAREMOS UN GESTOR DE CONTRASEÑAS,
+            <h1 class="texto5 opacity-0 text-center mb-2">PARA QUE SEA MÁS SEGURO UTILIZAREMOS UN <span class="text-[#0ED800]">GESTOR DE CONTRASEÑAS</span>,
                 EL CUAL SE ENCARGARÁ DE CREAR Y GESTIONAR ESAS CONTRASEÑAS SEGURAS POR NOSOTROS.</h1>
             <h1 class="texto6 opacity-0 text-center">AÚN ASÍ NECESITARÁS CREAR UNA CONTRASEÑA SEGURA POR TU CUENTA, LA
                 CUAL DARÁ ACCESO AL GESTOR.</h1>
@@ -59,7 +59,7 @@
             </div>
             
             <div v-if="caracteres && mayuscula && minuscula && numero && especial" class="flex justify-center items-center mt-10">
-                <button class="bg-blue-600 px-2 py-1 rounded hover:opacity-70 transition">Establecer contraseña</button>
+                <button class="bg-blue-600 px-2 py-1 rounded hover:opacity-70 transition" @click="completarPrueba">Establecer contraseña</button>
             </div>
 
             <div
@@ -67,6 +67,20 @@
             </div>
         </div>
         </div> 
+    </div>
+
+    <div v-if="mostrarAdvertencia" class="w-full h-screen bg-black bg-opacity-85 absolute left-0 top-0 flex justify-center items-center">
+        <div class="alerta w-[500px] h-max bg-black p-5 text-center flex flex-col gap-3 relative">
+            <p class="text-[#0ED800] font-bold text-lg">¡Atención!</p>
+            <p>Podrás seguir explorando el espacio de juego en caso de querer, pero ten en cuenta que el tiempo seguirá corriendo, lo que afectará tu puntuación final.</p>
+            <p>Cuando estés listo, podrás realizar la prueba final en cualquier momento accediendo desde el cuaderno de progreso.</p>
+            <p>¡Suerte!</p>
+
+            <div class="flex justify-around absolute -bottom-4 w-full left-0">
+                <div class="check w-[50px] aspect-square bg-green-500 flex justify-center items-center cursor-pointer text-lg font-bold" @click="respuestaAdvertencia(1)">✓</div>
+                <div class="cross w-[50px] aspect-square bg-red-500 flex justify-center items-center cursor-pointer text-lg" @click="respuestaAdvertencia(2)">✗</div>
+            </div>
+        </div>
     </div>
 
 </template>
@@ -86,6 +100,8 @@ const minuscula = ref(false);
 const numero = ref(false);
 const especial = ref(false);
 
+const mostrarAdvertencia = ref(false);
+
 
 const oultarInicio = () => {
     inicioOculto.value = true;
@@ -102,7 +118,19 @@ const comprobarPassword = () => {
 }
 
 const seguirExplorando = () => {
-    router.push('/inicio')
+    // router.push('/inicio')
+    mostrarAdvertencia.value = true;
+
+}
+
+const completarPrueba = () => localStorage.removeItem('inicioOculto');  
+const respuestaAdvertencia = (respuesta) => {
+    if(respuesta === 1){
+        mostrarAdvertencia.value = false;
+        router.push('/inicio');
+    }else{
+        mostrarAdvertencia.value = false;
+    }
 }
 
 </script>
@@ -150,5 +178,27 @@ const seguirExplorando = () => {
     to {
         opacity: 1;
     }
+}
+
+.alerta{
+    box-shadow: 0 0 2px gray;
+}
+.check{
+    transition: 150ms;
+    clip-path: polygon(1% 2%, 93% 3%, 97% 95%, 2% 99%);
+}
+.cross{
+    transition: 150ms;
+    clip-path: polygon(99% 2%, 7% 3%, 3% 95%, 98% 99%);
+}
+
+.check:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #0ED800;
+}
+
+.cross:hover{
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    background-color: #FF0000;
 }
 </style>
