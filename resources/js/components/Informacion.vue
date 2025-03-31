@@ -4,7 +4,7 @@
         <h1>Antes de comenzar, es importante que sepas:</h1>
         <div class="mt-8 max-w-[65%] flex flex-col gap-4">
             <h1 class="text-xs list-item">Juega en pantalla completa <span class="text-[#0ED800]">(F11)</span> para una mejor experiencia de juego.</h1>
-            <h1 class="text-xs list-item">Dispondrás de un total de <span class="text-[#0ED800]">30 minutos</span> para completar la partida.</h1>
+            <h1 class="text-xs list-item">Dispondrás de un total de <span class="text-[#0ED800]">60 minutos</span> para completar la partida.</h1>
             <h1 class="text-xs list-item">Interactua con todos los elementos posibles en busca de <span class="text-[#0ED800]">pistas</span> para ir recuperando el acceso de sus redes.</h1>
             <h1 class="text-xs list-item">Una vez recuperadas todas las redes sociales, te enfrentarás a una <span class="text-[#0ED800]">prueba final</span>. ¡Así que no te vayas!</h1>
             <h1 class="text-xs list-item">Todo lo <span class="text-[#0ED800]">necesario</span> para completar este Escape Room lo encontrarás <span class="text-[#0ED800]">en el juego</span>, por lo que no necesitarás utilizar ninguna herramienta externa al juego.</h1>

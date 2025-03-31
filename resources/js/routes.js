@@ -152,6 +152,7 @@ import Login from "./components/Login.vue";
 
 // FINAL
 import PruebaFinal from "./components/PruebaFinal.vue";
+import PantallaFinal from "./components/PantallaFinal.vue";
 
 
 const routes = [
@@ -685,6 +686,10 @@ const routes = [
     {
         path : '/final',
         component : PruebaFinal,
+    },
+    {
+        path: '/partidaTerminada/:status',
+        component: PantallaFinal,
     },
     {
         path: '/registro',

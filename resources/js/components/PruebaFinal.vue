@@ -72,7 +72,7 @@
     <div v-if="mostrarAdvertencia" class="w-full h-screen bg-black bg-opacity-85 absolute left-0 top-0 flex justify-center items-center">
         <div class="alerta w-[500px] h-max bg-black p-5 text-center flex flex-col gap-3 relative">
             <p class="text-[#0ED800] font-bold text-lg">¡Atención!</p>
-            <p>Podrás seguir explorando el espacio de juego en caso de querer, pero ten en cuenta que el tiempo seguirá corriendo, lo que afectará tu puntuación final.</p>
+            <p>Podrás seguir explorando el espacio de juego si deseas, pero ten en cuenta que el tiempo seguirá corriendo, lo que afectará tu puntuación final.</p>
             <p>Cuando estés listo, podrás realizar la prueba final en cualquier momento accediendo desde el cuaderno de progreso.</p>
             <p>¡Suerte!</p>
 
@@ -88,6 +88,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { usePartidaStore } from '../stores/partidaStore';
 const router = useRouter();
 const password = ref('');
 
@@ -99,6 +100,8 @@ const mayuscula = ref(false);
 const minuscula = ref(false);
 const numero = ref(false);
 const especial = ref(false);
+
+const partidaStore = usePartidaStore();
 
 const mostrarAdvertencia = ref(false);
 
@@ -123,7 +126,17 @@ const seguirExplorando = () => {
 
 }
 
-const completarPrueba = () => localStorage.removeItem('inicioOculto');  
+const completarPrueba = async () => {
+    localStorage.removeItem('inicioOculto');
+    //cambio el estado de la partida a "terminada"  
+    try {
+      const partida = await partidaStore.comprobarPartida();
+      await partidaStore.cambiarEstado('terminado', partida.data.id_partida);
+    } catch (error) {
+      console.error(error);
+    }
+    router.push('/partidaTerminada/1');
+}
 const respuestaAdvertencia = (respuesta) => {
     if(respuesta === 1){
         mostrarAdvertencia.value = false;

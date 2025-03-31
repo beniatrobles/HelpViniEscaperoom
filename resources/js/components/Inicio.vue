@@ -6,10 +6,9 @@
       <h1>{{ tiempoFormateado }}</h1>
     </div>
 
-    <div @click="salirPartida"
-      class="absolute left-[2%] top-[6%] w-[30px] flex flex-col items-center space-y-3 hover:text-[#0ED800]">
-      <img :src="'/storage/img/exit.png'" alt="">
-      <h1 class="text-[10px]">SALIR</h1>
+    <div @click="preguntarSalir" class="absolute left-[2%] top-[6%] w-[30px] flex flex-col items-center gap-1 group cursor-pointer">
+      <svg viewBox="0 0 24 24" width="40px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11067)"> <path class="group-hover:stroke-[#0ED800]" d="M15 4.00098H5V18.001C5 19.1055 5.89543 20.001 7 20.001H15" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path class="group-hover:stroke-[#0ED800]" d="M16 15.001L19 12.001M19 12.001L16 9.00098M19 12.001H9" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11067"> <rect width="24" height="24" fill="white" transform="translate(0 0.000976562)"></rect> </clipPath> </defs> </g></svg>
+      <h1 class="text-[10px] group-hover:text-[#0ED800]">SALIR</h1>
     </div>
     
     <img :src="'/storage/img/mesa.jpg'" class="w-[100%] h-[100%] z-[-10]">
@@ -81,6 +80,29 @@
     <router-view class="absolute inset-0 z-[100]"></router-view>
 
   </div>
+
+  <div v-if="mostrarAdvertencia1" class="w-full h-screen bg-black bg-opacity-85 absolute left-0 top-0 flex justify-center items-center z-50">
+        <div class="alerta w-[375px] h-max bg-black p-5 text-center flex flex-col gap-3 relative">
+            <p class="text-[#0ED800] font-bold text-lg">Salir de la partida</p>
+            <p>¿Estas seguro que quieres salir de la partida?</p>
+
+            <div class="flex justify-around absolute -bottom-4 w-full left-0">
+                <div class="check w-[30px] aspect-square bg-green-500 flex justify-center items-center cursor-pointer text-lg font-bold" @click="confirmarSalir(1)">✓</div>
+                <div class="cross w-[30px] aspect-square bg-red-500 flex justify-center items-center cursor-pointer text-lg" @click="confirmarSalir(2)">✗</div>
+            </div>
+        </div>
+  </div>
+  <div v-if="mostrarAdvertencia2" class="w-full h-screen bg-black bg-opacity-85 absolute left-0 top-0 flex justify-center items-center z-50">
+        <div class="alerta w-[375px] h-max bg-black p-5 text-center flex flex-col gap-3 relative">
+            <p class="text-[#0ED800] font-bold text-lg">Guardar partida</p>
+            <p>¿Desea guardar el progreso obtenido hasta el momento?</p>
+
+            <div class="flex justify-around absolute -bottom-4 w-full left-0">
+              <div class="check w-[30px] aspect-square bg-green-500 flex justify-center items-center cursor-pointer text-lg font-bold" @click="guardarPartida(1)">✓</div>
+              <div class="cross w-[30px] aspect-square bg-red-500 flex justify-center items-center cursor-pointer text-lg" @click="guardarPartida(2)">✗</div>
+            </div>
+        </div>
+  </div>
 </template>
 
 <script setup>
@@ -95,6 +117,9 @@ import Informacion from './Informacion.vue';
 const router = useRouter();
 const authStore = useAuthStore();
 const partidaStore = usePartidaStore();
+
+const mostrarAdvertencia1 = ref(false);
+const mostrarAdvertencia2 = ref(false);
 
 let intervalo; // Controla el temporizador
 const loaderVisible = ref(true);
@@ -123,26 +148,37 @@ const iniciarTemporizador = () => {
       } catch (error) {
         console.error(error);
       }
-      router.push("/");
+      router.push("/partidaTerminada/2");
     }
   }, 1000); // Cada segundo
 };
 
-const salirPartida = async ()=>{
+const preguntarSalir = async ()=> mostrarAdvertencia1.value = true;
+  
+const confirmarSalir = (respuesta) => {
+  if(respuesta === 1){
+      mostrarAdvertencia1.value = false;
+      mostrarAdvertencia2.value = true;
+      // router.push('/');
+  }else{
+      mostrarAdvertencia1.value = false;
+  }
+}
 
-  if(confirm('¿Estás seguro de que quieres salir de la partida?')) {
-    const salir = confirm('Desea guardar la pártida para recuperarla en cualquier momento?');
-    if(salir){
-      try {
-        const partida = await partidaStore.comprobarPartida();
-        await partidaStore.cambiarEstado('terminado', partida.data.id_partida);
-      } catch (error) {
-        console.error(error);
-      }
+const guardarPartida = async (respuesta) => {
+  if(respuesta === 2){
+    mostrarAdvertencia2.value = false;
+    try {
+      const partida = await partidaStore.comprobarPartida();
+      await partidaStore.cambiarEstado('terminado', partida.data.id_partida);
+    } catch (error) {
+      console.error(error);
     }
-    
-    router.push("/");
-  } 
+    router.push('/');
+  }else{
+    mostrarAdvertencia2.value = false;
+    router.push('/');
+  }
 }
 
 onMounted(async () => {
@@ -199,5 +235,25 @@ onUnmounted(() => {
 
 
 <style scoped>
+.alerta{
+  box-shadow: 0 0 2px gray;
+}
+.check{
+    transition: 150ms;
+    clip-path: polygon(1% 2%, 93% 3%, 97% 95%, 2% 99%);
+}
+.cross{
+    transition: 150ms;
+    clip-path: polygon(99% 2%, 7% 3%, 3% 95%, 98% 99%);
+}
 
+.check:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #0ED800;
+}
+
+.cross:hover{
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    background-color: #FF0000;
+}
 </style>
