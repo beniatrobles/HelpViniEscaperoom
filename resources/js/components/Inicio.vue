@@ -195,7 +195,7 @@ onMounted(async () => {
         twitter: false,
         whatsapp: false,
         completado: false,
-        tiempo: 3600,
+        tiempo: 1800,
         id_usuario: authStore.user.id,
         terminado : 0,
         penalizar : 0,
