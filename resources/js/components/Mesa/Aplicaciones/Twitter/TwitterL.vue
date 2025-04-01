@@ -54,7 +54,7 @@ const contra = ref('')
 const error = ref('')
 
 const loginInstagram = async () => {
-    if (usuario.value === 'vinijr' && contra.value === 'ViniOmelhor123') {
+    if (usuario.value === 'vinijr' && contra.value === 'ViniMononeuronal1') {
 
         try {
             //sacamos el numero de la partida actual
