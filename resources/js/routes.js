@@ -153,6 +153,7 @@ import Login from "./components/Login.vue";
 // FINAL
 import PruebaFinal from "./components/PruebaFinal.vue";
 import PantallaFinal from "./components/PantallaFinal.vue";
+import Ranking from "./components/Ranking.vue";
 
 
 const routes = [
@@ -699,6 +700,10 @@ const routes = [
         path: '/login',
         component: Login,
     },
+    {
+        path: '/ranking',
+        component: Ranking
+    }
 ];
 
 export const router = createRouter({
