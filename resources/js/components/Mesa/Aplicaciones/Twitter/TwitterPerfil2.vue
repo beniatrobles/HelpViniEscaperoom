@@ -241,8 +241,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-4 text-s">
-                        <p>01010011 01101111 01111001 01001101 01100101 01101010 01101111 01110010 01010001 01110101</p>
+                    <div class="mb-4 text-s"> 
+                        <p>01010110 01101001 01101110 01101001 01000100 01100001</p>
                     </div>
                     <div class="flex space-x-20 text-gray-400 text-sm items-center">
                         <div class="flex items-center space-x-1 w-[20px]">
@@ -280,7 +280,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-4 text-s">
+                    <div class="mb-4 text-s"> S
                         <p>01100101 01001110 01100101 01111001 00110111</p>
                     </div>
                     <div class="flex space-x-20 text-gray-400 text-sm items-center">

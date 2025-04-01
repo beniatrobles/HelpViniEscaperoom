@@ -32,7 +32,7 @@
                         class="w-[30px] rounded-full bg-white p-1">
                     <p class="font-bold flex items-center gap-1">legoiv</p>
 
-                    <p>xax: ZmrmSqiplsv123</p>
+                    <p>xax: ZmrmQsrsriyvsrep1</p>
                 </div>
 
                 <div class="text-wrap ml-8 mt-1">
