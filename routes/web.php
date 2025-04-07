@@ -53,6 +53,7 @@ Route::post('/register', [AuthController::class, 'registro']);
 Route::post('/crear-partida', [PartidasController::class, 'crearPartida']);
 Route::put('/actualizar-partida/{id}', [PartidasController::class, 'actualizarPartida']);
 Route::get('/partida-activa/{idUsuario}', [PartidasController::class, 'obtenerPartidaActiva']);
+Route::get('/partidas-finalizadas', [PartidasController::class, 'obtenerPartidasFinalizadas']);
 
 Route::get('/partida/{id}/tiempo', [PartidasController::class, 'getTiempoRestante']);
 Route::post('/partida/{id}/actualizarTiempo', [PartidasController::class, 'actualizarTiempo']);

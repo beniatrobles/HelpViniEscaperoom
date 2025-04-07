@@ -1,6 +1,6 @@
 <template>
     <!-- <section class="fixed top-0 left-0 w-full h-screen z-[1000] flex justify-center items-center bg-zinc-950"> -->
-        <section class="dots-container">
+        <section class="dots-container fixed top-0 left-0 w-full h-screen z-[1000] bg-zinc-950">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>

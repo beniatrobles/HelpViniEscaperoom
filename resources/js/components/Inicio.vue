@@ -1,7 +1,7 @@
 <template>
-  <loading v-if="loaderVisible"></loading>
   <Informacion v-if="informacionVisible" @empezar="ocultarInformacion"></Informacion>
   <div class="h-screen relative overflow-hidden">
+    <loading v-if="loaderVisible"></loading>
     <div class="absolute m-3">
       <h1>{{ tiempoFormateado }}</h1>
     </div>
@@ -195,7 +195,7 @@ onMounted(async () => {
         twitter: false,
         whatsapp: false,
         completado: false,
-        tiempo: 1800,
+        tiempo: 3600,
         id_usuario: authStore.user.id,
         terminado : 0,
         penalizar : 0,

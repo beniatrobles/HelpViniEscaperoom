@@ -154,4 +154,37 @@ class PartidasController extends Controller
 
             return response()->json(['message' => 'Tiempo actualizado con éxito.'], 200);
         }
+        public function obtenerPartidasFinalizadas()
+        {
+            $partidas = Partida::with('usuario:id_usuario,nombre_usuario,correo,avatar_ruta,id_rol')
+                ->where('terminado', true)
+                ->where('completado', true)
+                ->orderByDesc('tiempo')
+                ->limit(10)
+                ->get()
+                ->map(function ($partida) {
+                    return [
+                        // 'id_partida'     => $partida->id_partida,
+                        // 'primera_vez'    => $partida->primera_vez,
+                        // 'tablet'         => $partida->tablet,
+                        // 'gmail'          => $partida->gmail,
+                        // 'instagram'      => $partida->instagram,
+                        // 'twitter'        => $partida->twitter,
+                        // 'whatsapp'       => $partida->whatsapp,
+                        // 'completado'     => $partida->completado,
+                        // 'terminado'      => $partida->terminado,
+                        // 'penalizar'      => $partida->penalizar,
+                        'tiempo'         => $partida->tiempo,
+                        'id_usuario'     => $partida->id_usuario,
+                        // 'created_at'     => $partida->created_at,
+                        // 'updated_at'     => $partida->updated_at,
+                        'nombre_usuario' => $partida->usuario->nombre_usuario ?? null,
+                        // 'correo'         => $partida->usuario->correo ?? null,
+                        'avatar_ruta'    => $partida->usuario->avatar_ruta ?? null,
+                        // 'id_rol'         => $partida->usuario->id_rol ?? null,
+                    ];
+                });
+
+            return response()->json($partidas);
+        }
 }
