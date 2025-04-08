@@ -14,7 +14,7 @@
             <div v-if="top3.length>0" class="flex justify-center gap-14 mt-14 ">
                 <div class="flex flex-col items-center">
                     <div class="w-[150px] h-[150px] bg-white rounded-full mt-20 outline outline-[#C0C0C0] outline-[5px] relative segundo">
-                        <img :src="top3[1].avatar_ruta ? `/storage/${top3[1].avatar_ruta}` : '/storage/avatars/default.jpg'" class="rounded-full object-cover">
+                        <img :src="top3[1].avatar_ruta ? `/storage/${top3[1].avatar_ruta}` : '/storage/avatars/default.jpg'" class="rounded-full object-cover aspect-square object-top">
                         <div class="bg-[#C0C0C0] outline pt-1 rounded-full max-w-max aspect-square absolute left-0 right-0 -bottom-5 mx-auto text-black"><h1>#2</h1></div>
                     </div>
                     <p class="mt-5 font-bold">{{ top3[1].nombre_usuario }}</p>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="flex flex-col items-center ">
                     <div class="w-[180px] h-[180px] bg-white rounded-full outline outline-[5px] outline-[yellow] relative primero">
-                        <img :src="top3[0].avatar_ruta ? `/storage/${top3[0].avatar_ruta}` : '/storage/avatars/default.jpg'" class="rounded-full object-cover">
+                        <img :src="top3[0].avatar_ruta ? `/storage/${top3[0].avatar_ruta}` : '/storage/avatars/default.jpg'" class="rounded-full object-cover aspect-square object-top">
                         <div class="bg-[yellow] outline pt-1 rounded-full max-w-max aspect-square absolute left-0 right-0 -bottom-5 mx-auto text-black"><h1>#1</h1></div>
                         <img :src="'/storage/img/corona.png'" class="corona w-20 absolute -top-12 right-0 rotate-[26deg]">
                     </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="w-[150px] h-[150px] bg-white rounded-full mt-24 outline outline-[#CE8946] outline-[5px] relative tercero">
-                        <img :src="top3[2].avatar_ruta ? `/storage/${top3[2].avatar_ruta}` : '/storage/avatars/default.jpg'" class="rounded-full object-cover">
+                        <img :src="top3[2].avatar_ruta ? `/storage/${top3[2].avatar_ruta}` : '/storage/avatars/default.jpg'" class="rounded-full object-cover aspect-square object-top">
                         <div class="bg-[#CE8946] outline pt-1 rounded-full max-w-max aspect-square absolute left-0 right-0 -bottom-5 mx-auto text-black"><h1>#3</h1></div>
                     </div>
                     <p class="mt-5 font-bold">{{ top3[2].nombre_usuario }}</p>
@@ -63,12 +63,13 @@ import { computed, onMounted, ref } from 'vue';
 const top3 = ref([]);
 const partidas = ref([]);
 
-const tiempoFormateado = (segundos) => {
+const tiempoFormateado = (segundosRestantes) => {
+  const segundos = 3600 - segundosRestantes;
   const hours = Math.floor(segundos / 3600);
   const minutes = Math.floor((segundos % 3600) / 60);
   const remainingSeconds = segundos % 60;
   
-  // Formatear el tiempo como HH:MM:SS
+  // Formatear el tiempo transcurrido como HH:MM:SS
   return `${hours}:${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
 };
 
