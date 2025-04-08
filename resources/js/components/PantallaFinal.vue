@@ -6,7 +6,7 @@
     <source :src="'/storage/img/vini_baila.mp4'" type="video/mp4">
 </video>
 
-<div class="boton m-auto max-w-max mt-3 px-2 py-1 rounded cursor-pointer" @click="()=>router.push('/')">Ver Ranking</div>
+<div class="boton m-auto max-w-max mt-3 px-2 py-1 rounded cursor-pointer" @click="()=>router.push('/ranking')">Ver Ranking</div>
 
 
 </template>
