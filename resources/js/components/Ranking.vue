@@ -77,7 +77,7 @@ onMounted(async () => {
     const response = await axios.get('/partidas-finalizadas');
     top3.value = response.data.slice(0, 3); 
     partidas.value = response.data.slice(3);
-    
+    console.log(top3.value)
 })
 </script>
 

@@ -23,35 +23,35 @@
     const imagenes = ref([
         {
             src: 'https://i.pinimg.com/736x/0d/c4/c8/0dc4c86d8590170d02719a27c615da9f.jpg',
-            tablero: 'Love'
+            tablero: 'amor prohibido'
         }, 
         {
             src: 'https://i.pinimg.com/736x/1f/af/ce/1fafce4d7b1ae104c5b494e374b261e5.jpg',
-            tablero: 'Love'
+            tablero: 'amor prohibido'
         }, 
         {
             src: 'https://i.pinimg.com/736x/d7/f1/0b/d7f10b46656fb2baaf1c0d0e354ec8e2.jpg',
-            tablero: 'Love'
+            tablero: 'amor prohibido'
         }, 
         {
             src: 'https://i.pinimg.com/736x/6b/1b/e7/6b1be7aa80ff3154cfa9d0c2dfd44f37.jpg',
-            tablero: 'Love'
+            tablero: 'amor prohibido'
         }, 
         {
             src: 'https://i.pinimg.com/736x/71/57/88/715788a322be79c717c84786a8adf067.jpg',
-            tablero: 'Love'
+            tablero: 'amor prohibido'
         }, 
         {
             src: 'https://i.pinimg.com/736x/14/95/18/14951873a7c8c6680e21f8a8cd06d8db.jpg',
-            tablero: 'Love'
+            tablero: 'amor prohibido'
         }, 
         {
             src: 'https://i.pinimg.com/736x/42/5c/93/425c93432cc23379dd7ecc08236bc299.jpg',
-            tablero: 'Love'
+            tablero: 'amor prohibido'
         }, 
         {
             src: 'https://i.pinimg.com/736x/79/51/73/79517370d131670f0a118edd722cb875.jpg',
-            tablero: 'Love'
+            tablero: 'amor prohibido'
         }, 
         {
             src: 'https://i.pinimg.com/736x/0a/62/17/0a6217432203657893d1f20f020b01aa.jpg',

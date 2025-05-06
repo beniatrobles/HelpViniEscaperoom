@@ -22,7 +22,7 @@
             <p class="text-sm font-medium">mininas</p>
         </router-link>
 
-        <router-link :to="{name : 'fotosTableros', params : {nombre : 'Love'}}">
+        <router-link :to="{name : 'fotosTableros', params : {nombre : 'amor prohibido'}}">
             <div class="bg-zinc-900 w-52 h-32 flex overflow-hidden rounded-lg">
                 <div class="w-[65%] h-full bg-black border-r border-zinc-800"><img src="https://i.pinimg.com/736x/0d/c4/c8/0dc4c86d8590170d02719a27c615da9f.jpg"></div>
                 <div class="w-[35%]">

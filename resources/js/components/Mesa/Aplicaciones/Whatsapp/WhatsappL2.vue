@@ -48,7 +48,7 @@ const passwd = ref('')
 const error = ref('')
 
 const loginGmail = async () => {
-    if (correo.value === 'vinijr07@gmail.com' && passwd.value === 'ViniDaPena7') {
+    if (correo.value === 'vinijr07@gmail.com' && (passwd.value === 'ViniDaPena7' || passwd.value === 'ViniDPena7')) {
 
         try {
             //sacamos el numero de la partida actual
