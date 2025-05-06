@@ -5,8 +5,7 @@
                 <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">P*to mono🦍🍌</p>
                 <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">Que eres un payaso🖕🖕</p>
                 <p class="p-4 bg-zinc-700 max-w-[80%] rounded-[20px] w-max">Y feo</p>
-                <!-- esta imagen chatgpt -->
-                <img  src="https://pbs.twimg.com/media/FqEqV1YXwAIsNR9.jpg:large" class="w-[130px] rounded-lg border border-zinc-800 cursor-pointer" @click="mostrarImagen">
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJytyaLnjEKBvg6KBXKIqwEZuZhuPueOKYcw&s" class="w-[130px] rounded-lg border border-zinc-800 cursor-pointer" @click="mostrarImagen">
             </div>
         </div>
         <div class="mt-auto flex gap-2">
@@ -26,7 +25,7 @@
             </div>
         </div>
         <div :class="{'scale-0' : !imagen}" class="bg-black bg-opacity-35 absolute inset-0 m-auto flex justify-center items-center transition duration-75" @click="mostrarImagen">
-            <img src="https://pbs.twimg.com/media/FqEqV1YXwAIsNR9.jpg:large" class="w-[80%] object-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJytyaLnjEKBvg6KBXKIqwEZuZhuPueOKYcw&s" class="w-[80%] object-cover">
         </div>
     </div>
 </template>

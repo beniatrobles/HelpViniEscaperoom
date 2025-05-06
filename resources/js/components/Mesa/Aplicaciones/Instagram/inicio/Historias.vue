@@ -18,7 +18,7 @@
                 <p class="m-auto w-full text-center mt-14 text-lg">Así comenzamos el día!💪</p>
             </div>
 
-            <div :class="{ 'hidden': historiaSeleccionada != 2 }" class="w-full h-full absolute bg-black p-2 bg-[url('https://pbs.twimg.com/media/FEbpAcWUcAIOcNV.jpg')] bg-contain bg-no-repeat bg-center">
+            <div :class="{ 'hidden': historiaSeleccionada != 2 }" class="w-full h-full absolute bg-black p-2 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmEo0esswjhimWpJ6t3vUDE_h5ytiv-tOtLw&s')] bg-contain bg-no-repeat bg-center">
                 <div class="flex items-center gap-1">
                     <img :src="'/storage/img/elbicho.jpg'" class="bg-white w-[30px] h-[30px] rounded-full">
                     cristiano
