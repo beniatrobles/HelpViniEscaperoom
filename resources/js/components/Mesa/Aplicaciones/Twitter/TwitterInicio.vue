@@ -96,7 +96,7 @@
                             <router-link to="/inicio/tablet/twitter/perfil" class="flex items-center space-x-1">
                                 <span class="font-bold">Vini Jr.</span>
                                 <img class="w-[15px]" :src="'/storage/img/verificado.png'" />
-                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/RealMadrid.jpg'" />
+                                <img class="w-[15px]" :src="'/storage/img/apps/iconos/realmadrid.jpg'" />
                                 <span class="text-gray-400 text-sm">@vinijr · 2 ene.</span>
                             </router-link>
                         </div>

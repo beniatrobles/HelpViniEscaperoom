@@ -28,10 +28,10 @@
         </section>
         <hr class="mt-[50px]">
         <section class="grid grid-cols-3 gap-1 mt-2">
-            <router-link to="/inicio/tablet/instagram/perfil/publicacion1" class="bg-black aspect-square cursor-pointer publicacion"><img :src="'/storage/img/vini.jpeg'"></router-link>
-            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
-            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
-            <router-link to="" class="bg-black aspect-square cursor-pointer publicacion">publicacion</router-link>
+            <router-link to="/inicio/tablet/instagram/perfil/publicacion1" class="bg-black aspect-square cursor-pointer publicacion"><img :src="'/storage/img/vini.jpeg'" class="h-full object-cover"></router-link>
+            <router-link to="/inicio/tablet/instagram/perfil/publicacion2" class="bg-black aspect-square cursor-pointer publicacion"><img :src="'/storage/img/puro.jpg'"></router-link>
+            <router-link to="/inicio/tablet/instagram/perfil/publicacion3" class="bg-black aspect-square cursor-pointer publicacion"><img :src="'/storage/img/vini_brasil.jpg'" class="h-full object-cover"></router-link>
+            <router-link to="/inicio/tablet/instagram/perfil/publicacion4" class="bg-black aspect-square cursor-pointer publicacion"></router-link>
         </section>
         <div class="mt-6 opacity-0">.</div>
     </div>
