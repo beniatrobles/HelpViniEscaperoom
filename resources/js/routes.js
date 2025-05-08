@@ -154,6 +154,9 @@ import Login from "./components/Login.vue";
 import PruebaFinal from "./components/PruebaFinal.vue";
 import PantallaFinal from "./components/PantallaFinal.vue";
 import Ranking from "./components/Ranking.vue";
+import Publicacion2 from "./components/Mesa/Aplicaciones/Instagram/perfil/Publicacion2.vue";
+import Publicacion4 from "./components/Mesa/Aplicaciones/Instagram/perfil/Publicacion4.vue";
+import Publicacion3 from "./components/Mesa/Aplicaciones/Instagram/perfil/Publicacion3.vue";
 
 
 const routes = [
@@ -377,6 +380,18 @@ const routes = [
                                     {
                                         path: 'publicacion1',
                                         component: PublicacionPista
+                                    },
+                                    {
+                                        path: 'publicacion2',
+                                        component: Publicacion2
+                                    },
+                                    {
+                                        path: 'publicacion3',
+                                        component: Publicacion3
+                                    },
+                                    {
+                                        path: 'publicacion4',
+                                        component: Publicacion4
                                     },
                                     {
                                         path: 'destacada1',
