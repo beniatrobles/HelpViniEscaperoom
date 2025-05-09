@@ -6,7 +6,7 @@
         <div class="flex flex-row">
 
             <div class="w-[25%]">
-                <img class="rounded-lg" :src="'/storage/img/apps/spotify/top50.png'" alt="">
+                <img class="rounded-lg" :src="'/storage/img/apps/spotify/Top50.png'" alt="">
             </div>
 
             <div class="p-10">
