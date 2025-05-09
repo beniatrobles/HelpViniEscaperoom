@@ -17,7 +17,7 @@
 
                 <div class="h-[150px] p-3">
 
-                    <img class="rounded-xl" :src="'/storage/img/apps/spotify/top50global.png'" alt="">
+                    <img class="rounded-xl" :src="'/storage/img/apps/spotify/Top50global.png'" alt="">
 
                 </div>
 
@@ -33,7 +33,7 @@
 
                 <div class="h-[150px] p-3">
 
-                    <img class="rounded-xl" :src="'/storage/img/apps/spotify/top50.png'" alt="">
+                    <img class="rounded-xl" :src="'/storage/img/apps/spotify/Top50.png'" alt="">
 
                 </div>
 

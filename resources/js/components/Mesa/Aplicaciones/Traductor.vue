@@ -60,29 +60,36 @@
                             v-model="traduccion" readonly></textarea>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
 </template>
-
 
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 import axios from 'axios';
 
 const texto = ref(localStorage.getItem('texto') || '');
-//controlamos el cambio de texto    
+// controlamos el cambio de texto
 watch(texto, (nuevoValor) => {
   localStorage.setItem('texto', nuevoValor);
 });
 
-const idiomaTexto = ref('en')
-const traduccion = ref('')
-const idiomaTraduccion = ref('es')
+// ---------------------- AÑADIDO POR CHATGPT ----------------------------
+const idiomaTexto = ref(localStorage.getItem('idiomaTexto') || 'en');
+const idiomaTraduccion = ref(localStorage.getItem('idiomaTraduccion') || 'es');
 
-//por defecto tiene césar y binario
+watch(idiomaTexto, (nuevoValor) => {
+  localStorage.setItem('idiomaTexto', nuevoValor);
+});
+
+watch(idiomaTraduccion, (nuevoValor) => {
+  localStorage.setItem('idiomaTraduccion', nuevoValor);
+});
+// ------------------------------------------------------------------------
+
+const traduccion = ref('');
+
 const idiomasDisponibles = ref([{
     language: 'cesar',
     name: 'César'
@@ -248,13 +255,11 @@ onMounted(async () => {
     //     } 
     // });
 
-    // // Mapeamos los datos para adaptarlos al formato que esperamos
     // const idiomasTransformados = get.data.languages.map((item) => ({
-    //     language: item.code,  // asignamos el valor de 'code' a 'language'
-    //     name: item.name       // asignamos el valor de 'name' a 'name'
+    //     language: item.code,
+    //     name: item.name
     // }));
 
-    // // Agregamos los idiomas transformados al principio de idiomasDisponibles
     // idiomasDisponibles.value.unshift(...idiomasTransformados);
 
     // } catch (error) {

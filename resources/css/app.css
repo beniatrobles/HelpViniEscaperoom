@@ -21,6 +21,10 @@ p {
 .btn__inicio{
     box-shadow: 0 15px 0 green;
 }
+.btn__ranking{
+    box-shadow: 0 5px 0 green;
+    font-family: "Press Start 2P", system-ui ;
+}
 .img__inicio{
     filter: drop-shadow(0 0 20px #0ED800);
     animation: flotar 2s alternate infinite linear;
