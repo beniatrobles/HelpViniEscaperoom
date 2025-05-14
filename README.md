@@ -6,8 +6,8 @@
 - [💻 Lenguajes y tecnologías](#-lenguajes-y-tecnologías)
 - [⌨️ Workspace](#-workspace)
 - [🔧 Instalación del proyecto](#-instalación-del-proyecto)
-- [📕 Erabilera](#-erabilera)
-- [👨🏽‍💻 Garatzaileak](#-garatzaileak)
+- [📕 Como jugar](#-como-jugar)
+- [👨🏽‍💻 Desarrolladores](#-desarrolladores)
 
 ---
 
@@ -27,10 +27,14 @@ Y muchas más que tendrá que detectar y evitar.
 ---
 
 ## 💎 Características  
-- Accesible desde cualquier navegador.
+- Accesible desde cualquier navegador web.
+  
 - Enfoque educativo. Se exponen las diferentes y más comunes amenazas y errores que cometemos en internet.
+  
 - Tiempo limitado. La prueba se deberá realizar en un periodo de tiempo inferior a 60 minutos.
+  
 - Competitivo. EL juego dispone de un Ranking donde se muestran las mejores partidas de los distintos usuarios.
+  
 
 ---
 
