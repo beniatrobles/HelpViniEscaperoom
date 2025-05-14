@@ -41,7 +41,6 @@ Opcionalmente, asegúrate de tener instalado un servidor local como Apache, Ngin
       
     - Configura la base de datos ejecutando las migraciones con `php artisan migrate`.
     - Genera la clave única de la aplicación ejecutando `php artisan key:generate`. Esta clave es necesaria, y se usará para proteger los datos almacenados en la aplicación.
-    - Compila los recursos del frontend. Para producción, ejecuta `npm run build`. Si estás desarrollando, usa `npm run dev`.
 
 ---
 
@@ -50,8 +49,6 @@ Opcionalmente, asegúrate de tener instalado un servidor local como Apache, Ngin
 Como ya mencionamos anteriormente, algunos archivos y carpetas no están incluidos en el repositorio, pero pueden llegar a ser esenciales para el correcto funcionamiento del proyecto. Aquí se explican cuáles son y cómo generarlos:
 
 - **`/public/storage`**: Enlace simbólico que conecta los archivos públicos con el directorio `/storage/app/public`. Se genera ejecutando `php artisan storage:link`. Será necesario cuando queramos que los archivos del directorio `/storage/app/public` sean accesibles desde el navegador, como por ejemplo, archivos subidos por el usuario
-  
-- **Archivos de frontend compilados**: Archivos CSS, JS y otros recursos necesarios para el navegador. Se generan automáticamente ejecutando `npm run build` o `npm run dev`.
 
 ---
 
