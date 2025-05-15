@@ -50,6 +50,17 @@ Y muchas más que tendrá que detectar y evitar.
 
 ## Workspace  
 
+**Metodología de trabajo:**
+- Organización en sprints
+- Uso de ramas en Git para control de versiones
+
+**Herramientas utilizadas:**
+- Editor de código: Visual Studio Code
+- Control de versiones: Git + GitHub
+- Diseño y prototipo: Figma
+- Documentación: Notion + Drive
+- Planificación: Trello
+- Despliegue en local: XAMMP
 
 ---
 
