@@ -1,17 +1,17 @@
 # Help Vini EscapeRoom
 
-## 📑 Índice
+## Índice
 - [📝 Descripción](#-descripción)
 - [💎 Características](#-características)
 - [💻 Lenguajes y tecnologías](#-lenguajes-y-tecnologías)
 - [⌨️ Workspace](#-workspace)
 - [🔧 Instalación del proyecto](#-instalación-del-proyecto)
-- [📕 Erabilera](#-erabilera)
-- [👨🏽‍💻 Garatzaileak](#-garatzaileak)
+- [📕 Como jugar](#-como-jugar)
+- [👨🏽‍💻 Desarrolladores](#-desarrolladores)
 
 ---
 
-## 📝 Descripción  
+## Descripción  
 **Help Vini EscapeRoom** es un Escape Room interáctivo cuyo objetivo es concienciar a los jóvenes, especialmente a los de 1º y 2º de la ESO, sobre los peligros reales que a día de hoy acechan en internet, especialmente los relacionados con las redes sociales, y los cuales están a la orden del día.
 
 El usuario se enfrentará a una prueba contrareloj, en la que, a través de pistas, deberá devolver la identidad digital del jugador de fútbol Vinicius, tratando de no cometer los mismos errores que cometió el jugador y que le llevó a esa situación.
@@ -26,15 +26,19 @@ Y muchas más que tendrá que detectar y evitar.
 
 ---
 
-## 💎 Características  
-- Accesible desde cualquier navegador.
+## Características  
+- Accesible desde cualquier navegador web.
+  
 - Enfoque educativo. Se exponen las diferentes y más comunes amenazas y errores que cometemos en internet.
+  
 - Tiempo limitado. La prueba se deberá realizar en un periodo de tiempo inferior a 60 minutos.
+  
 - Competitivo. EL juego dispone de un Ranking donde se muestran las mejores partidas de los distintos usuarios.
+  
 
 ---
 
-## 💻 Lenguajes y tecnologías  
+## Lenguajes y tecnologías  
 - Html
 - CSS
 - JavaScript
@@ -44,12 +48,23 @@ Y muchas más que tendrá que detectar y evitar.
 
 ---
 
-## ⌨️ Workspace  
+## Workspace  
 
+**Metodología de trabajo:**
+- Organización en sprints
+- Uso de ramas en Git para control de versiones
+
+**Herramientas utilizadas:**
+- Editor de código: Visual Studio Code
+- Control de versiones: Git + GitHub
+- Diseño y prototipo: Figma
+- Documentación: Notion + Drive
+- Planificación: Trello
+- Despliegue en local: XAMMP
 
 ---
 
-## 🔧 Instalación del proyecto
+## Instalación del proyecto
 
 ### Requisitos Previos
 
@@ -123,7 +138,7 @@ Durante el desarrollo y la administración del proyecto, estos son algunos coman
 
 ---
 
-## 📕 Como Jugar  
+## Como Jugar  
 Para poder jugar, el usuario deberá de estar registrado. Esta opción se encontrará en la parte superior derecha de la pantalla de inicio o al darle al botón de "Iniciar juego"
 
 Una vez dentro del juego, primero se dará un pequeño contexto sobre los hechos acontecidos, y posteriormente se darán las respectivas instrucciones y recomendaciones para poder completar el juego.
@@ -137,7 +152,7 @@ Las instrucciones/recomendaciones son las siguientes:
 
 ---
 
-## 👨🏽‍💻 Desarrolladores  
+## Desarrolladores  
 - Aitor López
 - Imanol Gullón
 - Beñat Robles
