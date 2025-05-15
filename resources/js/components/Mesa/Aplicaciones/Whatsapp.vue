@@ -51,7 +51,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link to="/inicio/tablet/whatsapp/chat2" class=" w-full h-[50px] flex items-center my-[1px] hover:bg-zinc-300">
+                            <router-link to="" class=" w-full h-[50px] flex items-center my-[1px] hover:bg-zinc-300">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -140,7 +140,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link to="/inicio/tablet/whatsapp/chat5" class=" w-full h-[50px] flex items-center my-[1px] hover:bg-zinc-300">
+                            <router-link to="" class=" w-full h-[50px] flex items-center my-[1px] hover:bg-zinc-300">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -173,7 +173,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link to="/inicio/tablet/whatsapp/chat6" class=" w-full h-[50px] flex items-center my-[1px] hover:bg-zinc-300">
+                            <router-link to="" class=" w-full h-[50px] flex items-center my-[1px] hover:bg-zinc-300">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
@@ -261,7 +261,7 @@
                             <hr class="w-full border-gray-400">
 
                             <!-- CONTACTO DE CHAT -->
-                            <router-link to="/inicio/tablet/whatsapp/chat9" class=" w-full h-[50px] flex items-center my-[1px] hover:bg-zinc-300">
+                            <router-link to="" class=" w-full h-[50px] flex items-center my-[1px] hover:bg-zinc-300">
 
                                 <!-- IMAGEN A LA IZQUIERDA -->
                                 <div class="h-full">
