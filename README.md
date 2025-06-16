@@ -90,7 +90,7 @@ Opcionalmente, asegúrate de tener instalado un servidor local como Apache, Ngin
     
     - Instala las dependencias de PHP ejecutando `composer install`. Este comando creará la carpeta `/vendor` donde se guardarán todas esas dependencias.
     
-    - Instala las dependencias de Node.js usando `npm install` o, si prefieres, `yarn install`. Esto creará la carpeta `node_modules`, también necesaria para el correcto funcionamiento.
+    - Instala las dependencias de Node.js usando `npm install --force`(hay problemas con depencias) o, si prefieres, `yarn install`. Esto creará la carpeta `node_modules`, también necesaria para el correcto funcionamiento.
     
     - Crea el archivo llamado `.env`. En este archivo se almacenan variables de entorno, como las credenciales y configuraciones necesarias para la conexión a la base de datos.
     
