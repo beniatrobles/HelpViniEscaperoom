@@ -150,10 +150,3 @@ Las instrucciones/recomendaciones son las siguientes:
 - Todo lo necesario para completar este Escape Room lo encontrarás en el juego, por lo que no necesitarás utilizar ninguna herramienta externa al juego.
 - Una vez recuperadas todas las redes sociales, te enfrentarás a una prueba final.
 
----
-
-## Desarrolladores  
-- Aitor López
-- Imanol Gullón
-- Beñat Robles
-- Anurag Yadav
